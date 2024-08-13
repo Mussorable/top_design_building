@@ -1,5 +1,59 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>About Us page</h1>
+    <div class="page-header header-filter about-us">
+        <div class="container set-above-2">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="page-name-block">
+                        {% if title %}
+                            <h1 class="page-name">{{ title }}</h1>
+                        {% else %}
+                            <h1>About Us</h1>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-raised container-light-mode">
+        <div class="row section">
+            <div class="col-md-8 ml-auto mr-auto">
+                <h4 class="description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ad at debitis dolores ipsa maxime neque pariatur, provident.</h4>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="option-small-block">
+                    <div class="icon-container">
+                        <img src="{{ url_for('static', filename='svg/hammer.svg') }}" alt="Hammer" width="72px" height="72px">
+                    </div>
+                    <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
+                        perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="option-small-block">
+                    <div class="icon-container">
+                        <img src="{{ url_for('static', filename='svg/drill.svg') }}" alt="Drill" width="72px" height="72px">
+                    </div>
+                    <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
+                        perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="option-small-block">
+                    <div class="icon-container">
+                        <img src="{{ url_for('static', filename='svg/paint-brush.svg') }}" alt="Paint Brush" width="72px" height="72px">
+                    </div>
+                    <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
+                        perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

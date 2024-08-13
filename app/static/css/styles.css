@@ -1,3 +1,112 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+}
+
+.section {
+    padding:70px 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.option-small-block {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+}
+
+.option-title {
+    margin-top: 35px;
+    margin-bottom: 1rem;
+}
+
+.description,
+.option-description{
+    color: #898989;
+    line-height: 1.5em;
+}
+
+.set-above-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.page-name-block {
+    color: #fff;
+    text-align: center;
+}
+
+.page-name-block .page-name {
+    font-size: 6.2rem;
+    font-weight: 600;
+    text-shadow: 0 0 0 #000, 0 0 1em #000;
+}
+
+/*CONTAINER*/
+
+.container-light-mode {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.container-raised {
+    margin-top: -60px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),
+                0 6px 30px 5px rgba(0,0,0,.12),
+                0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+/*UNDER HEADER BACKGROUND-IMAGE*/
+
+.page-header {
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.header-filter {
+    position: relative;
+}
+
+.header-filter:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(74,94,121,.25) 55%, rgba(0,78,119,0.15) 100%);
+}
+
+.about-us {
+    background-image: url("../images/background_team.webp");
+    background-repeat: no-repeat;
+}
+
+/*INPUT FORM*/
+
 .form-control-dark {
     color: #fff;
     background-color: #212529;
