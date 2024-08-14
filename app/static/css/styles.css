@@ -1,3 +1,27 @@
+@keyframes moveRight {
+    0% {
+        transform:  translateX(0);
+    }
+    50% {
+        transform: translateX(15%);
+    }
+    10% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -12,10 +36,21 @@ html * {
     background-position: center center;
 }
 
+.section-dark {
+    background: rgb(196,196,196);
+    background: radial-gradient(circle, rgba(196,196,196,1) 0%, rgba(16,10,45,1) 83%);
+}
+
 .option-small-block {
     max-width: 360px;
     margin: 0 auto;
     padding: 60px 0 30px;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 5px;
 }
 
 .option-title {
@@ -27,6 +62,83 @@ html * {
 .option-description{
     color: #898989;
     line-height: 1.5em;
+}
+
+.section-option-description {
+    padding-right: 2rem;
+}
+
+.section-title-description {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    height: 560px;
+    position: relative;
+}
+
+.option-img {
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),
+                0 3px 14px 2px rgba(0,0,0,.32),
+                0 5px 5px -3px rgba(0,0,0,.2);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.ortho-image {
+    max-width: 1040px;
+    width: auto;
+    position: relative;
+    top: -70px;
+}
+
+.move-left {
+    animation-name: moveLeft;
+}
+
+.move-right {
+    animation-name: moveRight;
+}
+
+.bathroom-img {
+    left: -5%;
+    top: 40%;
+    height: 180px;
+}
+
+.ceiling-img {
+    left: 5%;
+    top: 3%;
+    height: 140px;
+}
+
+.plan-img {
+    left: 53%;
+    top: 2%;
+    height: 170px;
+}
+
+.walls-img {
+    left: 90%;
+    top: 28%;
+    height: 190px;
+}
+
+.floor-img {
+    left: 70%;
+    top: 68%;
+    height: 140px;
+}
+
+.main-section-preview-image {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    max-height: 560px;
+    object-fit: cover;
 }
 
 .set-above-2 {
@@ -62,7 +174,7 @@ html * {
 }
 
 .container-raised {
-    margin-top: -60px;
+    margin: -60px 60px 0;
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),
                 0 6px 30px 5px rgba(0,0,0,.12),
