@@ -2,7 +2,10 @@ import folium
 from xdg.Config import icon_size
 
 
-def generate_map(coordinates, zoom_start=14):
+def generate_map(coordinates=None, zoom_start=14):
+    if coordinates is None:
+        coordinates = [51.215950, 18.573541]
+
     m = folium.Map(
         location=coordinates,
         zoom_start=zoom_start,

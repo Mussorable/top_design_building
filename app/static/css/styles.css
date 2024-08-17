@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html * {
     -webkit-font-smoothing: antialiased;
 }
@@ -229,7 +233,11 @@ html * {
     text-decoration: none;
     color: #333;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.15s;
+}
+
+.contact-link:hover {
+    color: #007bff;
 }
 
 .option-raised {
@@ -274,6 +282,7 @@ html * {
     background-size: cover;
     display: flex;
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 .header-filter {
@@ -293,9 +302,8 @@ html * {
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(74,94,121,.25) 55%, rgba(0,78,119,0.15) 100%);
 }
 
-.about-us {
-    background-image: url("../images/background_team.webp");
-    background-repeat: no-repeat;
+.bg-center {
+    background-position: center center;
 }
 
 .address-block {
