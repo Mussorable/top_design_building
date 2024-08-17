@@ -103,14 +103,16 @@
         </div>
         <div class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 option-raised">
+                <div class="row scrolling-fast-up">
+                    <div class="col-md-4 option-raised hover-raise">
                         <img class="text-icon" src="{{ url_for('static', filename='svg/placeholder.svg') }}" alt="Location icon">
                         <div class="address-block">
-                            <h4 class="title section-title">Address:</h4>
-                            <p>City: <span>Wieluń</span></p>
-                            <p>osiedle Kopernika 1</p>
-                            <p>98-300</p>
+                            <h4 class="title section-title address">Address:</h4>
+                            <div class="contact-info">
+                                <p class="mb-0 d-flex align-items-center"><i class="fa-solid fa-map-location-dot"></i><strong>osiedle Kopernika 1, 98-300 Wieluń</strong></p>
+                                <a class="contact-link d-flex align-items-center" href="mailto:email@example.com"><i class="fa fa-envelope"></i>email@example.com</a>
+                                <a class="contact-link d-flex align-items-center" href="tel:+48123456789"><i class="fa-solid fa-mobile"></i>+48 123 456 789</a>
+                            </div>
                         </div>
                         <div class="qr-code-section text-center">
                             <img class="qr-code" src="{{ url_for('static', filename='svg/qr.svg') }}" alt="QR Code">
@@ -121,7 +123,7 @@
                     </div>
                     <div class="col-md-8">
                         {% if map %}
-                            <div id="map">
+                            <div id="map" class="hover-raise">
                                 {{ map|safe }}
                             </div>
                         {% endif %}
