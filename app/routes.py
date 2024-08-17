@@ -1,4 +1,7 @@
+import logging
+
 from app import app
+from app.logic.map import generate_map
 
 from flask import render_template, flash, redirect, url_for, request
 
@@ -11,7 +14,18 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about_us.html', title='About Us')
+    coordinates = [51.215950, 18.573541]
+    folium_map = None
+
+    try:
+        folium_map = generate_map(coordinates)
+    except ValueError:
+        flash('Invalid coordinates provided.')
+    except Exception as e:
+        logging.error(f'Error generating map: {e}', exc_info=True)
+        flash('Something went wrong while generating the map.')
+
+    return render_template('about_us.html', title='About Us', map=folium_map)
 
 
 @app.route('/services')
@@ -32,4 +46,3 @@ def realisations():
 @app.route('/reviews')
 def reviews():
     return render_template('reviews.html', title='Reviews')
-
