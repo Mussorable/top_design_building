@@ -302,6 +302,58 @@ html * {
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(74,94,121,.25) 55%, rgba(0,78,119,0.15) 100%);
 }
 
+.form-group {
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.btn-raised:hover {
+    box-shadow: 0 14px 26px -12px rgba(2,0,31,.42),0 4px 23px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(156,39,176,.2);
+}
+
+.submit {
+    padding-top: 35px;
+}
+
+.bmd-form-group {
+    position: relative;
+    padding-top: 27px;
+    margin-bottom: 17px;
+    will-change: left, top, contents;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.bmd-label-floating {
+    color: #8d8d8d;
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    bottom: 7px;
+}
+
+.form-control {
+    background-size: 0 100%, 100% 100%;
+    border: 0;
+    border-bottom: 2px solid #d2d2d2;
+    border-radius: 0;
+    height: 36px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0;
+    color: #495057;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: 0.3s;
+    box-shadow: none;
+    outline: 0;
+    border-color: #ffc107;
+}
+
 .bg-center {
     background-position: center center;
 }

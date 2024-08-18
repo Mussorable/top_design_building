@@ -1,24 +1,24 @@
-{% macro form_field(field, autofocus) %}
+{% macro form_field(field, autofocus, autocomplete="on") %}
 {#    {% if field.type == "SearchField" %}#}
 {#        {{ field(class="form-control form-control-dark", id="search-bar", placeholder="Search...", aria-label="Search") }}#}
     {% if field.type == "TextAreaField" %}
         <div class="form-group label-floating bmd-form-group">
             {{ field.label(class="form-control-label bmd-label-floating") }}
-            {{ field(class="form-control") }}
+            {{ field(class="form-control", autocomplete=autocomplete) }}
         </div>
     {% elif field.type == "SubmitField" %}
         <div class="submit text-center">
-            {{ field(class="btn btn-primary btn-raised btn-round") }}
+            {{ field(class="btn btn-warning btn-raised btn-contact") }}
         </div>
     {% else %}
         <div class="form-group bmd-form-group">
-            {{ field.label(class="mbd-label-floating") }}
+            {{ field.label(class="bmd-label-floating") }}
             {{ field(class="form-control") }}
         </div>
     {% endif %}
 {% endmacro %}
 
-{% macro quick_form(form, action="", method="post", id="", novalidate=False) %}
+{% macro quick_form(form, action="", method="post", id="", novalidate=False, autocomplete="on") %}
     <form
         {% if action != None %} action="{{ action }}" {% endif %}
         {% if method %} method="{{ method }}" {% endif %}
@@ -30,7 +30,7 @@
         {% set ns = namespace(first_field=true) %}
         {% for field in form %}
             {% if field.widget.input_type != 'hidden' %}
-                {{ form_field(field, ns.first_field) }}
+                {{ form_field(field, ns.first_field, autocomplete=autocomplete) }}
                 {% set ns.first_field = false %}
             {% endif %}
         {% endfor %}
