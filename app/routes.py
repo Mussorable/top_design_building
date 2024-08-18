@@ -2,6 +2,7 @@ import logging
 
 from app import app
 from app.logic.map import generate_map
+from app.forms import ContactForm
 
 from flask import render_template, flash, redirect, url_for, request
 
@@ -24,9 +25,13 @@ def services():
     return render_template('services.html', title='Services')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html', title='Contact')
+    contact_form = ContactForm()
+    if contact_form.validate_on_submit():
+        flash('Your message is sent.', 'success')
+        return redirect(url_for('contact'))
+    return render_template('contact.html', title='Contact', form=contact_form)
 
 
 @app.route('/realisations')

@@ -28,7 +28,7 @@
                     <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white">Realisations</a></li>
                 </ul>
                 <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
                 </form>
                 <ul class="nav mb-md-0 justify-content-center">
                     <li><a href="{{ url_for('reviews') }}" class="btn btn-outline-light me-2">Reviews</a></li>
@@ -37,6 +37,19 @@
             </div>
         </div>
     </header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="messages">
+            <div class="container">
+                {% for message in messages %}
+                    <div class="message">
+                        <p>{{ message }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    {% endwith %}
     {% block content %}{% endblock %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
