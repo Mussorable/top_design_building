@@ -34,6 +34,18 @@ html * {
     -webkit-font-smoothing: antialiased;
 }
 
+textarea {
+    resize: none;
+    height: auto !important;
+    scrollbar-width: none;
+    line-height: 1.5 !important;
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
 .section {
     padding:70px 0;
     background-size: cover;
@@ -332,8 +344,20 @@ html * {
     bottom: 7px;
 }
 
+.bmd-form-group.is-focused > .bmd-label-floating,
+.bmd-form-group.is-filled > .bmd-label-floating {
+    top: 0.6rem;
+    left: 0;
+    font-size: .675rem;
+}
+
+.bmd-notation {
+    margin-top: 0;
+    font-size: .825rem;
+    position: absolute;
+}
+
 .form-control {
-    background-size: 0 100%, 100% 100%;
     border: 0;
     border-bottom: 2px solid #d2d2d2;
     border-radius: 0;
@@ -344,14 +368,18 @@ html * {
     padding: 0.4rem 0;
     color: #495057;
     box-shadow: none;
+    transition: 0.3s ease all;
 }
 
 .form-control:focus {
-    background-size: 100% 100%, 100% 100%;
-    transition-duration: 0.3s;
     box-shadow: none;
     outline: 0;
     border-color: #ffc107;
+    background-color: #f4f4f4;
+}
+
+.form-control.invalid {
+    border-color: #dc3545;
 }
 
 .bg-center {

@@ -1,10 +1,8 @@
 {% macro form_field(field, autofocus, autocomplete="on") %}
-{#    {% if field.type == "SearchField" %}#}
-{#        {{ field(class="form-control form-control-dark", id="search-bar", placeholder="Search...", aria-label="Search") }}#}
     {% if field.type == "TextAreaField" %}
         <div class="form-group label-floating bmd-form-group">
             {{ field.label(class="form-control-label bmd-label-floating") }}
-            {{ field(class="form-control", autocomplete=autocomplete) }}
+            {{ field(class="form-control", autocomplete=autocomplete, rows=6) }}
         </div>
     {% elif field.type == "SubmitField" %}
         <div class="submit text-center">
