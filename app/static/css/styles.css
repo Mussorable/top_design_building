@@ -195,6 +195,13 @@ textarea::-webkit-scrollbar {
 
 .btn-contact {
     width: 50%;
+    background-color: #f16236;
+    border-color: #f16236;
+}
+
+.btn-contact:hover {
+    background-color: #f84f1c;
+    border-color: #f84f1c;
 }
 
 .contact-row {
@@ -374,12 +381,38 @@ textarea::-webkit-scrollbar {
 .form-control:focus {
     box-shadow: none;
     outline: 0;
-    border-color: #ffc107;
+    border-color: #f16236;
     background-color: #f4f4f4;
 }
 
+.contact-information {
+    position: relative;
+}
+
+.contact-information > i {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    font-size: 30px;
+    color: #f16236;
+}
+
+.small-contact-title {
+    font-weight: 600;
+    display: inline-block;
+    margin: 1.5rem .75rem;
+}
+
+.small-contact-description {
+    color: #808080;
+    font-weight: 400;
+    font-size: .975rem;
+    line-height: 1.6rem;
+    margin: 0 .75rem;
+}
+
 .form-control.invalid {
-    border-color: #dc3545;
+    border-color: #dd293a;
 }
 
 .bg-center {
