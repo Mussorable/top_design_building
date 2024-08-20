@@ -152,6 +152,38 @@ textarea::-webkit-scrollbar {
     height: 140px;
 }
 
+.motto-section {
+    text-shadow: 0 0 0 #000, 0 0 1em #000;
+}
+
+.motto-section > p {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.page-desc {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.9s ease-in-out;
+}
+
+.page-desc.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.motto-section > .page-main-motto {
+    font-size: 3.4rem;
+    color: #f16236;
+}
+
+.motto-section > .page-secondary-motto {
+    font-size: 3rem;
+    color: rgba(255,255,255,.76);
+    margin-left: 25px;
+}
+
 .main-section-preview-image {
     width: auto;
     margin: 0 auto;
@@ -387,6 +419,14 @@ textarea::-webkit-scrollbar {
 
 .contact-information {
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-information.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-information > i {

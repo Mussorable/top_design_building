@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
         image.style.animationDuration = `${randomDuration}s`;
     });
 
+    const pageDescriptions = document.querySelectorAll('.page-desc');
+    function checkPageDescription() {
+        pageDescriptions.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                block.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkPageDescription);
+    window.addEventListener('resize', checkPageDescription);
+
+    checkPageDescription();
+
     // Image shows up when scrolling down
     const showsUpBlocks = document.querySelectorAll('.scrolling-fast-up');
 
@@ -111,4 +128,23 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('invalid');
         }
     });
+
+    const contactInformationBlocks = document.querySelectorAll('.contact-information');
+    function checkContactInfoBlocks() {
+        contactInformationBlocks.forEach((block, index) => {
+            const rect = block.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                setTimeout(() => {
+                    block.classList.add('show');
+                }, index * 120);
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkContactInfoBlocks);
+    window.addEventListener('resize', checkContactInfoBlocks);
+
+    checkContactInfoBlocks();
 })

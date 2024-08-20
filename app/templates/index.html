@@ -1,5 +1,68 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Index page</h1>
+    <div class="page-header header-filter bg-center" style="background-image: url('{{ url_for('static', filename='images/new_appartment.webp') }}');">
+        <div class="container set-above-2">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="page-name-block">
+                        <h1 class="page-name">Top Design</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 mr-auto">
+                    <div class="motto-section">
+                        <p class="page-main-motto page-desc">Swift and Reliable</p>
+                        <p class="page-secondary-motto page-desc">Quality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-raised container-light-mode">
+        <div class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 pb-50 header-text text-center">
+                        <h2 class="main-offer">What we offer to our clients</h2>
+                        <p>We offer comprehensive home and apartment renovations, including full interior finishing services</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-offer">
+                            <a href="#">Interior Finishing</a>
+                            <p>We provide high-quality interior finishing services, transforming your space into a
+                                stylish and functional environment, tailored to your preferences.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-offer">
+                            <a href="#">Expert Consultation</a>
+                            <p>Our team provides professional advice on processes, materials, costs, and construction
+                                work, helping you make informed decisions and achieve your desired results.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-offer">
+                            <a href="#">Comprehensive Construction Services</a>
+                            <p>From start to finish, we manage all aspects of your renovation project,
+                                ensuring seamless execution and a stress-free experience for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 pb-50 header-text text-center">
+                        <h2 class="main-offer">Our Works may impress you</h2>
+                        <p>Explore our impressive work through a gallery of recent projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
