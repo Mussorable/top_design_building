@@ -22,10 +22,6 @@
   }
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -55,6 +51,11 @@ textarea::-webkit-scrollbar {
 .section-dark {
     background: rgb(88,88,88);
     background: radial-gradient(circle, rgba(88,88,88,1) 13%, rgba(88,88,88,1) 41%, rgba(35,35,35,1) 100%);
+}
+
+.section-orange {
+    background: rgb(241,118,80);
+    background: radial-gradient(circle, rgba(241,118,80,1) 13%, rgba(219,82,40,1) 41%, rgba(182,65,29,1) 100%);
 }
 
 .option-small-block {
@@ -184,16 +185,19 @@ textarea::-webkit-scrollbar {
     margin-left: 25px;
 }
 
+.cloud {
+    transition: all 0.2s ease;
+}
+
+.cloud:hover {
+    transform: scale(1.05);
+}
+
 .single-offer {
     text-align: center;
     border: 1px solid #eee;
     border-radius: 8px;
     padding: 25px;
-    transition: all 0.2s ease;
-}
-
-.single-offer:hover {
-    transform: scale(1.05);
 }
 
 .single-offer:hover > a > h4 {
@@ -214,6 +218,10 @@ textarea::-webkit-scrollbar {
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 1.3rem;
+}
+
+.main-offer {
+    font-weight: 600;
 }
 
 .main-section-preview-image {
@@ -281,6 +289,35 @@ textarea::-webkit-scrollbar {
     font-size: 6.2rem;
     font-weight: 600;
     text-shadow: 0 0 0 #000, 0 0 1em #000;
+}
+
+.small-shadow {
+    text-shadow: 0 0 0 #404040, 0 0 1em #404040;
+}
+
+.options-section {
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: repeat(auto-fill, 100px);
+}
+
+.service-option {
+    background-color: #fff;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.service-option > .option-name > p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .text-icon {
@@ -366,6 +403,10 @@ textarea::-webkit-scrollbar {
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
+}
+
+.header-text {
+    margin-bottom: 25px;
 }
 
 .header-filter {
