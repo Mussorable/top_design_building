@@ -304,20 +304,24 @@ textarea::-webkit-scrollbar {
     grid-template-rows: repeat(auto-fill, 100px);
 }
 
+i.fa-circle-dot {
+    font-size: 12px;
+}
+
 .service-option {
     background-color: #fff;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    border-radius: 15px;
-    padding: 1rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.option-name {
+    border: 2px solid #333;
+    border-radius: 30px;
 }
 
 .service-option > .option-name > p {
     margin: 0;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
 }
 
 .text-icon {
