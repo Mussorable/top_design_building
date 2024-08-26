@@ -32,29 +32,29 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="single-offer cloud">
-                            <a href="#"><h4 class="offer-title">Interior Finishing</h4></a>
+                            <a href="#section-1"><h4 class="offer-title">Interior Finishing</h4></a>
                             <p>We provide high-quality interior finishing services, transforming your space into a
                                 stylish and functional environment, tailored to your preferences.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer cloud">
-                            <a href="#"><h4 class="offer-title">Expert Consultation</h4></a>
-                            <p>Our team provides professional advice on processes, materials, costs, and construction
-                                work, helping you make informed decisions and achieve your desired results.</p>
+                            <a href="#section-2"><h4 class="offer-title">Comprehensive Construction Services</h4></a>
+                            <p>From start to finish, we manage all aspects of your renovation project,
+                                ensuring seamless execution and a stress-free experience for you.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-offer cloud">
-                            <a href="#"><h4 class="offer-title">Comprehensive Construction Services</h4></a>
-                            <p>From start to finish, we manage all aspects of your renovation project,
-                                ensuring seamless execution and a stress-free experience for you.</p>
+                            <a href="#section-3"><h4 class="offer-title">Expert Consultation</h4></a>
+                            <p>Our team provides professional advice on processes, materials, costs, and construction
+                                work, helping you make informed decisions and achieve your desired results.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="section-1">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12 pb-50 header-text text-center">
@@ -66,6 +66,7 @@
                     <div class="col-lg-4">
                         <div class="intent-container">
                             <div class="content cloud">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_1.webp') }}" alt="">
                             </div>
                         </div>
@@ -73,6 +74,7 @@
                     <div class="col-lg-8">
                         <div class="intent-container">
                             <div class="content cloud">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_2.webp') }}" alt="">
                             </div>
                         </div>
@@ -80,6 +82,7 @@
                     <div class="col-lg-8">
                         <div class="intent-container">
                             <div class="content cloud">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_3.webp') }}" alt="">
                             </div>
                         </div>
@@ -87,6 +90,7 @@
                     <div class="col-lg-4">
                         <div class="intent-container">
                             <div class="content cloud">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                                 <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_4.webp') }}" alt="">
                             </div>
                         </div>
@@ -94,16 +98,16 @@
                 </div>
             </div>
         </div>
-        <div class="section section-dark">
+        <div class="section section-dark" id="section-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12 pb-40 header-text text-center">
                     <h2 class="main-offer text-white small-shadow">A Wide Variety of Our Services</h2>
                     <p class="text-white small-shadow">Explore a wide range of services tailored to your needs.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="d-flex gap-2 flex-wrap options-section">
+            <div class="row option-fixed-height">
+                <div class="col-lg-12 carousel">
+                    <div class="d-flex gap-2 flex-wrap options-section carousel-inner">
                         <div class="service-option p-2">
                             <div class="option-name p-2 px-3">
                                 <p class="d-flex gap-2"><i class="fa-solid fa-circle-dot align-content-center"></i><span>Filling</span></p>
@@ -203,5 +207,68 @@
                 </div>
             </div>
         </div>
+        <div class="section" id="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pb-50 header-text text-center">
+                        <h2 class="main-offer">
+                            How Does It Feel
+                        </h2>
+                        <p>Discover the comfort and satisfaction of a space built with care, precision, and professionalism.
+                            See how our work feels when it’s finally yours to enjoy.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="video-container">
+                            <video src="{{ url_for('static', filename='videos/example_of_video.mp4') }}" class="video"
+                                   id="video-presentation" poster="{{ url_for('static', filename='videos/example_of_video_poster.jpg') }}">
+                            </video>
+                            <div class="video-controls">
+                                <div id="play-button" class="control-button">
+                                    <i id="play-icon" class="fa-solid fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="statistics">
+                            <div class="row">
+                                <div class="statistics-title">
+                                    Stats Snapshot
+                                </div>
+                            </div>
+                            <div class="row stats-row">
+                                <div class="col-md-6 stats-column">
+                                    <p class="column-title">Clients</p>
+                                    <p class="column-value">518+</p>
+                                </div>
+                                <div class="col-md-6 stats-column">
+                                    <p class="column-title">Square Meters</p>
+                                    <p class="column-value">3800+</p>
+                                </div>
+                            </div>
+                            <div class="row stats-row">
+                                <div class="col-md-6 stats-column">
+                                    <p class="column-title">Years of experience</p>
+                                    <p class="column-value">12</p>
+                                </div>
+                                <div class="col-md-6 stats-column">
+                                    <p class="column-title">Savings on Materials</p>
+                                    <p class="column-value">12%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="lightbox-modal" class="lightbox">
+        <span class="close">&times;</span>
+        <img src="" class="lightbox-content" id="lightbox-image" alt="gallery image container">
+    </div>
+    <script src="{{ url_for('static', filename="js/carousel.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/video_player.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/lightbox.js") }}"></script>
 {% endblock %}
