@@ -482,7 +482,13 @@ video {
     padding-block: 60px;
 }
 
-/*UNDER HEADER BACKGROUND-IMAGE*/
+header a.nav-link {
+    transition: all .3s;
+}
+
+header a.nav-link:hover {
+    color: #f84f1c !important;
+}
 
 .page-header {
     height: 70vh;
@@ -544,13 +550,7 @@ video {
 
 .page-footer {
     background-color: #ff5f2e;
-    padding-block: 5rem !important;
-}
-
-.page-footer .footer-title-container {
-    border-left: 2px solid #fff;
-    padding-left: 25px;
-    padding-block: 10px;
+    padding-block: 5rem 1rem !important;
 }
 
 .page-footer .footer-title {
@@ -558,6 +558,9 @@ video {
     font-size: 32px;
     font-weight: 500;
     line-height: 0.85;
+    border-left: 2px solid #fff;
+    padding-left: 25px;
+    padding-block: 20px;
 }
 
 .page-footer .footer-input-container {
@@ -611,6 +614,27 @@ video {
 
 .page-footer .footer-input:focus {
     background: #633224;
+}
+
+.page-footer .footer-above-block {
+    margin-bottom: 75px;
+}
+
+.page-footer .footer-navigation {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.page-footer .footer-navigation .nav-item {
+    opacity: 0.75;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.page-footer .footer-navigation .nav-item:hover,
+.page-footer .footer-navigation .nav-item:focus {
+    opacity: 1;
+    color: #fff;
 }
 
 .header-filter:after {

@@ -22,10 +22,10 @@
                     <img src="{{ url_for('static', filename='svg/logo.svg') }}" alt="Logo" width="48px" height="48px">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white">About Us</a></li>
-                    <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white">Services</a></li>
-                    <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white">Realisations</a></li>
+                    <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">About Us</a></li>
+                    <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">Services</a></li>
+                    <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">Realisations</a></li>
                 </ul>
                 <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
@@ -53,11 +53,11 @@
     {% block content %}{% endblock %}
     <footer class="page-footer mt-5">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-md-4 footer-title-container">
+            <div class="row footer-above-block justify-content-between">
+                <div class="col-lg-4 footer-title-container">
                     <h4 class="footer-title">Got a Question? Share your email and We'll call you</h4>
                 </div>
-                <div class="col-md-4 footer-input-container">
+                <div class="col-lg-4 footer-input-container">
                     <label class="footer-input-label" for="question-email">For any questions, offers or comments please fill out the following form.</label>
                     <form action="">
                         <input id="question-email" class="footer-input" type="text" placeholder="Email address">
@@ -66,6 +66,18 @@
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </div>
                     </form>
+                </div>
+            </div>
+            <div class="row footer-navigation">
+                <div class="col-lg-8">
+                    <ul class="nav justify-content-start">
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">About Us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Services</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Realisations</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Reviews</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
