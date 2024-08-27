@@ -542,6 +542,77 @@ video {
     position: relative;
 }
 
+.page-footer {
+    background-color: #ff5f2e;
+    padding-block: 5rem !important;
+}
+
+.page-footer .footer-title-container {
+    border-left: 2px solid #fff;
+    padding-left: 25px;
+    padding-block: 10px;
+}
+
+.page-footer .footer-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 0.85;
+}
+
+.page-footer .footer-input-container {
+    padding-inline: 35px;
+}
+
+.page-footer .footer-input-label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.page-footer .footer-input {
+    color: #fff;
+    background: inherit;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    width: 100%;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.page-footer .footer-input::placeholder {
+    color: #fff;
+}
+
+.page-footer .submit-container {
+    position: relative;
+    display: inline-block;
+}
+
+.page-footer .submit-container > i {
+    position: absolute;
+    color: #333;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+}
+
+.page-footer .footer-input-submit {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 75px 8px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.page-footer .footer-input:focus {
+    background: #633224;
+}
+
 .header-filter:after {
     position: absolute;
     z-index: 1;

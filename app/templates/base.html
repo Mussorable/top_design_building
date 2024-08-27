@@ -51,6 +51,25 @@
     {% endif %}
     {% endwith %}
     {% block content %}{% endblock %}
+    <footer class="page-footer mt-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 footer-title-container">
+                    <h4 class="footer-title">Got a Question? Share your email and We'll call you</h4>
+                </div>
+                <div class="col-md-4 footer-input-container">
+                    <label class="footer-input-label" for="question-email">For any questions, offers or comments please fill out the following form.</label>
+                    <form action="">
+                        <input id="question-email" class="footer-input" type="text" placeholder="Email address">
+                        <div class="submit-container">
+                            <input class="footer-input-submit" type="submit" value="Submit">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
