@@ -1,5 +1,75 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Services page</h1>
+    <div class="page-header header-filter" style="background-image: url('{{ url_for('static', filename='images/services_header.webp') }}');">
+        <div class="container set-above-2">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="page-name-block">
+                        {% if title %}
+                            <h1 class="page-name">{{ title }}</h1>
+                        {% else %}
+                            <h1 class="page-name">About Us</h1>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-raised container-light-mode">
+        <div class="section">
+            <div class="row justify-content-center">
+                <div class="col-md-12 pb-50 header-text text-center">
+                    <h2 class="main-offer">Our Services</h2>
+                    <p>Swift, accurate interior comprehensive building services, ensuring flawless execution and timely project completion</p>
+                </div>
+            </div>
+            <div class="row g-4 px-3 mx-0 select-services">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-3 bg-warning bg-opacity-15 rounded-3 text-center">
+                        <span class="display-6 text-warning mb-0">
+                            <i class="fa-solid fa-repeat"></i>
+                        </span>
+                        <div class="ms-2 h6 mb-0">
+                            <h5 class="fw-bolder main-service-title">Private and Business Renovations</h5>
+                            <p class="main-service-description">Quality Renovations for Private and Commercial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-3 bg-blue bg-opacity-15 rounded-3 text-center">
+                        <span class="display-6 text-blue mb-0">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </span>
+                        <div class="ms-2 h6 mb-0">
+                            <h5 class="fw-bolder main-service-title">Interior Adaptation</h5>
+                            <p class="main-service-description">for Functional and Stylish Spaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-3 bg-purple bg-opacity-15 rounded-3 text-center">
+                        <span class="display-6 text-purple mb-0">
+                            <i class="fa-solid fa-house-circle-check"></i>
+                        </span>
+                        <div class="ms-2 h6 mb-0">
+                            <h5 class="fw-bolder main-service-title">Comprehensive Construction of Facilities</h5>
+                            <p class="main-service-description">Complete Facility Construction from Start to Finish</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-3 bg-mint bg-opacity-15 rounded-3 text-center">
+                        <span class="display-6 text-mint mb-0">
+                            <i class="fa-solid fa-user-group"></i>
+                        </span>
+                        <div class="ms-2 h6 mb-0">
+                            <h5 class="fw-bolder main-service-title">Consulting for Effective Solutions</h5>
+                            <p class="main-service-description">Consulting for Optimal Project Results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -342,6 +342,11 @@ i.fa-circle-dot {
     height: 100%;
 }
 
+.nav .nav-link.active {
+        border-bottom: 1px solid #FFA500FF;
+
+}
+
 .statistics {
     font-weight: bold;
     margin-left: 20px;
@@ -548,8 +553,50 @@ header a.nav-link:hover {
     position: relative;
 }
 
+.select-services div.bg-warning {
+    background-color: rgb(255 193 7 / 10%) !important;
+}
+
+.select-services div.bg-blue {
+    background-color: rgba(4, 82, 145, 10%) !important;
+}
+
+.select-services div.bg-purple {
+    background-color: rgb(101 55 185 / 10%) !important;
+}
+
+.select-services div.bg-mint {
+    background-color: rgb(20 159 181 / 10%) !important;
+}
+
+.select-services span.display-6 {
+    font-size: 4rem;
+}
+
+.select-services div.bg-blue span.display-6 {
+    color: rgb(29 59 83 / 100%) !important;
+}
+
+.select-services div.bg-purple span.display-6 {
+    color: rgb(111 66 193 / 100%) !important;
+}
+
+.select-services div.bg-mint span.display-6 {
+    color: rgb(23 162 184 / 100%) !important;
+}
+
+.select-services  .main-service-title {
+    font-size: 1rem;
+}
+
+.select-services  .main-service-description {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
 .page-footer {
-    background-color: #ff5f2e;
+    background: rgb(187,49,6);
+    background: linear-gradient(0deg, rgba(187,49,6,1) 0%, rgba(255,95,46,1) 100%);
     padding-block: 5rem 1rem !important;
 }
 
