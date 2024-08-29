@@ -557,16 +557,36 @@ header a.nav-link:hover {
     background-color: rgb(255 193 7 / 10%) !important;
 }
 
+.select-services .service-button:hover div.bg-warning,
+.select-services .service-button.active div.bg-warning {
+    background-color: rgb(255 193 7 / 25%) !important;
+}
+
 .select-services div.bg-blue {
     background-color: rgba(4, 82, 145, 10%) !important;
+}
+
+.select-services .service-button:hover div.bg-blue,
+.select-services .service-button.active div.bg-blue {
+    background-color: rgb(40, 82, 145, 25%) !important;
 }
 
 .select-services div.bg-purple {
     background-color: rgb(101 55 185 / 10%) !important;
 }
 
+.select-services .service-button:hover div.bg-purple,
+.select-services .service-button.active div.bg-purple {
+    background-color: rgb(101 55 185 / 25%) !important;
+}
+
 .select-services div.bg-mint {
     background-color: rgb(20 159 181 / 10%) !important;
+}
+
+.select-services .service-button:hover div.bg-mint,
+.select-services .service-button.active div.bg-mint {
+    background-color: rgb(20 159 181 / 25%) !important;
 }
 
 .select-services span.display-6 {
@@ -587,6 +607,53 @@ header a.nav-link:hover {
 
 .select-services  .main-service-title {
     font-size: 1rem;
+}
+
+.service-container .service-presentation-image {
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0);
+}
+
+.service-container .service-explanation {
+    list-style: none;
+}
+
+.service-container .service-explanation > li {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.services-menu button {
+    border: none;
+    outline: none;
+    background: inherit;
+    width: 100%;
+}
+
+.section .service-button,
+.section .service-button > div {
+    transition: all 0.3s ease-in-out;
+}
+
+.section .service-button:hover > div,
+.section .service-button.active > div {
+    border: 1px solid #333;
+    background: rgb(51,51,51);
+    background: linear-gradient(0deg, rgba(51,51,51,0.05) 0%, rgba(255,95,46,0) 100%);
+}
+
+.section .service-button:hover,
+.section .service-button.active {
+    transform: scale(1.05);
+}
+
+.section .service-container {
+    display: none;
+}
+
+.section .service-container.active {
+    display: block;
 }
 
 .select-services  .main-service-description {

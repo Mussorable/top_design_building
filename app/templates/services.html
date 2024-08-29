@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="container-raised container-light-mode">
-        <div class="section">
+        <div class="section services-menu">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-50 header-text text-center">
                     <h2 class="main-offer">Our Services</h2>
@@ -26,50 +26,202 @@
             </div>
             <div class="row g-4 px-3 mx-0 select-services">
                 <div class="col-sm-6 col-xl-3">
-                    <div class="d-flex justify-content-center align-items-center p-3 bg-warning bg-opacity-15 rounded-3 text-center">
-                        <span class="display-6 text-warning mb-0">
-                            <i class="fa-solid fa-repeat"></i>
-                        </span>
-                        <div class="ms-2 h6 mb-0">
-                            <h5 class="fw-bolder main-service-title">Private and Business Renovations</h5>
-                            <p class="main-service-description">Quality Renovations for Private and Commercial</p>
+                    <button class="service-button">
+                        <div class="d-flex justify-content-center align-items-center p-3 bg-warning bg-opacity-15 rounded-3 text-center">
+                            <span class="display-6 text-warning mb-0">
+                                <i class="fa-solid fa-repeat"></i>
+                            </span>
+                            <div class="ms-2 h6 mb-0">
+                                <h5 class="fw-bolder main-service-title">Private and Business Renovations</h5>
+                                <p class="main-service-description">Quality Renovations for Private and Commercial</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <button class="service-button">
+                        <div class="d-flex justify-content-center align-items-center p-3 bg-blue bg-opacity-15 rounded-3 text-center">
+                            <span class="display-6 text-blue mb-0">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </span>
+                            <div class="ms-2 h6 mb-0">
+                                <h5 class="fw-bolder main-service-title">Interior Adaptation</h5>
+                                <p class="main-service-description">for Functional and Stylish Spaces</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <button class="service-button">
+                        <div class="d-flex justify-content-center align-items-center p-3 bg-purple bg-opacity-15 rounded-3 text-center">
+                            <span class="display-6 text-purple mb-0">
+                                <i class="fa-solid fa-house-circle-check"></i>
+                            </span>
+                            <div class="ms-2 h6 mb-0">
+                                <h5 class="fw-bolder main-service-title">Comprehensive Construction of Facilities</h5>
+                                <p class="main-service-description">Complete Facility Construction from Start to Finish</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <button class="service-button">
+                        <div class="d-flex justify-content-center align-items-center p-3 bg-mint bg-opacity-15 rounded-3 text-center">
+                            <span class="display-6 text-mint mb-0">
+                                <i class="fa-solid fa-user-group"></i>
+                            </span>
+                            <div class="ms-2 h6 mb-0">
+                                <h5 class="fw-bolder main-service-title">Consulting for Effective Solutions</h5>
+                                <p class="main-service-description">Consulting for Optimal Project Results</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div id="service-container-0" class="service-container">
+                    <div class="row">
+                        <div class="col-md-12 service-image-container text-center">
+                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/new_appartment.webp") }}" alt="Apartment Renovation visualization">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-12 pb-50 header-text text-center">
+                            <h2 class="main-offer">Comprehensive Renovation Services for Private and Commercial Spaces</h2>
+                            <p>Our company offers professional comprehensive renovation services for projects of any complexity.
+                                We specialize in both private and commercial properties, ensuring high-quality work at every stage of the project.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">Our Services</h3>
+                            <ul>
+                                <li><span class="fw-bolder">Residential Renovation:</span> Apartments, private houses, cottages.</li>
+                                <li><span class="fw-bolder">Commercial Renovation:</span> Offices, shops, restaurants, beauty salons, and other business spaces.</li>
+                                <li><span class="fw-bolder">Interior Design:</span> Creating unique and functional interiors tailored to your needs and style.</li>
+                                <li><span class="fw-bolder">Engineering Words:</span> Installation of heating, ventilation, air conditioning, and electrical systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">What you gain by choosing us</h3>
+                            <ul class="service-explanation">
+                                <li><span class="fw-bolder">Experience and Expertise:</span> Our team is composed of seasoned professionals with a track record of successful projects.
+                                    We approach each project with attention to detail, considering all the specific requirements and unique features of the space.</li>
+                                <li><span class="fw-bolder">Personalized Approach:</span> We create tailored solutions that meet the specific needs of our clients.
+                                    Whether you need a stylish apartment renovation or a refresh of your office space, we will find the optimal solution for you.</li>
+                                <li><span class="fw-bolder">Comprehensive Services:</span> We handle the entire project cycle - from design development to final finishing.
+                                    You won't need to worry about finding subcontractors or coordinating work; we take care of everything for you.</li>
+                                <li><span class="fw-bolder">High Standards of Quality:</span> We use only trusted materials and the latest technologies,
+                                    ensuring durability and functionality in our solutions.</li>
+                                <li><span class="fw-bolder">Timely Delivery:</span> We understand the importance of deadlines.
+                                    We strive to complete all work on time without compromising on quality.</li>
+                                <li><span class="fw-bolder">Transparency and Openness:</span> We provide detailed estimates and reports at every stage of the project,
+                                    helping you avoid unexpected costs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">Contact Us</h3>
+                            <p>Ready to take the first step toward creating your ideal space? Contact us for a consultation and a project cost estimate.
+                                We guarantee a professional approach and a high-quality result that will exceed your expectations.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="d-flex justify-content-center align-items-center p-3 bg-blue bg-opacity-15 rounded-3 text-center">
-                        <span class="display-6 text-blue mb-0">
-                            <i class="fa-solid fa-pen-ruler"></i>
-                        </span>
-                        <div class="ms-2 h6 mb-0">
-                            <h5 class="fw-bolder main-service-title">Interior Adaptation</h5>
-                            <p class="main-service-description">for Functional and Stylish Spaces</p>
+                <div id="service-container-1" class="service-container">
+                    <div class="row">
+                        <div class="col-md-12 service-image-container text-center">
+                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/business_private.webp") }}" alt="Apartment Renovation visualization">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-12 pb-50 header-text text-center">
+                            <h2 class="main-offer">Interior Adaptation: Transforming Spaces to Meet Your Needs</h2>
+                            <p>At Top Design, we specialize in interior adaptation services that transform spaces to better suit your needs,
+                                whether it's for residential or commercial properties. Our goal is to create environments that are not only functional but also aesthetically pleasing,
+                                ensuring that every space is maximized to its full potential.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">What is Interior Adaptation?</h3>
+                            <p>Interior adaptation involves the process of modifying and optimizing existing spaces to enhance their usability,
+                                comfort, and style. Whether you need to reconfigure a room, update an outdated layout, or completely overhaul a space to meet new requirements,
+                                our team is here to help.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">Examples of Interior Adaptation Projects</h3>
+                            <ul>
+                                <li><span class="fw-bolder">Residential Adaptation:</span> Converting a small apartment into a
+                                    spacious living area by removing non-load-bearing walls and integrating multi-functional furniture</li>
+                                <li><span class="fw-bolder">Commercial Adaptation:</span> Redesigning an office space to improve workflow,
+                                    adding flexible workstations, and enhancing lighting for better productivity.</li>
+                                <li><span class="fw-bolder">Retail Adaptation:</span> Updating a store layout to improve customer
+                                    flow and display products more effectively, creating a more engaging shopping experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">Why Choose Our Interior Adaptation Services?</h3>
+                            <ul class="service-explanation">
+                                <li><span class="fw-bolder">Tailored Solutions:</span> We understand that each space is unique,
+                                    which is why we offer customized solutions that align with your specific needs and preferences.
+                                    Whether you're adapting a residential area for a growing family or transforming a commercial space to improve workflow,
+                                    we provide designs that fit your vision.</li>
+                                <li><span class="fw-bolder">Maximized Functionality:</span> Our team focuses on making the most out of every square meter.
+                                    We design layouts that enhance the usability of your space,
+                                    incorporating smart storage solutions, efficient lighting, and ergonomic design elements.</li>
+                                <li><span class="fw-bolder">Aesthetic Excellence:</span> We believe that functionality should never come at the expense of beauty.
+                                    Our design approach ensures that your adapted space is not only practical but also visually appealing,
+                                    reflecting your personal style or brand identity.</li>
+                                <li><span class="fw-bolder">Seamless Integration:</span> Whether you're working with an existing structure or planning a new configuration,
+                                    our interior adaptation services ensure a smooth transition.
+                                    We take care of all the details, from structural changes to finishing touches, ensuring that everything blends seamlessly.</li>
+                                <li><span class="fw-bolder">Attention to Detail:</span> Every element matters.
+                                    We pay close attention to the small details that make a big difference,
+                                    from the choice of materials to the quality of craftsmanship, ensuring a flawless finish.</li>
+                                <li><span class="fw-bolder">Innovative Design:</span> Stay ahead of the curve with our forward-thinking design solutions.
+                                    We incorporate the latest trends and technologies to create spaces that are not only current but also timeless.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="fw-bold mb-3">Our Process</h3>
+                            <ul>
+                                <li><span class="fw-bolder">Consultation:</span> We start with an in-depth consultation
+                                    to understand your needs, goals, and vision for the space.</li>
+                                <li><span class="fw-bolder">Site Evaluation:</span> Our team conducts a thorough evaluation of the existing
+                                    space to identify opportunities for adaptation and improvement.</li>
+                                <li><span class="fw-bolder">Design Proposal:</span> Based on your input and our findings,
+                                    we develop a comprehensive design proposal that includes layouts, material suggestions, and a detailed project plan.</li>
+                                <li><span class="fw-bolder">Implementation:</span> Our skilled craftsmen and contractors bring the design to life,
+                                    ensuring every aspect of the project meets our high standards of quality.</li>
+                                <li><span class="fw-bolder">Final Review:</span> Once the work is complete, we conduct a
+                                    final walkthrough to ensure everything is perfect and meets your expectations.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="d-flex justify-content-center align-items-center p-3 bg-purple bg-opacity-15 rounded-3 text-center">
-                        <span class="display-6 text-purple mb-0">
-                            <i class="fa-solid fa-house-circle-check"></i>
-                        </span>
-                        <div class="ms-2 h6 mb-0">
-                            <h5 class="fw-bolder main-service-title">Comprehensive Construction of Facilities</h5>
-                            <p class="main-service-description">Complete Facility Construction from Start to Finish</p>
-                        </div>
+                <div id="service-container-2" class="service-container">
+                    <div class="row">
+                        <h3>service-container-2</h3>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="d-flex justify-content-center align-items-center p-3 bg-mint bg-opacity-15 rounded-3 text-center">
-                        <span class="display-6 text-mint mb-0">
-                            <i class="fa-solid fa-user-group"></i>
-                        </span>
-                        <div class="ms-2 h6 mb-0">
-                            <h5 class="fw-bolder main-service-title">Consulting for Effective Solutions</h5>
-                            <p class="main-service-description">Consulting for Optimal Project Results</p>
-                        </div>
+                <div id="service-container-3" class="service-container">
+                    <div class="row">
+                        <h3>service-container-3</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='js/service-navigation.js') }}"></script>
 {% endblock %}
