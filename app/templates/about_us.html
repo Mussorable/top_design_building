@@ -62,7 +62,7 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-12 mx-auto">
+                    <div class="col-lg-6 col-md-12 mx-auto">
                         <h3 class="title section-title">Client Reviews</h3>
                         <h5 class="title-description section-title-description">See what our clients have to say about our work.</h5>
                         <p class="option-description section-option-description">We have been entrusted with the interior
@@ -86,12 +86,12 @@
         <div class="section section-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-xl-8">
                         <div class="image-container">
                             <img class="ortho-image" src="{{ url_for('static', filename='images/ai-rooms-flat.webp') }}" alt="Set of tools">
                         </div>
                     </div>
-                    <div class="col-md-4 ml-auto">
+                    <div class="col-xl-4 ml-auto">
                         <div class="description-block">
                             <h3 class="title section-title text-white">Lorem Ipsum</h3>
                             <h5 class="title-description section-title-description light-color">Lorem Ipsum dolor sit amet.</h5>
@@ -105,7 +105,7 @@
         <div class="section">
             <div class="container">
                 <div class="row scrolling-fast-up">
-                    <div class="col-md-4 option-raised hover-raise">
+                    <div class="col-xl-4 option-raised hover-raise">
                         <img class="text-icon" src="{{ url_for('static', filename='svg/placeholder.svg') }}" alt="Location icon">
                         <div class="address-block">
                             <h4 class="title section-title address">Address:</h4>
@@ -122,7 +122,7 @@
                             <a class="btn btn-warning btn-contact" href="{{ url_for('contact') }}">Contact</a>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-xl-8">
                         {% if map %}
                             <div id="map" class="hover-raise">
                                 {{ map|safe }}
