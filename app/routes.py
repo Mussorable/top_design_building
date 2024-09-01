@@ -42,3 +42,8 @@ def realisations():
 @app.route('/reviews')
 def reviews():
     return render_template('reviews.html', title='Reviews', active_page=request.endpoint)
+
+
+@app.route('/policy')
+def policy():
+    return render_template('policy.html', title='Privacy Policy', active_page=request.endpoint)

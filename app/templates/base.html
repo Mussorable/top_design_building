@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row footer-above-block justify-content-between">
                 <div class="col-lg-4 footer-title-container">
-                    <h4 class="footer-title">Got a Question? Share your email and We'll call you</h4>
+                    <h4 class="footer-title">Got a Question? Share your email and We'll write you</h4>
                 </div>
                 <div class="col-lg-4 footer-input-container">
                     <label class="footer-input-label" for="question-email">For any questions, offers or comments please fill out the following form.</label>
@@ -71,13 +71,16 @@
             <div class="row footer-navigation">
                 <div class="col-lg-8">
                     <ul class="nav justify-content-start">
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">About Us</a></li>
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Services</a></li>
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Realisations</a></li>
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Reviews</a></li>
-                        <li class="nav-item"><a href="" class="nav-link px-2 text-white fw-bolder">Contact</a></li>
+                        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link px-2 text-white fw-bolder">Home</a></li>
+                        <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link px-2 text-white fw-bolder">About Us</a></li>
+                        <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link px-2 text-white fw-bolder">Services</a></li>
+                        <li class="nav-item"><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white fw-bolder">Realisations</a></li>
+                        <li class="nav-item"><a href="{{ url_for('reviews') }}" class="nav-link px-2 text-white fw-bolder">Reviews</a></li>
+                        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link px-2 text-white fw-bolder">Contact</a></li>
                     </ul>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a href="{{ url_for('policy') }}" class="footer-terms-links text-white fw-bolder px-2">Privacy Policy</a>
                 </div>
             </div>
         </div>
