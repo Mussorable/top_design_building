@@ -39,6 +39,17 @@ def realisations():
     return render_template('realisations.html', title='Realisations', active_page=request.endpoint)
 
 
+@app.route('/realisations/<type_of_room>')
+def realisations_type(type_of_room):
+    title_list = type_of_room.split('-')
+    capitalized_list = []
+    for word in title_list:
+        capitalized_list.append(word.capitalize())
+    title = ' '.join(capitalized_list)
+
+    return render_template('type-of-room.html', title=title, active_page=request.endpoint)
+
+
 @app.route('/reviews')
 def reviews():
     return render_template('reviews.html', title='Reviews', active_page=request.endpoint)
