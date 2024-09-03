@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+export function setVideoPlayer() {
     const video = document.querySelector("#video-presentation");
     const playButton = document.querySelector("#play-button");
     const icon = document.querySelector("#play-icon");
@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    playButton.addEventListener("click", play);
-    video.addEventListener("click", play);
-});
+    if (video) {
+        playButton.addEventListener("click", play);
+        video.addEventListener("click", play);
+    }
+}

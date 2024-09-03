@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export function setGallery() {
     const images = document.querySelectorAll('.content-image');
     const magnifiers = document.querySelectorAll('.fa-magnifying-glass');
     const lightboxModal = document.getElementById('lightbox-modal');
@@ -19,17 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    images.forEach(image => {
-        image.addEventListener('click', openLightboxModal);
-    });
-    magnifiers.forEach(magnifier => {
-        magnifier.addEventListener('click', openLightboxModal);
-    })
+    if (images.length > 0) {
+        images.forEach(image => {
+            image.addEventListener('click', openLightboxModal);
+        });
+        magnifiers.forEach(magnifier => {
+            magnifier.addEventListener('click', openLightboxModal);
+        })
 
-    closeImage.addEventListener('click', () => {
-       lightboxModal.style.display = 'none';
-    });
-    lightboxModal.addEventListener('click', () => {
-        lightboxModal.style.display = 'none';
-    });
-});
+        closeImage.addEventListener('click', () => {
+            lightboxModal.style.display = 'none';
+        });
+        lightboxModal.addEventListener('click', () => {
+            lightboxModal.style.display = 'none';
+        });
+    }
+}
