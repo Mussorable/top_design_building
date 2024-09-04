@@ -1,0 +1,15 @@
+// Colour Palette
+$black-original: #000;
+$black: #333;
+$black-bright: #404040;
+$orange-main: #f84f1c;
+$orange-bright: #f16236;
+$yellow: #ffa500ff;
+$link-color: #007bff;
+$white: #eee;
+$white-true: #fff;
+$white-less-opacity: rgba(255,255,255,.76);
+
+// Fixed variables
+$shadow-dark: 0 0 0 $black-original, 0 0 1em $black-original;
+$shadow-bright: 0 0 0 $black-bright, 0 0 1em $black-bright;
