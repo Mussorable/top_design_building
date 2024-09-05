@@ -78,6 +78,26 @@ html * {
         background: linear-gradient(360deg, #020024 0%, rgba(74, 94, 121, 0.25) 55%, rgba(0, 78, 119, 0.15) 100%); }
     html * .page-header.bg-center {
       background-position: center center; }
+    html * .page-header > .container > .row > div > .motto-section {
+      text-shadow: 0 0 0 #000, 0 0 1em #000; }
+      html * .page-header > .container > .row > div > .motto-section > p {
+        margin: 0;
+        font-weight: 600;
+        line-height: 1; }
+        html * .page-header > .container > .row > div > .motto-section > p.page-desc {
+          opacity: 0;
+          transform: translateX(20px);
+          transition: all 0.9s ease-in-out; }
+          html * .page-header > .container > .row > div > .motto-section > p.page-desc.page-main-motto {
+            font-size: 3.4rem;
+            color: #f16236; }
+          html * .page-header > .container > .row > div > .motto-section > p.page-desc.page-secondary-motto {
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.76);
+            margin-left: 25px; }
+          html * .page-header > .container > .row > div > .motto-section > p.page-desc.show {
+            opacity: 1;
+            transform: translateX(0); }
   html * .section {
     padding: 70px 0;
     background-size: cover;
@@ -85,6 +105,99 @@ html * {
     html * .section.section-dark {
       background: #585858;
       background: radial-gradient(circle, #585858 13%, #585858 41%, #232323 100%); }
+    html * .section.services-menu > .select-services > div > .service-button {
+      border: none;
+      outline: none;
+      background: inherit;
+      width: 100%;
+      transition: all 0.3s ease-in-out; }
+      html * .section.services-menu > .select-services > div > .service-button > div {
+        transition: all 0.3s ease-in-out; }
+        html * .section.services-menu > .select-services > div > .service-button > div > span.display-6 {
+          font-size: 4rem; }
+        html * .section.services-menu > .select-services > div > .service-button > div > div > .main-service-title {
+          font-size: 1rem; }
+        html * .section.services-menu > .select-services > div > .service-button > div > div > .main-service-description {
+          font-size: 0.8rem;
+          margin: 0; }
+      html * .section.services-menu > .select-services > div > .service-button > .bg-warning {
+        background-color: rgba(255, 193, 7, 0.1) !important; }
+      html * .section.services-menu > .select-services > div > .service-button > .bg-blue {
+        background-color: rgba(4, 82, 145, 0.1) !important; }
+        html * .section.services-menu > .select-services > div > .service-button > .bg-blue span.display-6 {
+          color: #1d3b53 !important; }
+      html * .section.services-menu > .select-services > div > .service-button > .bg-purple {
+        background-color: rgba(101, 55, 185, 0.1) !important; }
+        html * .section.services-menu > .select-services > div > .service-button > .bg-purple span.display-6 {
+          color: #6f42c1 !important; }
+      html * .section.services-menu > .select-services > div > .service-button > .bg-mint {
+        background-color: rgba(20, 159, 181, 0.1) !important; }
+        html * .section.services-menu > .select-services > div > .service-button > .bg-mint span.display-6 {
+          color: #17a2b8 !important; }
+      html * .section.services-menu > .select-services > div > .service-button:hover, html * .section.services-menu > .select-services > div > .service-button.active {
+        transform: scale(1.05); }
+        html * .section.services-menu > .select-services > div > .service-button:hover > .bg-warning, html * .section.services-menu > .select-services > div > .service-button.active > .bg-warning {
+          background-color: rgba(255, 193, 7, 0.25) !important; }
+        html * .section.services-menu > .select-services > div > .service-button:hover > .bg-blue, html * .section.services-menu > .select-services > div > .service-button.active > .bg-blue {
+          background-color: rgba(40, 82, 145, 0.25) !important; }
+        html * .section.services-menu > .select-services > div > .service-button:hover > .bg-purple, html * .section.services-menu > .select-services > div > .service-button.active > .bg-purple {
+          background-color: rgba(101, 55, 185, 0.25) !important; }
+        html * .section.services-menu > .select-services > div > .service-button:hover > .bg-mint, html * .section.services-menu > .select-services > div > .service-button.active > .bg-mint {
+          background-color: rgba(20, 159, 181, 0.25) !important; }
+        html * .section.services-menu > .select-services > div > .service-button:hover > div, html * .section.services-menu > .select-services > div > .service-button.active > div {
+          border: 1px solid #333;
+          background: #333333;
+          background: linear-gradient(0deg, rgba(51, 51, 51, 0.05) 0%, rgba(255, 95, 46, 0) 100%); }
+    html * .section > .container > .row > div > .contact-information {
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease-in-out; }
+      html * .section > .container > .row > div > .contact-information > .small-contact-title {
+        font-weight: 600;
+        display: inline-block;
+        margin: 1.5rem .75rem; }
+      html * .section > .container > .row > div > .contact-information > .small-contact-description {
+        color: #808080;
+        font-weight: 400;
+        font-size: .975rem;
+        line-height: 1.6rem;
+        margin: 0 .75rem; }
+      html * .section > .container > .row > div > .contact-information > i {
+        position: absolute;
+        top: 20px;
+        left: -35px;
+        font-size: 30px;
+        color: #f16236; }
+      html * .section > .container > .row > div > .contact-information.show {
+        opacity: 1;
+        transform: translateY(0); }
+    html * .section > .container > .row > div > .intent-container {
+      margin-bottom: 30px; }
+      html * .section > .container > .row > div > .intent-container > .content {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        max-height: 400px;
+        height: 400px; }
+        html * .section > .container > .row > div > .intent-container > .content > .fa-magnifying-glass {
+          position: absolute;
+          font-size: 24px;
+          padding: 10px;
+          opacity: 0;
+          color: #f84f1c;
+          border-radius: 50%;
+          background-color: #fff;
+          left: calc(50% - 23px);
+          top: calc(50% - 23px);
+          border: 1px solid #f84f1c; }
+        html * .section > .container > .row > div > .intent-container > .content > .content-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        html * .section > .container > .row > div > .intent-container > .content:hover > .fa-magnifying-glass {
+          opacity: 0.8; }
     html * .section > .container > .row > div > .section-title {
       font-weight: 700;
       margin-top: 50px;
@@ -138,6 +251,8 @@ html * {
         position: absolute;
         top: 10%;
         left: -30%; }
+    html * .section > .container > .row > div > .address-block {
+      padding-left: 35px; }
     html * .section > .container > .row > div > #map {
       width: 100%;
       border: 2px solid #585858;
@@ -147,8 +262,6 @@ html * {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45); }
     html * .section > .container > .row > .header-text {
       margin-bottom: 25px; }
-    html * .section > .select-services .bg-warning {
-      background-color: rgba(255, 193, 7, 0.1) !important; }
   html * .small-wrapper > .realisation-button {
     text-decoration: none;
     color: inherit; }
@@ -233,6 +346,21 @@ html * {
   .page-footer > .container > .footer-navigation {
     border-top: 1px solid #fff;
     padding-top: 20px; }
+    .page-footer > .container > .footer-navigation > div > .nav > .nav-item {
+      opacity: 0.75;
+      color: #bbb;
+      transition: 0.3s; }
+      .page-footer > .container > .footer-navigation > div > .nav > .nav-item:hover, .page-footer > .container > .footer-navigation > div > .nav > .nav-item:focus {
+        opacity: 1;
+        color: #fff; }
+    .page-footer > .container > .footer-navigation > div > .footer-terms-links {
+      text-decoration: none;
+      opacity: 0.75;
+      color: #bbb;
+      transition: 0.3s; }
+      .page-footer > .container > .footer-navigation > div > .footer-terms-links:hover, .page-footer > .container > .footer-navigation > div > .footer-terms-links:focus {
+        opacity: 1;
+        color: #fff; }
 
 form .form-group {
   margin-bottom: 17px;
@@ -335,3 +463,44 @@ form .submit {
     display: block;
     max-height: 90%;
     max-width: 80%; }
+
+@media screen and (max-width: 1200px) {
+  .section:first-child {
+    padding-bottom: 0; }
+  .section > .container .option-raised {
+    width: 95%;
+    margin-inline: auto;
+    margin-bottom: 2rem; }
+  .main-section-preview-image {
+    max-width: 80%; }
+  .image-container {
+    height: auto;
+    margin-top: 0; }
+  .ortho-image {
+    position: initial;
+    width: 100%; }
+  .contact-row {
+    margin-bottom: 1.5rem; } }
+
+@media screen and (max-width: 992px) {
+  .global-services {
+    gap: 1rem; }
+  .section:last-child {
+    padding-bottom: 2rem; }
+  .footer-navigation .col-lg-4 {
+    text-align: center !important; } }
+
+@media screen and (max-width: 768px) {
+  .statistics .stats-row:last-child {
+    margin-top: 0; }
+  .realisations-menu {
+    margin-bottom: 0 !important;
+    gap: 2rem; }
+  .realisations-menu:last-child {
+    margin-top: 2rem; }
+  .small-contact-description {
+    border-top: 2px solid #f84f1c;
+    padding-top: 1rem; }
+  .contact-information > i {
+    right: 35px;
+    left: unset; } }

@@ -80,7 +80,32 @@
       padding-top: 20px;
 
       &>div {
+        &>.nav {
+          & > .nav-item {
+            opacity: 0.75;
+            color: #bbb;
+            transition: 0.3s;
 
+            &:hover,
+            &:focus {
+              opacity: 1;
+              color: #fff;
+            }
+          }
+        }
+
+        &>.footer-terms-links {
+          text-decoration: none;
+          opacity: 0.75;
+          color: #bbb;
+          transition: 0.3s;
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+            color: #fff;
+          }
+        }
       }
     }
   }

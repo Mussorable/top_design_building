@@ -1,5 +1,7 @@
-html * {
-  -webkit-font-smoothing: antialiased;
+html {
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
 
   .hover-raise {
     &:hover {
@@ -39,6 +41,44 @@ html * {
     &.bg-center {
       background-position: center center;
     }
+
+    &>.container {
+      &>.row {
+        &>div {
+          &>.motto-section {
+            text-shadow: 0 0 0 #000, 0 0 1em #000;
+
+            &>p {
+              margin: 0;
+              font-weight: 600;
+              line-height: 1;
+
+              &.page-desc {
+                opacity: 0;
+                transform: translateX(20px);
+                transition: all 0.9s ease-in-out;
+
+                &.page-main-motto {
+                  font-size: 3.4rem;
+                  color: #f16236;
+                }
+
+                &.page-secondary-motto {
+                  font-size: 3rem;
+                  color: rgba(255,255,255,.76);
+                  margin-left: 25px;
+                }
+
+                &.show {
+                  opacity: 1;
+                  transform: translateX(0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .section {
@@ -51,9 +91,171 @@ html * {
       background: radial-gradient(circle, rgba(88,88,88,1) 13%, rgba(88,88,88,1) 41%, rgba(35,35,35,1) 100%);
     }
 
+    &.services-menu {
+      &>.select-services {
+        &>div {
+          &>.service-button {
+            border: none;
+            outline: none;
+            background: inherit;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+
+            &.active {
+
+            }
+
+            &>div {
+              transition: all 0.3s ease-in-out;
+
+              &>span.display-6 {
+                font-size: 4rem;
+              }
+
+              &>div {
+                &>.main-service-title {
+                  font-size: 1rem;
+                }
+
+                &>.main-service-description {
+                  font-size: 0.8rem;
+                  margin: 0;
+                }
+              }
+            }
+
+            &>.bg-warning {
+              background-color: rgba(255, 193, 7, 0.1) !important;
+
+              span.display-6 {
+
+              }
+            }
+            &>.bg-blue {
+              background-color: rgba(4, 82, 145, 0.1) !important;
+
+              span.display-6 {
+                color: rgba(29, 59, 83, 1) !important;
+              }
+            }
+            &>.bg-purple {
+              background-color: rgba(101, 55, 185, 0.1) !important;
+
+              span.display-6 {
+                color: rgba(111, 66, 193, 1) !important;
+              }
+            }
+            &>.bg-mint {
+              background-color: rgba(20, 159, 181, 0.1) !important;
+
+              span.display-6 {
+                color: rgba(23, 162, 184, 1) !important;
+              }
+            }
+
+            &:hover,
+            &.active {
+              transform: scale(1.05);
+
+              &>.bg-warning {
+                background-color: rgba(255, 193, 7, 0.25) !important;
+              }
+              &>.bg-blue {
+                background-color: rgba(40, 82, 145, 0.25) !important;
+              }
+              &>.bg-purple {
+                background-color: rgba(101, 55, 185, 0.25) !important;
+              }
+              &>.bg-mint {
+                background-color: rgba(20, 159, 181, 0.25) !important;
+              }
+
+              &>div {
+                border: 1px solid #333;
+                background: rgb(51,51,51);
+                background: linear-gradient(0deg, rgba(51,51,51,0.05) 0%, rgba(255,95,46,0) 100%);
+              }
+            }
+          }
+        }
+      }
+    }
+
     &>.container {
       &>.row {
         &>div {
+          &>.contact-information {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+
+            &>.small-contact-title {
+              font-weight: 600;
+              display: inline-block;
+              margin: 1.5rem .75rem;
+            }
+
+            &>.small-contact-description {
+              color: #808080;
+              font-weight: 400;
+              font-size: .975rem;
+              line-height: 1.6rem;
+              margin: 0 .75rem;
+            }
+
+            &>i {
+              position: absolute;
+              top: 20px;
+              left: -35px;
+              font-size: 30px;
+              color: #f16236;
+            }
+
+            &.show {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          &>.intent-container {
+            margin-bottom: 30px;
+
+            &>.content {
+              position: relative;
+              max-width: 100%;
+              margin: auto;
+              overflow: hidden;
+              max-height: 400px;
+              height: 400px;
+
+              &>.fa-magnifying-glass {
+                position: absolute;
+                font-size: 24px;
+                padding: 10px;
+                opacity: 0;
+                color: #f84f1c;
+                border-radius: 50%;
+                background-color: #fff;
+                left: calc(50% - 23px);
+                top: calc(50% - 23px);
+                border: 1px solid #f84f1c;
+              }
+
+              &>.content-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              &:hover {
+                &>.fa-magnifying-glass {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+
           &>.section-title {
             font-weight: 700;
             margin-top: 50px;
@@ -135,6 +337,10 @@ html * {
             }
           }
 
+          &>.address-block {
+            padding-left: 35px;
+          }
+
           &>#map {
             width: 100%;
             border: 2px solid rgba(88,88,88,1);
@@ -154,9 +360,7 @@ html * {
     }
 
     &>.select-services {
-      .bg-warning {
-        background-color: rgba(255, 193, 7, 0.1) !important;
-      }
+
     }
   }
 
