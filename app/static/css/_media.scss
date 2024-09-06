@@ -14,13 +14,17 @@
     }
 
     .image-container {
-        height: auto;
-        margin-top: 0;
+        height: auto !important;
+        margin-top: 0 !important;
+
+        &>.option-img {
+            height: 100px !important;
+        }
     }
 
     .ortho-image {
-        position: initial;
-        width: 100%;
+        position: initial !important;
+        width: 100% !important;
     }
 
     .contact-row {
@@ -29,12 +33,22 @@
 }
 
 @media screen and (max-width: 992px) {
+    .page-footer .footer-navigation .nav.justify-content-start {
+        justify-content: center !important;
+    }
+
+    .container-raised {
+        margin: 0 !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
     .global-services {
         gap: 1rem;
     }
 
     .section:last-child {
-        padding-bottom: 2rem;
+        padding-bottom: 2rem !important;
     }
 
     .footer-navigation .col-lg-4 {
@@ -44,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
     .statistics .stats-row:last-child {
-        margin-top: 0;
+        margin-top: 0 !important;
     }
 
     .realisations-menu {
@@ -62,7 +76,7 @@
     }
 
     .contact-information > i {
-        right: 35px;
-        left: unset;
+        right: 35px !important;
+        left: unset !important;
     }
 }
