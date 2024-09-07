@@ -16,5 +16,6 @@ class ContactForm(FlaskForm):
 
 
 class EmailForm(FlaskForm):
-    email = EmailField('For any questions, offers or comments please fill out the following form.', validators=[DataRequired(), Email()])
+    email = EmailField('For any questions, offers or comments please fill out the following form.',
+                       validators=[DataRequired(), Email()])
     submit = SubmitField('Submit')

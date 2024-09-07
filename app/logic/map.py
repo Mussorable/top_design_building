@@ -4,7 +4,7 @@ from xdg.Config import icon_size
 
 def generate_map(coordinates=None, zoom_start=14):
     if coordinates is None:
-        coordinates = [51.215950, 18.573541]
+        coordinates = [51.205774, 18.566866]
 
     m = folium.Map(
         location=coordinates,
@@ -17,7 +17,7 @@ def generate_map(coordinates=None, zoom_start=14):
         icon=folium.Icon(color='blue'),
         popup='<b>Top Design</b>'
               '<br>'
-              'Address: osiedle Kopernika 1, 98-300 Wieluń',
+              'Address: ul. Graniczna 14, 98-300 Gaszyn',
     ).add_to(m)
 
     return m._repr_html_()
