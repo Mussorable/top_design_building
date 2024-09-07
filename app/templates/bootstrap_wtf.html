@@ -1,0 +1,53 @@
+{% macro form_field(field, autofocus,  position_on_page, autocomplete="on") %}
+    {% if field.type == "TextAreaField" %}
+        <div class="form-group label-floating bmd-form-group">
+            {{ field.label(class="form-control-label bmd-label-floating") }}
+            {{ field(class="form-control", autocomplete=autocomplete, rows=6) }}
+        </div>
+    {% elif field.type == 'EmailField' %}
+        {% if position_on_page == "footer" %}
+            {{ field.label(class="footer-input-label") }}
+            {{ field(class="footer-input", autocomplete=autocomplete, placeholder="Email address") }}
+        {% else %}
+            <div class="form-group bmd-form-group">
+                {{ field.label(class="bmd-label-floating") }}
+                {{ field(class="form-control") }}
+            </div>
+        {% endif %}
+    {% elif field.type == "SubmitField" %}
+        {% if position_on_page == "footer"  %}
+            <div class="submit-container">
+                {{ field(class="footer-input-submit") }}
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+        {% else %}
+        <div class="submit text-center">
+            {{ field(class="btn btn-warning btn-raised btn-contact") }}
+        </div>
+        {% endif %}
+    {% else %}
+        <div class="form-group bmd-form-group">
+            {{ field.label(class="bmd-label-floating") }}
+            {{ field(class="form-control") }}
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro quick_form(form, action="", method="post", id="", novalidate=False, autocomplete="on", position_on_page="") %}
+    <form
+        {% if action != None %} action="{{ action }}" {% endif %}
+        {% if method %} method="{{ method }}" {% endif %}
+        {% if novalidate %} novalidate="{{ novalidate }}" {% endif %}
+        {% if id %} id="{{ id }}" {% endif %}>
+
+        {{ form.hidden_tag() }}
+
+        {% set ns = namespace(first_field=true) %}
+        {% for field in form %}
+            {% if field.widget.input_type != 'hidden' %}
+                {{ form_field(field, ns.first_field, autocomplete=autocomplete, position_on_page=position_on_page) }}
+                {% set ns.first_field = false %}
+            {% endif %}
+        {% endfor %}
+    </form>
+{% endmacro %}

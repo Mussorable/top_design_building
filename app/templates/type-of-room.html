@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="page-header header-filter" style="background-image: url('{{ url_for('static', filename='images/'+title.replace(' ', '-').lower()+'.webp') }}');">
+        <div class="container set-above-2">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="page-name-block">
+                        {% if title %}
+                            <h1 class="page-name">{{ title }}</h1>
+                        {% else %}
+                            <h1 class="page-name">About Us</h1>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-raised container-light-mode">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                            <div class="intent-container">
+                                <div class="content cloud">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_1.webp') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="intent-container">
+                                <div class="content cloud">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_2.webp') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="intent-container">
+                                <div class="content cloud">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_3.webp') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="intent-container">
+                                <div class="content cloud">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <img class="content-image img-fluid d-block mx-auto" src="{{ url_for('static', filename='images/example_rw_4.webp') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lightbox-modal" class="lightbox">
+        <span class="close">&times;</span>
+        <img src="" class="lightbox-content" id="lightbox-image" alt="gallery image container">
+    </div>
+{% endblock %}

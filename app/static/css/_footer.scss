@@ -1,0 +1,112 @@
+.page-footer {
+    background: rgb(187,49,6);
+    background: linear-gradient(0deg, rgba(187,49,6,1) 0%, rgba(255,95,46,1) 100%);
+    padding-block: 5rem 1rem !important;
+
+  &>.container {
+    &>.footer-above-block {
+      margin-bottom: 75px;
+
+      &>.footer-title-container {
+        &>.footer-title {
+          color: #fff;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 0.85;
+          border-left: 2px solid #fff;
+          padding-left: 25px;
+          padding-block: 20px;
+        }
+      }
+
+      &>.footer-input-container {
+        padding-inline: 35px;
+
+        &>form {
+          &>.footer-input-label {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+
+          &>.footer-input {
+            color: #fff;
+            background: inherit;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 8px 15px;
+            width: 100%;
+            transition: 0.3s;
+            margin-bottom: 20px;
+
+            &::placeholder {
+              color: #fff;
+            }
+
+            &:focus {
+              background: #633224;
+            }
+          }
+
+          &>.submit-container {
+            position: relative;
+            display: inline-block;
+
+            &>.footer-input-submit {
+              background: #fff;
+              color: #333;
+              border: none;
+              border-radius: 3px;
+              padding: 8px 75px 8px 15px;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+
+            &>i {
+              position: absolute;
+              color: #333;
+              top: 10px;
+              right: 15px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &>.footer-navigation {
+      border-top: 1px solid #fff;
+      padding-top: 20px;
+
+      &>div {
+        &>.nav {
+          & > .nav-item {
+            opacity: 0.75;
+            color: #bbb;
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+              opacity: 1;
+              color: #fff;
+            }
+          }
+        }
+
+        &>.footer-terms-links {
+          text-decoration: none;
+          opacity: 0.75;
+          color: #bbb;
+          transition: 0.3s;
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
