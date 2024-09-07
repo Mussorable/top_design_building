@@ -22,14 +22,14 @@
       &>.footer-input-container {
         padding-inline: 35px;
 
-        &>.footer-input-label {
-          color: #fff;
-          font-weight: 600;
-          font-size: 18px;
-          margin-bottom: 15px;
-        }
-
         &>form {
+          &>.footer-input-label {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+
           &>.footer-input {
             color: #fff;
             background: inherit;

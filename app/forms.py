@@ -13,3 +13,8 @@ class ContactForm(FlaskForm):
     ])
     message = TextAreaField('Your message', validators=[DataRequired()])
     submit = SubmitField('Contact Us')
+
+
+class EmailForm(FlaskForm):
+    email = EmailField('For any questions, offers or comments please fill out the following form.', validators=[DataRequired(), Email()])
+    submit = SubmitField('Submit')

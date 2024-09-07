@@ -2,7 +2,7 @@ import logging
 
 from app import app
 from app.logic.map import generate_map
-from app.forms import ContactForm
+from app.forms import ContactForm, EmailForm
 
 from flask import render_template, flash, redirect, url_for, request
 
@@ -58,3 +58,10 @@ def reviews():
 @app.route('/policy')
 def policy():
     return render_template('policy.html', title='Privacy Policy', active_page=request.endpoint)
+
+
+@app.context_processor
+def utility_processor():
+    email_form = EmailForm()
+
+    return dict(email_form=email_form)

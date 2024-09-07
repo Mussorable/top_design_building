@@ -30,9 +30,21 @@
     .contact-row {
         margin-bottom: 1.5rem;
     }
+
+    .column-title {
+        font-size: 18px !important;
+    }
+
+    .column-value {
+        font-size: 40px !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .page-name {
+        font-size: 4.2rem !important;
+    }
+
     .page-footer .footer-navigation .nav.justify-content-start {
         justify-content: center !important;
     }

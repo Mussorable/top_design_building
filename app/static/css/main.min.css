@@ -546,7 +546,7 @@ html .small-wrapper > .realisation-button {
       padding-block: 20px; }
     .page-footer > .container > .footer-above-block > .footer-input-container {
       padding-inline: 35px; }
-      .page-footer > .container > .footer-above-block > .footer-input-container > .footer-input-label {
+      .page-footer > .container > .footer-above-block > .footer-input-container > form > .footer-input-label {
         color: #fff;
         font-weight: 600;
         font-size: 18px;
@@ -720,9 +720,15 @@ form .submit {
     position: initial !important;
     width: 100% !important; }
   .contact-row {
-    margin-bottom: 1.5rem; } }
+    margin-bottom: 1.5rem; }
+  .column-title {
+    font-size: 18px !important; }
+  .column-value {
+    font-size: 40px !important; } }
 
 @media screen and (max-width: 992px) {
+  .page-name {
+    font-size: 4.2rem !important; }
   .page-footer .footer-navigation .nav.justify-content-start {
     justify-content: center !important; }
   .container-raised {

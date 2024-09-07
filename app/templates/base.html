@@ -1,3 +1,5 @@
+{% import 'bootstrap_wtf.html' as wtf %}
+
 <!doctype html>
 <html lang="pl">
 <head>
@@ -8,7 +10,6 @@
     <link rel="icon" href="{{ url_for('static', filename='svg/logo.svg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-{#    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">#}
     {% assets "css_all" %}
         <link rel="stylesheet" href="{{ ASSET_URL }}">
     {% endassets %}
@@ -31,9 +32,9 @@
                     <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">Services</a></li>
                     <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">Realisations</a></li>
                 </ul>
-                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-                </form>
+{#                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">#}
+{#                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">#}
+{#                </form>#}
                 <ul class="nav mb-md-0 justify-content-center">
                     <li><a href="{{ url_for('reviews') }}" class="btn btn-outline-light me-2">Reviews</a></li>
                     <li><a href="{{ url_for('contact') }}" class="btn btn-warning">Contact</a></li>
@@ -62,14 +63,7 @@
                     <h4 class="footer-title">Got a Question? Share your email and We'll write you</h4>
                 </div>
                 <div class="col-lg-4 footer-input-container">
-                    <label class="footer-input-label" for="question-email">For any questions, offers or comments please fill out the following form.</label>
-                    <form action="">
-                        <input id="question-email" class="footer-input" type="text" placeholder="Email address">
-                        <div class="submit-container">
-                            <input class="footer-input-submit" type="submit" value="Submit">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </form>
+                    {{ wtf.quick_form(email_form, position_on_page="footer") }}
                 </div>
             </div>
             <div class="row footer-navigation">
