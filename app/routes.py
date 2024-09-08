@@ -1,8 +1,9 @@
 import logging
 
-from app import app
+from app import app, db
 from app.logic.map import generate_map
 from app.forms import ContactForm, EmailForm
+from app.models import User
 
 from flask import render_template, flash, redirect, url_for, request
 
@@ -29,8 +30,20 @@ def services():
 def contact():
     contact_form = ContactForm()
     if contact_form.validate_on_submit():
+        user_customer = User(
+            full_name=contact_form.name.data,
+            email=contact_form.email.data,
+            phone_number=contact_form.phone_number.data,
+            text_message=contact_form.message.data
+        )
+
+        db.session.add(user_customer)
+        db.session.commit()
+
         flash('Your message is sent.', 'success')
         return redirect(url_for('contact'))
+    elif request.method == 'POST':
+        flash('Please, fill out the form correctly.', 'danger')
     return render_template('contact.html', title='Contact', form=contact_form, active_page=request.endpoint)
 
 

@@ -91,6 +91,6 @@ export function showModalMessage() {
             setTimeout(() => {
                 modal.classList.remove('show');
             }, 1000);
-        }, 7000);
+        }, 5000);
     }
 }
