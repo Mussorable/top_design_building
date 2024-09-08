@@ -1,6 +1,7 @@
 import logging
 
 from app import app, db
+from app.email import send_contact_confirmation
 from app.logic.map import generate_map
 from app.forms import ContactForm, EmailForm
 from app.models import User
@@ -40,8 +41,11 @@ def contact():
         db.session.add(user_customer)
         db.session.commit()
 
+        if user_customer:
+            send_contact_confirmation(user_customer)
+
         flash('Your message is sent.', 'success')
-        return redirect(url_for('contact'))
+        return redirect(url_for('index'))
     elif request.method == 'POST':
         flash('Please, fill out the form correctly.', 'danger')
     return render_template('contact.html', title='Contact', form=contact_form, active_page=request.endpoint)
