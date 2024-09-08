@@ -78,3 +78,19 @@ export function contactInformationPopup() {
     window.addEventListener('resize', checkContactInfoBlocks);
     checkContactInfoBlocks();
 }
+
+export function showModalMessage() {
+    const modal = document.querySelector('.messages');
+
+    if (modal) {
+        modal.classList.add('show');
+
+        setTimeout(() => {
+            modal.style.maxHeight = '0';
+
+            setTimeout(() => {
+                modal.classList.remove('show');
+            }, 1000);
+        }, 7000);
+    }
+}

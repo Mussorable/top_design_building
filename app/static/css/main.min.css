@@ -702,6 +702,27 @@ form .submit {
     max-height: 90%;
     max-width: 80%; }
 
+header {
+  position: relative;
+  z-index: 1; }
+
+.messages {
+  background-color: #f16236;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: calc(1rem + 1rem + 48px); }
+  .messages.show {
+    max-height: 500px; }
+  .messages .message {
+    color: #fff;
+    margin-block: 1.2rem; }
+    .messages .message > h5 {
+      font-weight: 600; }
+
 @media screen and (max-width: 1200px) {
   .section:first-child {
     padding-bottom: 0; }

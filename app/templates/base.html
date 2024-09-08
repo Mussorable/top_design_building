@@ -47,8 +47,12 @@
         <div class="messages">
             <div class="container">
                 {% for message in messages %}
-                    <div class="message">
-                        <p>{{ message }}</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="message">
+                                <h5>{{ message }}</h5>
+                            </div>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
