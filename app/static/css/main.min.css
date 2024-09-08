@@ -723,6 +723,12 @@ header {
     .messages .message > h5 {
       font-weight: 600; }
 
+.error-title {
+  font-size: 8.2rem;
+  font-weight: 600;
+  color: #f16236;
+  text-shadow: 1px 4px 11px #42445a; }
+
 @media screen and (max-width: 1200px) {
   .section:first-child {
     padding-bottom: 0; }
