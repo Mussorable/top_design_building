@@ -1,0 +1,28 @@
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.messages {
+  background-color: $orange-bright;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: calc(1rem + 1rem + 48px);
+
+  &.show {
+    max-height: 500px;
+  }
+
+  .message {
+    color: $white-true;
+    margin-block: 1.2rem;
+
+    &>h5 {
+      font-weight: 600;
+    }
+  }
+}

@@ -49,30 +49,30 @@ form {
       &:focus {
         box-shadow: none;
         outline: 0;
-        border-color: #f16236;
+        border-color: $orange-bright;
         background-color: #f4f4f4;
       }
 
       &.invalid {
-        border-color: #dd293a;
+        border-color: $error;
       }
     }
   }
 
   &>.form-control {
     &.form-control-dark {
-      color: #fff;
+      color: $white-true;
       background-color: #212529;
       border-color: #6c757d;
 
       &:focus {
-        color: #fff;
+        color: $white-true;
         background-color: #212529;
-        border-color: #fff;
+        border-color: $white-true;
         box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
 
         &::placeholder {
-          color: #fff;
+          color: $white-true;
           transition-duration: .25s;
         }
       }

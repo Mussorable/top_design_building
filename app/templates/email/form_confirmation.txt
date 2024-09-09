@@ -1,0 +1,19 @@
+Dear {{ user.full_name }},
+
+Thank you for reaching out! We’ve received your request through our contact form and will be in touch very soon.
+
+Here’s a summary of your submission:
+
+Name: {{ user.full_name }}
+Email: {{ user.email }}
+Phone Number (if provided): {{ user.phone_number }}
+Message: {{ user.text_message }}
+One of our team members will reach out to you within [X] business days to discuss your inquiry. If you need immediate assistance, please don’t hesitate to contact us directly at [Your Phone Number] or [Your Email Address].
+
+We look forward to connecting with you soon!
+
+Best regards,
+Top Design
+[Company Website URL]
+[Company Phone Number]
+

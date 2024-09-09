@@ -1,5 +1,5 @@
 import {emailFieldValidation, phoneFieldValidation} from './formValidation.js';
-import {contactInformationPopup, showPageDesc, contactFormInformation} from "./textAnimation.js";
+import {contactInformationPopup, showPageDesc, contactFormInformation, showModalMessage} from "./textAnimation.js";
 import {imageLevitation, imagePopupWhenScroll} from "./imageAnimation.js";
 import {setVideoPlayer} from "./videoPlayer.js";
 import {setGallery} from "./lightbox.js";
@@ -22,4 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setGallery();
     //  Services navigation menu with animation
     setServicesNavigation();
+    //  Modals
+    showModalMessage();
 });
