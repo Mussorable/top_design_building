@@ -4,7 +4,7 @@ header {
 }
 
 .messages {
-  background-color: #f16236;
+  background-color: $orange-bright;
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
@@ -18,7 +18,7 @@ header {
   }
 
   .message {
-    color: #fff;
+    color: $white-true;
     margin-block: 1.2rem;
 
     &>h5 {

@@ -70,7 +70,7 @@ html .text-icon {
   z-index: -1; }
 
 html .nav .nav-link.active {
-  border-bottom: 1px solid #FFA500FF; }
+  border-bottom: 1px solid #ffa500ff; }
 
 html .set-above-2 {
   position: relative;
@@ -763,7 +763,9 @@ header {
   .column-title {
     font-size: 18px !important; }
   .column-value {
-    font-size: 40px !important; } }
+    font-size: 40px !important; }
+  .error-title {
+    font-size: 3rem; } }
 
 @media screen and (max-width: 992px) {
   .page-name {
@@ -779,7 +781,16 @@ header {
   .section:last-child {
     padding-bottom: 2rem !important; }
   .footer-navigation .col-lg-4 {
-    text-align: center !important; } }
+    text-align: center !important; }
+  .error-title {
+    font-size: 2rem;
+    text-shadow: 1px 2px 3px #42445a; }
+  .error-description {
+    font-size: 18px; }
+  .error-menu-list > .error-menu-item {
+    font-size: 18px; }
+  .error-description-footer {
+    font-size: 18px; } }
 
 @media screen and (max-width: 768px) {
   .statistics .stats-row:last-child {
