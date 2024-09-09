@@ -18,3 +18,13 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.full_name} | Administrator: {self.admin}>'
+
+
+class ContactEmail(db.Model):
+    __tablename__ = 'contact_emails'
+
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    email: so.Mapped[str] = so.mapped_column(sa.String(120), index=True)
+
+    def __repr__(self):
+        return f'<Contact Email {self.email}>'

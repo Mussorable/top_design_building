@@ -20,4 +20,32 @@
             </div>
         </div>
     </div>
+    <div class="container-raised container-light-mode">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="error-title">Uh-oh! Something Went Wrong (500)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="error-description">It looks like something on our end isn’t working right now.
+                            We’re working hard to fix it, so please try again soon.
+                            <br>
+                            In the meantime, you can:
+                        </p>
+                        <ul class="error-menu-list">
+                            <li class="error-menu-item">Go back to the <a href="{{ url_for('index') }}">homepage</a>.</li>
+                        </ul>
+                        <p class="error-description-footer">We apologize for the inconvenience, and thanks for your patience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

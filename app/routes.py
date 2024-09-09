@@ -1,10 +1,13 @@
 import logging
+from crypt import methods
+
+from wtforms.validators import email
 
 from app import app, db
-from app.email import send_contact_confirmation
+from app.email import send_contact_confirmation, send_email_confirmation
 from app.logic.map import generate_map
 from app.forms import ContactForm, EmailForm
-from app.models import User
+from app.models import User, ContactEmail
 
 from flask import render_template, flash, redirect, url_for, request
 
@@ -77,14 +80,32 @@ def policy():
     return render_template('policy.html', title='Privacy Policy', active_page=request.endpoint)
 
 
+@app.route('/submit_email', methods=['POST'])
+def submit_email():
+    email_form = EmailForm()
+    if email_form.validate_on_submit():
+        email_record = ContactEmail(email=email_form.email.data)
+
+        db.session.add(email_record)
+        db.session.commit()
+
+        if email_form:
+            send_email_confirmation(email_record)
+
+        flash('Your email has been successfully sent and saved. '
+              'We appreciate your interest and will get back to you shortly.')
+        redirect(url_for('index'))
+    return redirect(url_for('index'))
+
+
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return render_template('404.html', title='Top Design | (404)'), 404
 
 
 @app.errorhandler(500)
 def internal_server_error(e):
-    return render_template('500.html'), 500
+    return render_template('500.html', title='Top Design | (500)'), 500
 
 
 @app.context_processor

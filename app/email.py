@@ -28,3 +28,13 @@ def send_contact_confirmation(user):
         html_body=render_template('email/form_confirmation.html',
                                   user=user)
     )
+
+
+def send_email_confirmation(email_record):
+    send_mail(
+        '[Top Design] Email Confirmation - Thank You for Providing Your Email!',
+        sender=app.config['ADMINS'],
+        recipients=[email_record.email],
+        text_body=render_template('email/email_confirmation.txt', email_record=email_record),
+        html_body=render_template('email/email_confirmation.html', email_record=email_record)
+    )

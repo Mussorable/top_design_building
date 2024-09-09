@@ -1,6 +1,23 @@
 .error-title {
-  font-size: 8.2rem;
+  font-size: 6rem;
   font-weight: 600;
   color: #f16236;
-  text-shadow: 1px 4px 11px rgba(66, 68, 90, 1);
+  text-shadow: 1px 2px 6px rgba(66, 68, 90, 1);
+}
+
+.error-description {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.error-menu-list {
+  margin-left: 1.5rem;
+
+  &>.error-menu-item {
+    font-size: 20px;
+  }
+}
+
+.error-description-footer {
+  font-size: 20px;
 }

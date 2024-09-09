@@ -25,7 +25,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="error-title">404 Error</h2>
+                        <h2 class="error-title">Oops! Page Not Found (404)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="error-description">It looks like the page you're looking for doesn't exist. But don't worry,
+                            we've got a main option for you:</p>
+                        <ul class="error-menu-list">
+                            <li class="error-menu-item">Go back to the <a href="{{ url_for('index') }}">homepage</a>.</li>
+                        </ul>
+                        <p class="error-description-footer">If you believe this is an error, please <a href="{{ url_for('contact') }}">contact us</a>. In the meantime,
+                            feel free to explore the rest of the site!</p>
                     </div>
                 </div>
             </div>

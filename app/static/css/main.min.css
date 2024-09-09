@@ -724,10 +724,22 @@ header {
       font-weight: 600; }
 
 .error-title {
-  font-size: 8.2rem;
+  font-size: 6rem;
   font-weight: 600;
   color: #f16236;
-  text-shadow: 1px 4px 11px #42445a; }
+  text-shadow: 1px 2px 6px #42445a; }
+
+.error-description {
+  font-weight: 600;
+  font-size: 24px; }
+
+.error-menu-list {
+  margin-left: 1.5rem; }
+  .error-menu-list > .error-menu-item {
+    font-size: 20px; }
+
+.error-description-footer {
+  font-size: 20px; }
 
 @media screen and (max-width: 1200px) {
   .section:first-child {
