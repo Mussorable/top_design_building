@@ -33,7 +33,7 @@ def about():
         title='About Us',
         map=folium_map,
         active_page=request.endpoint,
-        header_image='background_team'
+        header_image='child_wallpaper'
     )
 
 
