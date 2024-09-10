@@ -59,6 +59,11 @@
         </div>
     {% endif %}
     {% endwith %}
+    {% block page_header_content %}
+        {% if header_image %}
+            {% include 'page_header_content.html' with context %}
+        {% endif %}
+    {% endblock %}
     {% block content %}{% endblock %}
     <footer class="page-footer mt-5">
         <div class="container">

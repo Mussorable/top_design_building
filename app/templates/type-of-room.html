@@ -1,21 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="page-header header-filter" style="background-image: url('{{ url_for('static', filename='images/'+title.replace(' ', '-').lower()+'.webp') }}');">
-        <div class="container set-above-2">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="page-name-block">
-                        {% if title %}
-                            <h1 class="page-name">{{ title }}</h1>
-                        {% else %}
-                            <h1 class="page-name">About Us</h1>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-raised container-light-mode">
         <div class="section">
             <div class="container">
