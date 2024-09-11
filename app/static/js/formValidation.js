@@ -44,3 +44,19 @@ export function phoneFieldValidation() {
         });
     }
 }
+
+export function disableSubmitWhenSubmitting() {
+    const forms = document.querySelectorAll('form');
+
+    if (forms) {
+        forms.forEach(form => {
+            form.addEventListener('submit', function () {
+                form.querySelector('#submit').disabled = true;
+
+                setTimeout(function () {
+                    form.querySelector('#submit').disabled = false;
+                }, 5000);
+            });
+        });
+    }
+}

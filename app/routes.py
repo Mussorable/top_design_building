@@ -1,11 +1,9 @@
-import logging
-from crypt import methods
-
-from wtforms.validators import email
+from numpy import number
 
 from app import app, db
 from app.email import send_contact_confirmation, send_email_confirmation
 from app.logic.map import generate_map
+from app.logic.gallery_images import get_gallery
 from app.forms import ContactForm, EmailForm
 from app.models import User, ContactEmail
 
@@ -64,10 +62,10 @@ def contact():
         if user_customer:
             send_contact_confirmation(user_customer)
 
-        flash('Your message is sent.', 'success')
+        flash('Thank you! Your message has been successfully sent. We’ll get back to you shortly.', 'success')
         return redirect(url_for('index'))
     elif request.method == 'POST':
-        flash('Please, fill out the form correctly.', 'danger')
+        flash('Oops! Something went wrong. Please try again or contact us directly.', 'danger')
     return render_template(
         'contact.html',
         title='Contact',
@@ -96,11 +94,20 @@ def realisations_type(type_of_room):
     title = ' '.join(capitalized_list)
     title_url = title.replace(' ', '-').lower()
 
+    gallery = get_gallery()
+    room_images = gallery.get(title_url)
+    if room_images is None:
+        flash("Sorry, the room type you're looking for doesn't exist. Please select a type that exists from the options below.", 'dagner')
+        return redirect(url_for('realisations'))
+
     return render_template(
         'type-of-room.html',
         title=title,
         active_page=request.endpoint,
-        header_image=title_url
+        header_image=title_url,
+        room_images=room_images,
+        images_length=len(room_images),
+        images_row=len(room_images) // 2 + len(room_images) % 2
     )
 
 
