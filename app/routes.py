@@ -1,13 +1,12 @@
-from numpy import number
-
 from app import app, db
 from app.email import send_contact_confirmation, send_email_confirmation
 from app.logic.map import generate_map
 from app.logic.gallery_images import get_gallery
 from app.forms import ContactForm, EmailForm
-from app.models import User, ContactEmail
+from app.models import User, ContactEmail, Message
 
 from flask import render_template, flash, redirect, url_for, request
+from sqlalchemy import select
 
 
 @app.route('/')
@@ -49,18 +48,32 @@ def services():
 def contact():
     contact_form = ContactForm()
     if contact_form.validate_on_submit():
-        user_customer = User(
-            full_name=contact_form.name.data,
-            email=contact_form.email.data,
-            phone_number=contact_form.phone_number.data,
-            text_message=contact_form.message.data,
-        )
+        email = contact_form.email.data
+        full_name = contact_form.name.data
+        phone_number = contact_form.phone_number.data
+        text_message = contact_form.message.data
 
-        db.session.add(user_customer)
+        user_customer = User.query.filter_by(email=email).first()
+        email_record = ContactEmail.query.filter_by(email=email).first()
+        if not user_customer:
+            user_customer = User(
+                full_name=full_name,
+                email=email,
+                phone_number=phone_number,
+            )
+            db.session.add(user_customer)
+
+        if not email_record:
+            email_record = ContactEmail(email=email)
+            db.session.add(email_record)
+
+        new_message = Message(text_message=text_message, user_id=user_customer.id)
+        db.session.add(new_message)
+
         db.session.commit()
 
         if user_customer:
-            send_contact_confirmation(user_customer)
+            send_contact_confirmation(user_customer, new_message)
 
         flash('Thank you! Your message has been successfully sent. We’ll get back to you shortly.', 'success')
         return redirect(url_for('index'))
@@ -135,9 +148,18 @@ def policy():
 def submit_email():
     email_form = EmailForm()
     if email_form.validate_on_submit():
-        email_record = ContactEmail(email=email_form.email.data)
+        email_address = email_form.email.data
+        email_record = ContactEmail.query.filter_by(email=email_address).first()
 
-        db.session.add(email_record)
+        if not email_record:
+            email_record = ContactEmail(email=email_address)
+            db.session.add(email_record)
+
+        subquery = select(User.id).where(User.email == email_address).subquery()
+        Message.query.filter(Message.user_id.in_(subquery)).update(
+            {'contact_email_id': email_record.id}
+        )
+
         db.session.commit()
 
         if email_form:
