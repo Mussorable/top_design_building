@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-14 17:17+0200\n"
+"POT-Creation-Date: 2024-09-14 17:41+0200\n"
 "PO-Revision-Date: 2024-09-14 11:38+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -81,6 +81,7 @@ msgid "Oops! Something went wrong. Please try again or contact us directly."
 msgstr ""
 
 #: app/routes.py:90 app/templates/about_us.html:111
+#: app/templates/policy.html:108
 msgid "Contact"
 msgstr ""
 
@@ -98,7 +99,7 @@ msgstr ""
 msgid "Reviews"
 msgstr ""
 
-#: app/routes.py:154
+#: app/routes.py:154 app/templates/policy.html:9
 msgid "Privacy Policy"
 msgstr ""
 
@@ -222,7 +223,7 @@ msgstr ""
 msgid "Address:"
 msgstr ""
 
-#: app/templates/bootstrap_wtf.html:10
+#: app/templates/bootstrap_wtf.html:10 app/templates/policy.html:26
 msgid "Email address"
 msgstr ""
 
@@ -422,219 +423,203 @@ msgstr ""
 msgid "Quality"
 msgstr ""
 
-#: app/templates/policy.html:9
-msgid "Polityka Prywatności"
-msgstr ""
-
 #: app/templates/policy.html:14
-msgid "Wprowadzenie"
+msgid "Introduction"
 msgstr ""
 
 #: app/templates/policy.html:15
 #, python-format
 msgid ""
-"Niniejsza Polityka Prywatności określa zasady przetwarzania, "
-"przechowywania i ochrony danych osobowych\n"
-"                            użytkowników strony internetowej %(title)s "
-"dostępnej pod adresem %(contact_email)s.\n"
-"                            Administratorem danych osobowych jest "
-"%(title)s z siedzibą w Gaszynie, zwana dalej 'Administratorem'."
+"This Privacy Policy sets out the rules for processing, storing,\n"
+"                        and protecting the personal data of users of the "
+"%(title)s website, available at %(contact_email)s.\n"
+"                        The data controller is %(title)s, headquartered "
+"in Gaszyn, hereinafter referred to as the 'Administrator.'"
 msgstr ""
 
 #: app/templates/policy.html:22
-msgid "Rodzaje zbieranych danych"
+msgid "Types of Data Collected"
 msgstr ""
 
 #: app/templates/policy.html:23
 msgid ""
-"W ramach korzystania z naszej strony internetowej możemy zbierać "
-"następujące dane osobowe użytkowników:"
+"While using our website, we may collect the following personal data of "
+"users:"
 msgstr ""
 
 #: app/templates/policy.html:25
-msgid "Imię i nazwisko"
-msgstr ""
-
-#: app/templates/policy.html:26
-msgid "Adres e-mail"
+msgid "Name and surname"
 msgstr ""
 
 #: app/templates/policy.html:27
-msgid "Numer telefonu"
+msgid "Phone number"
 msgstr ""
 
 #: app/templates/policy.html:28 app/templates/policy.html:94
-msgid "Pliki cookie"
+msgid "Cookies"
 msgstr ""
 
 #: app/templates/policy.html:29
 msgid ""
-"Inne dane przekazywane dobrowolnie przez użytkowników za pośrednictwem "
-"formularzy dostępnych na stronie."
+"Other data voluntarily provided by users through forms available on the "
+"website."
 msgstr ""
 
 #: app/templates/policy.html:35
-msgid "Cele przetwarzania danych"
+msgid "Purposes of Data Processing"
 msgstr ""
 
 #: app/templates/policy.html:36
-msgid "Dane osobowe użytkowników przetwarzane są w następujących celach:"
+msgid "Users' personal data is processed for the following purposes:"
 msgstr ""
 
 #: app/templates/policy.html:38
-msgid "Umożliwienie korzystania z usług oferowanych przez stronę internetową"
+msgid "Enabling the use of services offered by the website"
 msgstr ""
 
 #: app/templates/policy.html:39
-msgid "Realizacja zamówień i obsługa klienta"
+msgid "Fulfilling orders and customer service"
 msgstr ""
 
 #: app/templates/policy.html:40 app/templates/policy.html:53
-msgid "Wysyłka newslettera (w przypadku wyrażenia zgody)"
+msgid "Sending newsletters (with consent)"
 msgstr ""
 
 #: app/templates/policy.html:41
-msgid "Prowadzenie analiz i statystyk dotyczących korzystania ze strony"
+msgid "Conducting analysis and statistics related to website usage"
 msgstr ""
 
 #: app/templates/policy.html:42
-msgid "Zabezpieczenie i ochrona praw Administratora"
+msgid "Securing and protecting the rights of the Administrator."
 msgstr ""
 
 #: app/templates/policy.html:48
-msgid "Podstawa prawna przetwarzania danych"
+msgid "Legal Basis for Data Processing"
 msgstr ""
 
 #: app/templates/policy.html:49
-msgid "Dane osobowe przetwarzane są na podstawie:"
+msgid "Personal data is processed on the basis of:"
 msgstr ""
 
 #: app/templates/policy.html:51
-msgid "Zgody użytkownika (art. 6 ust. 1 lit. a RODO)"
+msgid "User consent (Article 6(1)(a) of GDPR)"
 msgstr ""
 
 #: app/templates/policy.html:52
 msgid ""
-"Wykonania umowy lub podjęcia działań na żądanie użytkownika przed "
-"zawarciem umowy (art. 6 ust. 1 lit. b RODO)"
+"Performance of a contract or actions at the user's request before "
+"concluding a contract (Article 6(1)(b) of GDPR)"
 msgstr ""
 
 #: app/templates/policy.html:54
 msgid ""
-"Prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f "
-"RODO), jak np. prowadzenie analiz statystycznych i marketingowych"
+"The legitimate interest of the Administrator (Article 6(1)(f) of GDPR), "
+"such as conducting statistical and marketing analyses."
 msgstr ""
 
 #: app/templates/policy.html:60
-msgid "Przekazywanie danych"
+msgid "Data Sharing"
 msgstr ""
 
 #: app/templates/policy.html:61
-msgid "Dane osobowe użytkowników mogą być przekazywane następującym odbiorcom:"
+msgid "Users' personal data may be shared with the following recipients:"
 msgstr ""
 
 #: app/templates/policy.html:63
 msgid ""
-"Podmiotom przetwarzającym dane w imieniu Administratora, jak np. "
-"dostawcom usług IT"
+"Entities processing data on behalf of the Administrator, such as IT "
+"service providers"
 msgstr ""
 
 #: app/templates/policy.html:64
-msgid "Organom publicznym, jeśli wymagają tego przepisy prawa"
+msgid "Public authorities, if required by law."
 msgstr ""
 
 #: app/templates/policy.html:70
-msgid "Przechowywanie danych"
+msgid "Data Retention"
 msgstr ""
 
 #: app/templates/policy.html:71
 msgid ""
-"Dane osobowe przechowywane są przez okres niezbędny do realizacji celów, "
-"dla których zostały zebrane,\n"
-"                            lub przez okres wymagany przepisami prawa.\n"
-"                            Dane przetwarzane na podstawie zgody "
-"użytkownika przechowywane są do momentu jej wycofania."
+"Personal data is stored for as long as necessary to fulfill the purposes\n"
+"                        for which it was collected or for the period "
+"required by law.\n"
+"                        Data processed based on user consent is retained "
+"until the consent is withdrawn."
 msgstr ""
 
 #: app/templates/policy.html:78
-msgid "Prawa użytkownika"
+msgid "User Rights"
 msgstr ""
 
 #: app/templates/policy.html:79
-msgid "Użytkownikowi przysługują następujące prawa:"
+msgid "Users have the following rights:"
 msgstr ""
 
 #: app/templates/policy.html:81
-msgid "Prawo dostępu do danych"
+msgid "The right to access data"
 msgstr ""
 
 #: app/templates/policy.html:82
-msgid "Prawo do sprostowania danych"
+msgid "The right to rectify data"
 msgstr ""
 
 #: app/templates/policy.html:83
-msgid "Prawo do usunięcia danych"
+msgid "The right to delete data"
 msgstr ""
 
 #: app/templates/policy.html:84
-msgid "Prawo do ograniczenia przetwarzania"
+msgid "The right to restrict data processing"
 msgstr ""
 
 #: app/templates/policy.html:85
-msgid "Prawo do przenoszenia danych"
+msgid "The right to data portability"
 msgstr ""
 
 #: app/templates/policy.html:86
-msgid "Prawo do wniesienia sprzeciwu wobec przetwarzania"
+msgid "The right to object to data processing"
 msgstr ""
 
 #: app/templates/policy.html:87
-msgid "Prawo do wycofania zgody na przetwarzanie danych osobowych"
+msgid "The right to withdraw consent to personal data processing."
 msgstr ""
 
 #: app/templates/policy.html:89
 #, python-format
 msgid ""
-"Aby skorzystać z tych praw, użytkownik może skontaktować się z "
-"Administratorem za pośrednictwem adresu e-mail: %(contact_email)s"
+"To exercise these rights, users can contact the Administrator via email "
+"at: %(contact_email)s"
 msgstr ""
 
 #: app/templates/policy.html:95
 msgid ""
-"Strona internetowa wykorzystuje pliki cookie w celu zapewnienia "
-"prawidłowego funkcjonowania\n"
-"                            oraz w celach analitycznych i marketingowych."
-"\n"
-"                            Użytkownik może zarządzać ustawieniami plików"
-" cookie za pomocą ustawień przeglądarki internetowej."
+"The website uses cookies to ensure proper functionality and for "
+"analytical and marketing purposes.\n"
+"                        Users can manage cookie settings through their "
+"web browser settings."
+msgstr ""
+
+#: app/templates/policy.html:101
+msgid "Changes to the Privacy Policy"
 msgstr ""
 
 #: app/templates/policy.html:102
-msgid "Zmiany w Polityce Prywatności"
-msgstr ""
-
-#: app/templates/policy.html:103
 msgid ""
-"Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej "
-"Polityce Prywatności.\n"
-"                            O wszelkich zmianach użytkownicy będą "
-"informowani za pośrednictwem strony internetowej."
+"The Administrator reserves the right to make changes to this Privacy "
+"Policy.\n"
+"                        Users will be informed of any changes via the "
+"website."
 msgstr ""
 
 #: app/templates/policy.html:109
-msgid "Kontakt"
-msgstr ""
-
-#: app/templates/policy.html:110
 #, python-format
 msgid ""
-"W przypadku pytań dotyczących niniejszej Polityki Prywatności, prosimy o "
-"kontakt z Administratorem za pośrednictwem adresu e-mail: "
-"%(contact_email)s."
+"For questions regarding this Privacy Policy, please contact the "
+"Administrator via email: %(contact_email)s."
 msgstr ""
 
-#: app/templates/policy.html:116
-msgid "Data ostatniej aktualizacji:"
+#: app/templates/policy.html:115
+msgid "Last updated:"
 msgstr ""
 
 #: app/templates/realisations.html:13
@@ -1368,5 +1353,192 @@ msgid ""
 msgstr ""
 
 #~ msgid "Lorem Ipsum"
+#~ msgstr ""
+
+#~ msgid "Polityka Prywatności"
+#~ msgstr ""
+
+#~ msgid "Wprowadzenie"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Niniejsza Polityka Prywatności określa zasady"
+#~ " przetwarzania, przechowywania i ochrony "
+#~ "danych osobowych\n"
+#~ "                            użytkowników strony "
+#~ "internetowej %(title)s dostępnej pod adresem"
+#~ " %(contact_email)s.\n"
+#~ "                            Administratorem danych "
+#~ "osobowych jest %(title)s z siedzibą w"
+#~ " Gaszynie, zwana dalej 'Administratorem'."
+#~ msgstr ""
+
+#~ msgid "Rodzaje zbieranych danych"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "W ramach korzystania z naszej strony "
+#~ "internetowej możemy zbierać następujące dane"
+#~ " osobowe użytkowników:"
+#~ msgstr ""
+
+#~ msgid "Imię i nazwisko"
+#~ msgstr ""
+
+#~ msgid "Adres e-mail"
+#~ msgstr ""
+
+#~ msgid "Numer telefonu"
+#~ msgstr ""
+
+#~ msgid "Pliki cookie"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inne dane przekazywane dobrowolnie przez "
+#~ "użytkowników za pośrednictwem formularzy "
+#~ "dostępnych na stronie."
+#~ msgstr ""
+
+#~ msgid "Cele przetwarzania danych"
+#~ msgstr ""
+
+#~ msgid "Dane osobowe użytkowników przetwarzane są w następujących celach:"
+#~ msgstr ""
+
+#~ msgid "Umożliwienie korzystania z usług oferowanych przez stronę internetową"
+#~ msgstr ""
+
+#~ msgid "Realizacja zamówień i obsługa klienta"
+#~ msgstr ""
+
+#~ msgid "Wysyłka newslettera (w przypadku wyrażenia zgody)"
+#~ msgstr ""
+
+#~ msgid "Prowadzenie analiz i statystyk dotyczących korzystania ze strony"
+#~ msgstr ""
+
+#~ msgid "Zabezpieczenie i ochrona praw Administratora"
+#~ msgstr ""
+
+#~ msgid "Podstawa prawna przetwarzania danych"
+#~ msgstr ""
+
+#~ msgid "Dane osobowe przetwarzane są na podstawie:"
+#~ msgstr ""
+
+#~ msgid "Zgody użytkownika (art. 6 ust. 1 lit. a RODO)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Wykonania umowy lub podjęcia działań na"
+#~ " żądanie użytkownika przed zawarciem umowy"
+#~ " (art. 6 ust. 1 lit. b RODO)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prawnie uzasadnionego interesu Administratora "
+#~ "(art. 6 ust. 1 lit. f RODO), "
+#~ "jak np. prowadzenie analiz statystycznych "
+#~ "i marketingowych"
+#~ msgstr ""
+
+#~ msgid "Przekazywanie danych"
+#~ msgstr ""
+
+#~ msgid "Dane osobowe użytkowników mogą być przekazywane następującym odbiorcom:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Podmiotom przetwarzającym dane w imieniu "
+#~ "Administratora, jak np. dostawcom usług "
+#~ "IT"
+#~ msgstr ""
+
+#~ msgid "Organom publicznym, jeśli wymagają tego przepisy prawa"
+#~ msgstr ""
+
+#~ msgid "Przechowywanie danych"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dane osobowe przechowywane są przez "
+#~ "okres niezbędny do realizacji celów, dla"
+#~ " których zostały zebrane,\n"
+#~ "                            lub przez okres "
+#~ "wymagany przepisami prawa.\n"
+#~ "                            Dane przetwarzane na "
+#~ "podstawie zgody użytkownika przechowywane są"
+#~ " do momentu jej wycofania."
+#~ msgstr ""
+
+#~ msgid "Prawa użytkownika"
+#~ msgstr ""
+
+#~ msgid "Użytkownikowi przysługują następujące prawa:"
+#~ msgstr ""
+
+#~ msgid "Prawo dostępu do danych"
+#~ msgstr ""
+
+#~ msgid "Prawo do sprostowania danych"
+#~ msgstr ""
+
+#~ msgid "Prawo do usunięcia danych"
+#~ msgstr ""
+
+#~ msgid "Prawo do ograniczenia przetwarzania"
+#~ msgstr ""
+
+#~ msgid "Prawo do przenoszenia danych"
+#~ msgstr ""
+
+#~ msgid "Prawo do wniesienia sprzeciwu wobec przetwarzania"
+#~ msgstr ""
+
+#~ msgid "Prawo do wycofania zgody na przetwarzanie danych osobowych"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Aby skorzystać z tych praw, użytkownik"
+#~ " może skontaktować się z Administratorem"
+#~ " za pośrednictwem adresu e-mail: "
+#~ "%(contact_email)s"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Strona internetowa wykorzystuje pliki cookie"
+#~ " w celu zapewnienia prawidłowego "
+#~ "funkcjonowania\n"
+#~ "                            oraz w celach "
+#~ "analitycznych i marketingowych.\n"
+#~ "                            Użytkownik może "
+#~ "zarządzać ustawieniami plików cookie za "
+#~ "pomocą ustawień przeglądarki internetowej."
+#~ msgstr ""
+
+#~ msgid "Zmiany w Polityce Prywatności"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Administrator zastrzega sobie prawo do "
+#~ "wprowadzania zmian w niniejszej Polityce "
+#~ "Prywatności.\n"
+#~ "                            O wszelkich zmianach "
+#~ "użytkownicy będą informowani za pośrednictwem"
+#~ " strony internetowej."
+#~ msgstr ""
+
+#~ msgid "Kontakt"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "W przypadku pytań dotyczących niniejszej "
+#~ "Polityki Prywatności, prosimy o kontakt "
+#~ "z Administratorem za pośrednictwem adresu "
+#~ "e-mail: %(contact_email)s."
+#~ msgstr ""
+
+#~ msgid "Data ostatniej aktualizacji:"
 #~ msgstr ""
 

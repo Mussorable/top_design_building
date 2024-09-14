@@ -33,7 +33,7 @@ def about():
         website_title=app.config['TITLE'],
         map=folium_map,
         active_page=request.endpoint,
-        header_image='child_wallpaper'
+        header_image='example_rw_3'
     )
 
 
@@ -110,6 +110,7 @@ def realisations():
 @app.route('/realisations/<type_of_room>')
 def realisations_type(type_of_room):
     title_list = type_of_room.split('-')
+    gallery_type = request.args.get('gallery_type')
     capitalized_list = []
     for word in title_list:
         capitalized_list.append(word.capitalize())
@@ -127,6 +128,7 @@ def realisations_type(type_of_room):
     return render_template(
         'type-of-room.html',
         title=title,
+        gallery_type=gallery_type,
         website_title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image=title_url,

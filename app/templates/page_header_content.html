@@ -3,8 +3,10 @@
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
                 <div class="page-name-block">
-                    {% if title %}
+                    {% if title and not gallery_type %}
                         <h1 class="page-name">{{ title }}</h1>
+                    {% elif gallery_type %}
+                        <h1 class="page-name">{{ gallery_type }}</h1>
                     {% else %}
                         <h1 class="page-name">{{ website_title }}</h1>
                     {% endif %}
