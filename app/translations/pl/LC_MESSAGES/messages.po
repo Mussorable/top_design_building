@@ -1,0 +1,1635 @@
+# Polish translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-09-14 17:17+0200\n"
+"PO-Revision-Date: 2024-09-14 17:01+0200\n"
+"Last-Translator: \n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/forms.py:8
+msgid "Your name"
+msgstr "Twoje imię"
+
+#: app/forms.py:9
+msgid "Your email"
+msgstr "Twój email"
+
+#: app/forms.py:10
+msgid "Your phone number"
+msgstr "Numer telefonu"
+
+#: app/forms.py:12
+msgid "Invalid phone number format."
+msgstr "Nieprawidłowy format numeru telefonu."
+
+#: app/forms.py:13
+msgid "Phone number must be between 10 and 15 digits."
+msgstr "Numer telefonu musi zawierać od 10 do 15 cyfr."
+
+#: app/forms.py:15
+msgid "Your message"
+msgstr "Twoja wiadomość"
+
+#: app/forms.py:16 app/templates/services.html:114
+msgid "Contact Us"
+msgstr "Skontaktuj się z nami"
+
+#: app/forms.py:20
+msgid "For any questions, offers or comments please fill out the following form."
+msgstr ""
+"W przypadku jakichkolwiek pytań, propozycji lub komentarzy prosimy o "
+"wypełnienie poniższego formularza."
+
+#: app/forms.py:22
+msgid "Submit"
+msgstr "Wyślij"
+
+#: app/routes.py:15
+msgid "Home"
+msgstr "Strona główna"
+
+#: app/routes.py:16
+msgid "Got a Question? Share your email and We'll write you"
+msgstr "Masz pytanie? Podziel się swoim e-mailem, a my się z tobą skontaktujemy"
+
+#: app/routes.py:32
+msgid "About Us"
+msgstr "O nas"
+
+#: app/routes.py:44
+msgid "Services"
+msgstr "Usługi"
+
+#: app/routes.py:84
+msgid ""
+"Thank you! Your message has been successfully sent. We’ll get back to you"
+" shortly."
+msgstr ""
+"Dziękujemy! Twoja wiadomość została pomyślnie wysłana. Wkrótce się z Tobą"
+" skontaktujemy."
+
+#: app/routes.py:87
+msgid "Oops! Something went wrong. Please try again or contact us directly."
+msgstr ""
+"Ups! Coś poszło nie tak. Proszę spróbować ponownie lub skontaktować się z"
+" nami bezpośrednio."
+
+#: app/routes.py:90 app/templates/about_us.html:111
+msgid "Contact"
+msgstr "Kontakt"
+
+#: app/routes.py:103
+msgid "Realisations"
+msgstr "Realizacje"
+
+#: app/routes.py:123
+msgid ""
+"Sorry, the room type you're looking for doesn't exist. Please select a "
+"type that exists from the options below."
+msgstr ""
+"Przepraszamy, typ pokoju, którego szukasz, nie istnieje. Proszę wybrać "
+"istniejący typ z poniższych opcji."
+
+#: app/routes.py:143
+msgid "Reviews"
+msgstr "Opinie"
+
+#: app/routes.py:154
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
+
+#: app/routes.py:183
+msgid ""
+"Your email has been successfully sent and saved. We appreciate your "
+"interest and will get back to you shortly."
+msgstr ""
+"Twój e-mail został pomyślnie wysłany i zapisany. Doceniamy Twoje "
+"zainteresowanie i wkrótce się z Tobą skontaktujemy."
+
+#: app/templates/404.html:9
+msgid "Oops! Page Not Found"
+msgstr "Ups! Strona nie została znaleziona."
+
+#: app/templates/404.html:18
+msgid ""
+"It looks like the page you're looking for doesn't exist.\n"
+"                        But don't worry, we've got a main option for you:"
+msgstr ""
+"Wygląda na to, że strona, której szukasz, nie istnieje. \n"
+"\n"
+"                        Ale nie martw się, mamy dla Ciebie główną opcję:"
+
+#: app/templates/500.html:9
+msgid "Uh-oh! Something Went Wrong (500)"
+msgstr "Uh-oh! Coś poszło nie tak (500)"
+
+#: app/templates/500.html:18
+msgid ""
+"It looks like something on our end isn’t working right now.\n"
+"                                We’re working hard to fix it, so please "
+"try again soon."
+msgstr ""
+"Wygląda na to, że coś u nas nie działa poprawnie. \n"
+"                                Pracujemy nad naprawą, więc prosimy "
+"spróbować ponownie za chwilę."
+
+#: app/templates/500.html:21
+msgid "In the meantime, you can:"
+msgstr "W międzyczasie możesz:"
+
+#: app/templates/500.html:26
+msgid "We apologize for the inconvenience, and thanks for your patience!"
+msgstr "Przepraszamy za niedogodności i dziękujemy za cierpliwość!"
+
+#: app/templates/about_us.html:9
+msgid ""
+"Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach,\n"
+"                        biurach oraz przestrzeniach komercyjnych i "
+"usługowych"
+msgstr ""
+"Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach, "
+"biurach oraz przestrzeniach komercyjnych i usługowych"
+
+#: app/templates/about_us.html:19
+msgid "Profesjonalne wykończenia wnętrz"
+msgstr "Profesjonalne wykończenia wnętrz"
+
+#: app/templates/about_us.html:20
+msgid ""
+"Oferujemy kompleksowe prace wykończeniowe w domach,\n"
+"                            mieszkaniach i biurach, dostosowując się do "
+"indywidualnych potrzeb klientów."
+msgstr ""
+"Oferujemy kompleksowe prace wykończeniowe w domach,\n"
+"                            mieszkaniach i biurach, dostosowując się do "
+"indywidualnych potrzeb klientów."
+
+#: app/templates/about_us.html:29
+msgid "Kompleksowa renowacja i modernizacja"
+msgstr "Kompleksowa renowacja i modernizacja"
+
+#: app/templates/about_us.html:30
+msgid ""
+"Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
+"                            przywracając im nowoczesny wygląd i "
+"funkcjonalność na najwyższym poziomie."
+msgstr ""
+"Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
+"                            przywracając im nowoczesny wygląd i "
+"funkcjonalność na najwyższym poziomie."
+
+#: app/templates/about_us.html:39
+msgid "Montaż i wykończenia detali"
+msgstr "Montaż i wykończenia detali"
+
+#: app/templates/about_us.html:40
+msgid ""
+"Precyzyjne prace montażowe, wypełnienia i\n"
+"                            wykończenia drobnych elementów, które nadają "
+"wnętrzom ostateczny, elegancki wygląd."
+msgstr ""
+"Precyzyjne prace montażowe, wypełnienia i\n"
+"                            wykończenia drobnych elementów, które nadają "
+"wnętrzom ostateczny, elegancki wygląd."
+
+#: app/templates/about_us.html:51
+msgid "Client Reviews"
+msgstr "Opinie klientów"
+
+#: app/templates/about_us.html:52
+msgid "See what our clients have to say about our work."
+msgstr "Zobacz, co nasi klienci mówią o naszej pracy."
+
+#: app/templates/about_us.html:53
+msgid ""
+"We have been entrusted with the\n"
+"                                interior\n"
+"                                renovation of numerous apartments and "
+"houses. Our clients' feedback speaks for itself.\n"
+"                            You can read their reviews on our dedicated "
+"reviews page, where you'll see how highly people\n"
+"                                value the quality of our work."
+msgstr ""
+"Zaufano nam przy remoncie wnętrz wielu mieszkań i domów. Opinie naszych "
+"klientów mówią same za siebie. Możesz przeczytać ich recenzje na naszej "
+"dedykowanej stronie z opiniami, gdzie zobaczysz, jak wysoko ludzie cenią "
+"jakość naszej pracy."
+
+#: app/templates/about_us.html:82
+msgid "Eksperckie doradztwo"
+msgstr "Eksperckie doradztwo"
+
+#: app/templates/about_us.html:83
+msgid ""
+"Indywidualne doradztwo,\n"
+"                            szybka realizacja i wsparcie po zakończeniu "
+"prac"
+msgstr ""
+"Indywidualne doradztwo,\n"
+"                            szybka realizacja i wsparcie po zakończeniu "
+"prac"
+
+#: app/templates/about_us.html:85
+msgid ""
+"Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,"
+"\n"
+"                            a także wsparcie po zakończeniu projektu.\n"
+"                            Szybko i terminowo realizujemy prace, dbając "
+"o najwyższą jakość i zadowolenie klienta.\n"
+"                            Pomagamy również w kwestiach serwisowych po "
+"zakończeniu prac."
+msgstr ""
+"Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,"
+"\n"
+"                            a także wsparcie po zakończeniu projektu.\n"
+"                            Szybko i terminowo realizujemy prace, dbając "
+"o najwyższą jakość i zadowolenie klienta.\n"
+"                            Pomagamy również w kwestiach serwisowych po "
+"zakończeniu prac."
+
+#: app/templates/about_us.html:100
+msgid "Address:"
+msgstr "Adres:"
+
+#: app/templates/bootstrap_wtf.html:10
+msgid "Email address"
+msgstr "Adres e-mail"
+
+#: app/templates/contact.html:9
+msgid "Send us a message"
+msgstr "Wyślij do nas wiadomość"
+
+#: app/templates/contact.html:11
+msgid ""
+"You can contact us with anything related to our work.\n"
+"                            We'll get in touch with you as soon as "
+"possible."
+msgstr ""
+"Możesz skontaktować się z nami w sprawach związanych z naszą pracą. "
+"Skontaktujemy się z Tobą jak najszybciej."
+
+#: app/templates/contact.html:23
+msgid "Where to Find Us"
+msgstr "Gdzie nas znaleźć"
+
+#: app/templates/contact.html:34
+msgid "Contact Details"
+msgstr "Dane kontaktowe"
+
+#: app/templates/contact.html:45
+msgid "Legal Disclosures"
+msgstr "Informacje prawne"
+
+#: app/templates/index.html:9
+msgid "What we offer to our clients"
+msgstr "Co oferujemy naszym klientom"
+
+#: app/templates/index.html:10
+msgid ""
+"We offer comprehensive home and apartment renovations, including full "
+"interior finishing services"
+msgstr ""
+"Oferujemy kompleksowe remonty domów i mieszkań, w tym pełne usługi "
+"wykończeniowe wnętrz"
+
+#: app/templates/index.html:16
+msgid "Interior Finishing"
+msgstr "Wykończenie wnętrz"
+
+#: app/templates/index.html:17
+msgid ""
+"We provide high-quality interior finishing services, transforming your "
+"space into a\n"
+"                                stylish and functional environment, "
+"tailored to your preferences."
+msgstr ""
+"Oferujemy usługi wykończenia wnętrz wysokiej jakości, przekształcając "
+"Twoją przestrzeń w stylowe i funkcjonalne otoczenie, dopasowane do Twoich"
+" preferencji."
+
+#: app/templates/index.html:23 app/templates/index.html:130
+#: app/templates/index.html:165 app/templates/index.html:213
+#: app/templates/index.html:238 app/templates/index.html:341
+#: app/templates/index.html:376
+msgid "Comprehensive Construction Services"
+msgstr "Kompleksowe usługi budowlane"
+
+#: app/templates/index.html:24
+msgid ""
+"From start to finish, we manage all aspects of your renovation project,\n"
+"                                ensuring seamless execution and a stress-"
+"free experience for you."
+msgstr ""
+"Od początku do końca zarządzamy wszystkimi aspektami Twojego projektu "
+"remontowego, zapewniając płynne wykonanie i bezstresowe doświadczenie dla"
+" Ciebie."
+
+#: app/templates/index.html:30
+msgid "Expert Consultation"
+msgstr "Porady eksperta"
+
+#: app/templates/index.html:31
+msgid ""
+"Our team provides professional advice on processes, materials, costs, and"
+" construction\n"
+"                                work, helping you make informed decisions"
+" and achieve your desired results."
+msgstr ""
+"Nasza drużyna zapewnia profesjonalne doradztwo w zakresie procesów, "
+"materiałów, kosztów i prac budowlanych, pomagając Ci podejmować świadome "
+"decyzje i osiągnąć pożądane rezultaty."
+
+#: app/templates/index.html:42
+msgid "Our Recent Works may impress you"
+msgstr "Nasze ostatnie realizacje mogą Cię zachwycić"
+
+#: app/templates/index.html:43
+msgid "Explore our impressive work through a gallery small gallery"
+msgstr "Zobacz nasze imponujące prace w małej galerii"
+
+#: app/templates/index.html:85
+msgid "A Wide Variety of Our Services"
+msgstr "Szeroki zakres naszych usług"
+
+#: app/templates/index.html:86
+msgid "Explore a wide range of services tailored to your needs."
+msgstr "Poznaj szeroki zakres usług dostosowanych do Twoich potrzeb."
+
+#: app/templates/index.html:95 app/templates/index.html:110
+#: app/templates/index.html:243 app/templates/index.html:268
+#: app/templates/index.html:311 app/templates/index.html:346
+msgid "Filling"
+msgstr "Wypełnianie"
+
+#: app/templates/index.html:100 app/templates/index.html:115
+#: app/templates/index.html:316
+msgid "Wall Painting"
+msgstr "Malowanie ścian"
+
+#: app/templates/index.html:105 app/templates/index.html:125
+#: app/templates/index.html:160 app/templates/index.html:203
+#: app/templates/index.html:208 app/templates/index.html:253
+#: app/templates/index.html:283 app/templates/index.html:306
+#: app/templates/index.html:326 app/templates/index.html:336
+msgid "Renovations"
+msgstr "Renowacje"
+
+#: app/templates/index.html:120 app/templates/index.html:155
+#: app/templates/index.html:175 app/templates/index.html:193
+#: app/templates/index.html:198 app/templates/index.html:278
+#: app/templates/index.html:321 app/templates/index.html:331
+msgid "Tiling and White Installation"
+msgstr "Układanie płytek"
+
+#: app/templates/index.html:135 app/templates/index.html:188
+#: app/templates/index.html:218
+msgid "Drywall Installations"
+msgstr "Sucha zabudowa"
+
+#: app/templates/index.html:140 app/templates/index.html:223
+#: app/templates/index.html:263 app/templates/index.html:366
+msgid "Home and Apartment Renovations"
+msgstr "Remonty domów i mieszkań"
+
+#: app/templates/index.html:145 app/templates/index.html:228
+#: app/templates/index.html:273
+msgid "Plastering and Smoothing Walls"
+msgstr "Tynkowanie i wygładzanie ścian"
+
+#: app/templates/index.html:150 app/templates/index.html:233
+#: app/templates/index.html:396
+msgid "Wallpapering"
+msgstr "Tapetowanie"
+
+#: app/templates/index.html:170 app/templates/index.html:288
+#: app/templates/index.html:356 app/templates/index.html:386
+msgid "Flooring Installations"
+msgstr "Montaż podłóg"
+
+#: app/templates/index.html:248 app/templates/index.html:293
+#: app/templates/index.html:351 app/templates/index.html:361
+#: app/templates/index.html:391
+msgid "Ventilation"
+msgstr "Wentylacja"
+
+#: app/templates/index.html:258
+msgid "Air Conditioning"
+msgstr "Klimatyzacja"
+
+#: app/templates/index.html:371
+msgid "Sanitary Installations"
+msgstr "Instalacje sanitarne"
+
+#: app/templates/index.html:381
+msgid "Electrical Services"
+msgstr "Usługi związane z elektryką"
+
+#: app/templates/index.html:409
+msgid "How Does It Feel"
+msgstr "Jak to wygląda"
+
+#: app/templates/index.html:411
+msgid ""
+"Discover the comfort and satisfaction of a space built with care, "
+"precision, and professionalism.\n"
+"                            See how our work feels when it’s finally "
+"yours to enjoy."
+msgstr ""
+"Odkryj komfort i satysfakcję z przestrzeni stworzonej z troską, precyzją "
+"i profesjonalizmem. Zobacz, jak nasze prace prezentują się, gdy w końcu "
+"są Twoje do cieszenia się nimi."
+
+#: app/templates/index.html:432
+msgid "Stats Snapshot"
+msgstr "Podsumowanie"
+
+#: app/templates/index.html:437
+msgid "Clients"
+msgstr "Klienci"
+
+#: app/templates/index.html:441
+msgid "Square Meters"
+msgstr "Metry kwadratowe"
+
+#: app/templates/index.html:447
+msgid "Years of experience"
+msgstr "Lat doświadczenia"
+
+#: app/templates/index.html:451
+msgid "Savings on Materials"
+msgstr "Oszczędności na materiałach"
+
+#: app/templates/page_header_content.html:18
+msgid "Swift and Reliable"
+msgstr "Swift and Reliable"
+
+#: app/templates/page_header_content.html:19
+msgid "Quality"
+msgstr "Quality"
+
+#: app/templates/policy.html:9
+msgid "Polityka Prywatności"
+msgstr "Polityka Prywatności"
+
+#: app/templates/policy.html:14
+msgid "Wprowadzenie"
+msgstr "Wprowadzenie"
+
+#: app/templates/policy.html:15
+#, python-format
+msgid ""
+"Niniejsza Polityka Prywatności określa zasady przetwarzania, "
+"przechowywania i ochrony danych osobowych\n"
+"                            użytkowników strony internetowej %(title)s "
+"dostępnej pod adresem %(contact_email)s.\n"
+"                            Administratorem danych osobowych jest "
+"%(title)s z siedzibą w Gaszynie, zwana dalej 'Administratorem'."
+msgstr ""
+"Niniejsza Polityka Prywatności określa zasady przetwarzania, "
+"przechowywania i ochrony danych osobowych\n"
+"                            użytkowników strony internetowej %(title)s "
+"dostępnej pod adresem %(contact_email)s.\n"
+"                            Administratorem danych osobowych jest "
+"%(title)s z siedzibą w Gaszynie, zwana dalej 'Administratorem'."
+
+#: app/templates/policy.html:22
+msgid "Rodzaje zbieranych danych"
+msgstr "Rodzaje zbieranych danych"
+
+#: app/templates/policy.html:23
+msgid ""
+"W ramach korzystania z naszej strony internetowej możemy zbierać "
+"następujące dane osobowe użytkowników:"
+msgstr ""
+"W ramach korzystania z naszej strony internetowej możemy zbierać "
+"następujące dane osobowe użytkowników:"
+
+#: app/templates/policy.html:25
+msgid "Imię i nazwisko"
+msgstr "Imię i nazwisko"
+
+#: app/templates/policy.html:26
+msgid "Adres e-mail"
+msgstr "Adres e-mail"
+
+#: app/templates/policy.html:27
+msgid "Numer telefonu"
+msgstr "Numer telefonu"
+
+#: app/templates/policy.html:28 app/templates/policy.html:94
+msgid "Pliki cookie"
+msgstr "Pliki cookie"
+
+#: app/templates/policy.html:29
+msgid ""
+"Inne dane przekazywane dobrowolnie przez użytkowników za pośrednictwem "
+"formularzy dostępnych na stronie."
+msgstr ""
+"Inne dane przekazywane dobrowolnie przez użytkowników za pośrednictwem "
+"formularzy dostępnych na stronie."
+
+#: app/templates/policy.html:35
+msgid "Cele przetwarzania danych"
+msgstr "Cele przetwarzania danych"
+
+#: app/templates/policy.html:36
+msgid "Dane osobowe użytkowników przetwarzane są w następujących celach:"
+msgstr "Dane osobowe użytkowników przetwarzane są w następujących celach:"
+
+#: app/templates/policy.html:38
+msgid "Umożliwienie korzystania z usług oferowanych przez stronę internetową"
+msgstr "Umożliwienie korzystania z usług oferowanych przez stronę internetową"
+
+#: app/templates/policy.html:39
+msgid "Realizacja zamówień i obsługa klienta"
+msgstr "Realizacja zamówień i obsługa klienta"
+
+#: app/templates/policy.html:40 app/templates/policy.html:53
+msgid "Wysyłka newslettera (w przypadku wyrażenia zgody)"
+msgstr "Wysyłka newslettera (w przypadku wyrażenia zgody)"
+
+#: app/templates/policy.html:41
+msgid "Prowadzenie analiz i statystyk dotyczących korzystania ze strony"
+msgstr "Prowadzenie analiz i statystyk dotyczących korzystania ze strony"
+
+#: app/templates/policy.html:42
+msgid "Zabezpieczenie i ochrona praw Administratora"
+msgstr "Zabezpieczenie i ochrona praw Administratora"
+
+#: app/templates/policy.html:48
+msgid "Podstawa prawna przetwarzania danych"
+msgstr "Podstawa prawna przetwarzania danych"
+
+#: app/templates/policy.html:49
+msgid "Dane osobowe przetwarzane są na podstawie:"
+msgstr "Dane osobowe przetwarzane są na podstawie:"
+
+#: app/templates/policy.html:51
+msgid "Zgody użytkownika (art. 6 ust. 1 lit. a RODO)"
+msgstr "Zgody użytkownika (art. 6 ust. 1 lit. a RODO)"
+
+#: app/templates/policy.html:52
+msgid ""
+"Wykonania umowy lub podjęcia działań na żądanie użytkownika przed "
+"zawarciem umowy (art. 6 ust. 1 lit. b RODO)"
+msgstr ""
+"Wykonania umowy lub podjęcia działań na żądanie użytkownika przed "
+"zawarciem umowy (art. 6 ust. 1 lit. b RODO)"
+
+#: app/templates/policy.html:54
+msgid ""
+"Prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f "
+"RODO), jak np. prowadzenie analiz statystycznych i marketingowych"
+msgstr ""
+"Prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f "
+"RODO), jak np. prowadzenie analiz statystycznych i marketingowych"
+
+#: app/templates/policy.html:60
+msgid "Przekazywanie danych"
+msgstr "Przekazywanie danych"
+
+#: app/templates/policy.html:61
+msgid "Dane osobowe użytkowników mogą być przekazywane następującym odbiorcom:"
+msgstr "Dane osobowe użytkowników mogą być przekazywane następującym odbiorcom:"
+
+#: app/templates/policy.html:63
+msgid ""
+"Podmiotom przetwarzającym dane w imieniu Administratora, jak np. "
+"dostawcom usług IT"
+msgstr ""
+"Podmiotom przetwarzającym dane w imieniu Administratora, jak np. "
+"dostawcom usług IT"
+
+#: app/templates/policy.html:64
+msgid "Organom publicznym, jeśli wymagają tego przepisy prawa"
+msgstr "Organom publicznym, jeśli wymagają tego przepisy prawa"
+
+#: app/templates/policy.html:70
+msgid "Przechowywanie danych"
+msgstr "Przechowywanie danych"
+
+#: app/templates/policy.html:71
+msgid ""
+"Dane osobowe przechowywane są przez okres niezbędny do realizacji celów, "
+"dla których zostały zebrane,\n"
+"                            lub przez okres wymagany przepisami prawa.\n"
+"                            Dane przetwarzane na podstawie zgody "
+"użytkownika przechowywane są do momentu jej wycofania."
+msgstr ""
+"Dane osobowe przechowywane są przez okres niezbędny do realizacji celów, "
+"dla których zostały zebrane,\n"
+"                            lub przez okres wymagany przepisami prawa.\n"
+"                            Dane przetwarzane na podstawie zgody "
+"użytkownika przechowywane są do momentu jej wycofania."
+
+#: app/templates/policy.html:78
+msgid "Prawa użytkownika"
+msgstr "Prawa użytkownika"
+
+#: app/templates/policy.html:79
+msgid "Użytkownikowi przysługują następujące prawa:"
+msgstr "Użytkownikowi przysługują następujące prawa:"
+
+#: app/templates/policy.html:81
+msgid "Prawo dostępu do danych"
+msgstr "Prawo dostępu do danych"
+
+#: app/templates/policy.html:82
+msgid "Prawo do sprostowania danych"
+msgstr "Prawo do sprostowania danych"
+
+#: app/templates/policy.html:83
+msgid "Prawo do usunięcia danych"
+msgstr "Prawo do usunięcia danych"
+
+#: app/templates/policy.html:84
+msgid "Prawo do ograniczenia przetwarzania"
+msgstr "Prawo do ograniczenia przetwarzania"
+
+#: app/templates/policy.html:85
+msgid "Prawo do przenoszenia danych"
+msgstr "Prawo do przenoszenia danych"
+
+#: app/templates/policy.html:86
+msgid "Prawo do wniesienia sprzeciwu wobec przetwarzania"
+msgstr "Prawo do wniesienia sprzeciwu wobec przetwarzania"
+
+#: app/templates/policy.html:87
+msgid "Prawo do wycofania zgody na przetwarzanie danych osobowych"
+msgstr "Prawo do wycofania zgody na przetwarzanie danych osobowych"
+
+#: app/templates/policy.html:89
+#, python-format
+msgid ""
+"Aby skorzystać z tych praw, użytkownik może skontaktować się z "
+"Administratorem za pośrednictwem adresu e-mail: %(contact_email)s"
+msgstr ""
+"Aby skorzystać z tych praw, użytkownik może skontaktować się z "
+"Administratorem za pośrednictwem adresu e-mail: %(contact_email)s"
+
+#: app/templates/policy.html:95
+msgid ""
+"Strona internetowa wykorzystuje pliki cookie w celu zapewnienia "
+"prawidłowego funkcjonowania\n"
+"                            oraz w celach analitycznych i marketingowych."
+"\n"
+"                            Użytkownik może zarządzać ustawieniami plików"
+" cookie za pomocą ustawień przeglądarki internetowej."
+msgstr ""
+"Strona internetowa wykorzystuje pliki cookie w celu zapewnienia "
+"prawidłowego funkcjonowania\n"
+"                            oraz w celach analitycznych i marketingowych."
+"\n"
+"                            Użytkownik może zarządzać ustawieniami plików"
+" cookie za pomocą ustawień przeglądarki internetowej."
+
+#: app/templates/policy.html:102
+msgid "Zmiany w Polityce Prywatności"
+msgstr "Zmiany w Polityce Prywatności"
+
+#: app/templates/policy.html:103
+msgid ""
+"Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej "
+"Polityce Prywatności.\n"
+"                            O wszelkich zmianach użytkownicy będą "
+"informowani za pośrednictwem strony internetowej."
+msgstr ""
+"Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej "
+"Polityce Prywatności.\n"
+"                            O wszelkich zmianach użytkownicy będą "
+"informowani za pośrednictwem strony internetowej."
+
+#: app/templates/policy.html:109
+msgid "Kontakt"
+msgstr "Kontakt"
+
+#: app/templates/policy.html:110
+#, python-format
+msgid ""
+"W przypadku pytań dotyczących niniejszej Polityki Prywatności, prosimy o "
+"kontakt z Administratorem za pośrednictwem adresu e-mail: "
+"%(contact_email)s."
+msgstr ""
+"W przypadku pytań dotyczących niniejszej Polityki Prywatności, prosimy o "
+"kontakt z Administratorem za pośrednictwem adresu e-mail: "
+"%(contact_email)s."
+
+#: app/templates/policy.html:116
+msgid "Data ostatniej aktualizacji:"
+msgstr "Data ostatniej aktualizacji:"
+
+#: app/templates/realisations.html:13
+msgid "Kitchen"
+msgstr "Kuchnia"
+
+#: app/templates/realisations.html:24
+msgid "Bathroom"
+msgstr "Łazienka"
+
+#: app/templates/realisations.html:35
+msgid "Living Room"
+msgstr "Pokój"
+
+#: app/templates/realisations.html:48
+msgid "Summer Terrace"
+msgstr "Summer Terrace"
+
+#: app/templates/realisations.html:59
+msgid "Business"
+msgstr "Biznes"
+
+#: app/templates/realisations.html:70
+msgid "Other"
+msgstr "Inne"
+
+#: app/templates/services.html:8 app/templates/services.html:84
+msgid "Our Services"
+msgstr "Nasze usługi"
+
+#: app/templates/services.html:9
+msgid ""
+"Swift, accurate interior comprehensive building services, ensuring "
+"flawless execution and timely project completion"
+msgstr ""
+"Szybkie, precyzyjne i kompleksowe usługi budowlane, zapewniające "
+"bezbłędne wykonanie i terminowe zakończenie projektu"
+
+#: app/templates/services.html:20
+msgid "Private and Business Renovations"
+msgstr "Remonty prywatne i komercyjne"
+
+#: app/templates/services.html:21
+msgid "Quality Renovations for Private and Commercial"
+msgstr "Wysokiej jakości remonty prywatne i komercyjne"
+
+#: app/templates/services.html:33
+msgid "Interior Adaptation"
+msgstr "Dostosowanie wnętrz"
+
+#: app/templates/services.html:34
+msgid "for Functional and Stylish Spaces"
+msgstr "dla funkcjonalnych i stylowych przestrzeni"
+
+#: app/templates/services.html:46
+msgid "Comprehensive Construction of Facilities"
+msgstr "Kompleksowa budowa obiektów"
+
+#: app/templates/services.html:47
+msgid "Complete Facility Construction from Start to Finish"
+msgstr "Kompleksowa budowa obiektów od początku do końca"
+
+#: app/templates/services.html:59
+msgid "Consulting for Effective Solutions"
+msgstr "Doradztwo w zakresie skutecznych rozwiązań"
+
+#: app/templates/services.html:60
+msgid "Consulting for Optimal Project Results"
+msgstr "Doradztwo w zakresie optymalnych wyników projektu"
+
+#: app/templates/services.html:77
+msgid "Comprehensive Renovation Services for Private and Commercial Spaces"
+msgstr "Kompleksowe usługi remontowe dla przestrzeni prywatnych i komercyjnych"
+
+#: app/templates/services.html:78
+msgid ""
+"Our company offers professional comprehensive renovation services for "
+"projects of any complexity.\n"
+"                                We specialize in both private and "
+"commercial properties, ensuring high-quality work at every stage of the "
+"project."
+msgstr ""
+"Nasza firma oferuje profesjonalne, kompleksowe usługi remontowe dla "
+"projektów o dowolnym stopniu skomplikowania. Specjalizujemy się zarówno w"
+" nieruchomościach prywatnych, jak i komercyjnych, zapewniając wysoką "
+"jakość pracy na każdym etapie projektu."
+
+#: app/templates/services.html:86
+msgid "Residential Renovation:"
+msgstr "Remonty mieszkań:"
+
+#: app/templates/services.html:86
+msgid "Apartments, private houses, cottages."
+msgstr "Mieszkania, domy prywatne, domki letniskowe."
+
+#: app/templates/services.html:87
+msgid "Commercial Renovation:"
+msgstr "Renowacje komercyjne:"
+
+#: app/templates/services.html:87
+msgid "Offices, shops, restaurants, beauty salons, and other business spaces."
+msgstr ""
+"Biura, sklepy, restauracje, salony kosmetyczne i inne przestrzenie "
+"biznesowe."
+
+#: app/templates/services.html:88
+msgid "Interior Design:"
+msgstr "Projektowanie wnętrz:"
+
+#: app/templates/services.html:88
+msgid "Creating unique and functional interiors tailored to your needs and style."
+msgstr ""
+"Tworzenie unikalnych i funkcjonalnych wnętrz dostosowanych do Twoich "
+"potrzeb i stylu."
+
+#: app/templates/services.html:89
+msgid "Engineering Words:"
+msgstr "Słownictwo inżynieryjne:"
+
+#: app/templates/services.html:89
+msgid ""
+"Installation of heating, ventilation, air conditioning, and electrical "
+"systems."
+msgstr ""
+"Instalacja systemów grzewczych, wentylacyjnych, klimatyzacyjnych oraz "
+"elektrycznych."
+
+#: app/templates/services.html:95
+msgid "What you gain by choosing us"
+msgstr "Co zyskujesz, wybierając nas"
+
+#: app/templates/services.html:97
+msgid "Experience and Expertise:"
+msgstr "Doświadczenie i ekspertyza:"
+
+#: app/templates/services.html:97
+msgid ""
+"Our team is composed of seasoned professionals with a track record of "
+"successful projects.\n"
+"                                    We approach each project with "
+"attention to detail, considering all the specific requirements and unique"
+" features of the space."
+msgstr ""
+"Nasz zespół składa się z doświadczonych specjalistów z udokumentowanymi "
+"sukcesami w realizacji projektów. Do każdego projektu podchodzimy z "
+"dbałością o szczegóły, uwzględniając wszystkie specyficzne wymagania i "
+"unikalne cechy przestrzeni."
+
+#: app/templates/services.html:99
+msgid "Personalized Approach:"
+msgstr "Indywidualne podejście:"
+
+#: app/templates/services.html:99
+msgid ""
+"We create tailored solutions that meet the specific needs of our clients."
+"\n"
+"                                    Whether you need a stylish apartment "
+"renovation or a refresh of your office space, we will find the optimal "
+"solution for you."
+msgstr ""
+"Tworzymy dostosowane rozwiązania, które spełniają specyficzne potrzeby "
+"naszych klientów. Niezależnie od tego, czy potrzebujesz stylowego remontu"
+" mieszkania, czy odświeżenia przestrzeni biurowej, znajdziemy dla Ciebie "
+"optymalne rozwiązanie."
+
+#: app/templates/services.html:101
+msgid "Comprehensive Services:"
+msgstr "Kompleksowe usługi:"
+
+#: app/templates/services.html:101
+msgid ""
+"We handle the entire project cycle - from design development to final "
+"finishing.\n"
+"                                    You won't need to worry about finding"
+" subcontractors or coordinating work; we take care of everything for you."
+msgstr ""
+"Zajmujemy się całym cyklem projektu – od opracowania projektu po "
+"wykończenie końcowe. Nie musisz się martwić o znalezienie podwykonawców "
+"czy koordynację prac; zajmiemy się wszystkim za Ciebie."
+
+#: app/templates/services.html:103
+msgid "High Standards of Quality:"
+msgstr "Wysokie standardy jakości:"
+
+#: app/templates/services.html:103
+msgid ""
+"We use only trusted materials and the latest technologies,\n"
+"                                    ensuring durability and functionality"
+" in our solutions."
+msgstr ""
+"Używamy tylko sprawdzonych materiałów i najnowszych technologii, "
+"zapewniając trwałość i funkcjonalność naszych rozwiązań."
+
+#: app/templates/services.html:105 app/templates/services.html:259
+msgid "Timely Delivery:"
+msgstr "Terminowa realizacja:"
+
+#: app/templates/services.html:105
+msgid ""
+"We understand the importance of deadlines.\n"
+"                                    We strive to complete all work on "
+"time without compromising on quality."
+msgstr ""
+"Rozumiemy znaczenie terminów. Staramy się zakończyć wszystkie prace na "
+"czas, nie rezygnując z jakości."
+
+#: app/templates/services.html:107
+msgid "Transparency and Openness:"
+msgstr "Przejrzystość i otwartość:"
+
+#: app/templates/services.html:107
+msgid ""
+"We provide detailed estimates and reports at every stage of the project,\n"
+"                                    helping you avoid unexpected costs."
+msgstr ""
+"Przedstawiamy szczegółowe kosztorysy i raporty na każdym etapie projektu,"
+" pomagając uniknąć nieoczekiwanych kosztów."
+
+#: app/templates/services.html:115
+msgid ""
+"Ready to take the first step toward creating your ideal space? Contact us"
+" for a consultation and a project cost estimate.\n"
+"                                We guarantee a professional approach and "
+"a high-quality result that will exceed your expectations."
+msgstr ""
+"Gotowy, aby zrobić pierwszy krok w kierunku stworzenia swojej wymarzonej "
+"przestrzeni? Skontaktuj się z nami w celu konsultacji i wyceny projektu. "
+"Gwarantujemy profesjonalne podejście i wysoką jakość wykonania, która "
+"przekroczy Twoje oczekiwania."
+
+#: app/templates/services.html:128
+msgid "Interior Adaptation: Transforming Spaces to Meet Your Needs"
+msgstr "Adaptacja wnętrz: Przekształcanie przestrzeni zgodnie z Twoimi potrzebami"
+
+#: app/templates/services.html:129
+#, python-format
+msgid ""
+"At %(title)s, we specialize in interior adaptation services that "
+"transform spaces to better suit your needs,\n"
+"                                whether it's for residential or "
+"commercial properties. Our goal is to create environments that are not "
+"only functional but also aesthetically pleasing,\n"
+"                                ensuring that every space is maximized to"
+" its full potential."
+msgstr ""
+"W %(title)s specjalizujemy się w usługach adaptacji wnętrz, które "
+"przekształcają przestrzenie, aby lepiej odpowiadały Twoim potrzebom, "
+"zarówno w przypadku nieruchomości mieszkalnych, jak i komercyjnych. "
+"Naszym celem jest stworzenie środowisk, które są nie tylko funkcjonalne, "
+"ale także estetycznie atrakcyjne, zapewniając maksymalne wykorzystanie "
+"potencjału każdej przestrzeni."
+
+#: app/templates/services.html:136
+msgid "What is Interior Adaptation?"
+msgstr "Czym jest adaptacja wnętrz?"
+
+#: app/templates/services.html:137
+msgid ""
+"Interior adaptation involves the process of modifying and optimizing "
+"existing spaces to enhance their usability,\n"
+"                                comfort, and style. Whether you need to "
+"reconfigure a room, update an outdated layout, or completely overhaul a "
+"space to meet new requirements,\n"
+"                                our team is here to help."
+msgstr ""
+"Adaptacja wnętrz obejmuje proces modyfikacji i optymalizacji istniejących"
+" przestrzeni w celu poprawy ich funkcjonalności, komfortu i stylu. "
+"Niezależnie od tego, czy potrzebujesz zmienić układ pomieszczenia, "
+"zaktualizować przestarzały projekt, czy całkowicie przekształcić "
+"przestrzeń, aby spełniała nowe wymagania, nasz zespół jest gotowy, aby Ci"
+" pomóc."
+
+#: app/templates/services.html:144
+msgid "Examples of Interior Adaptation Projects"
+msgstr "Przykłady projektów adaptacji wnętrz"
+
+#: app/templates/services.html:146
+msgid "Residential Adaptation:"
+msgstr "Adaptacja wnętrz mieszkalnych:"
+
+#: app/templates/services.html:146
+msgid ""
+"Converting a small apartment into a\n"
+"                                    spacious living area by removing non-"
+"load-bearing walls and integrating multi-functional furniture"
+msgstr ""
+"Przekształcanie małego mieszkania w przestronną przestrzeń życiową "
+"poprzez usunięcie ścian nie nośnych i integrację mebli wielofunkcyjnych"
+
+#: app/templates/services.html:148
+msgid "Commercial Adaptation:"
+msgstr "Adaptacja wnętrz komercyjnych:"
+
+#: app/templates/services.html:148
+msgid ""
+"Redesigning an office space to improve workflow,\n"
+"                                    adding flexible workstations, and "
+"enhancing lighting for better productivity."
+msgstr ""
+"Przebudowa przestrzeni biurowej w celu poprawy przepływu pracy, dodanie "
+"elastycznych stanowisk pracy oraz poprawa oświetlenia dla lepszej "
+"produktywności."
+
+#: app/templates/services.html:150
+msgid "Retail Adaptation:"
+msgstr "Adaptacja przestrzeni handlowych:"
+
+#: app/templates/services.html:150
+msgid ""
+"Updating a store layout to improve customer\n"
+"                                    flow and display products more "
+"effectively, creating a more engaging shopping experience."
+msgstr ""
+"Aktualizacja układu sklepu w celu poprawy przepływu klientów i "
+"efektywniejszego wyeksponowania produktów, tworząc bardziej angażujące "
+"doświadczenie zakupowe."
+
+#: app/templates/services.html:157
+msgid "Why Choose Our Interior Adaptation Services?"
+msgstr "Dlaczego warto wybrać nasze usługi adaptacji wnętrz?"
+
+#: app/templates/services.html:159
+msgid "Tailored Solutions:"
+msgstr "Rozwiązania szyte na miarę:"
+
+#: app/templates/services.html:159
+msgid ""
+"We understand that each space is unique,\n"
+"                                    which is why we offer customized "
+"solutions that align with your specific needs and preferences.\n"
+"                                    Whether you're adapting a residential"
+" area for a growing family or transforming a commercial space to improve "
+"workflow,\n"
+"                                    we provide designs that fit your "
+"vision."
+msgstr ""
+"Rozumiemy, że każda przestrzeń jest wyjątkowa, dlatego oferujemy "
+"dostosowane rozwiązania, które odpowiadają Twoim specyficznym potrzebom i"
+" preferencjom. Niezależnie od tego, czy adaptujesz przestrzeń mieszkalną "
+"dla rosnącej rodziny, czy przekształcasz przestrzeń komercyjną, aby "
+"poprawić przepływ pracy, dostarczamy projekty, które odpowiadają Twojej "
+"wizji."
+
+#: app/templates/services.html:163
+msgid "Maximized Functionality:"
+msgstr "Maksymalna funkcjonalność:"
+
+#: app/templates/services.html:163
+msgid ""
+"Our team focuses on making the most out of every square meter.\n"
+"                                    We design layouts that enhance the "
+"usability of your space,\n"
+"                                    incorporating smart storage "
+"solutions, efficient lighting, and ergonomic design elements."
+msgstr ""
+"Nasz zespół koncentruje się na maksymalnym wykorzystaniu każdego metra "
+"kwadratowego. Projektujemy układy, które zwiększają funkcjonalność Twojej"
+" przestrzeni, włączając inteligentne rozwiązania do przechowywania, "
+"efektywne oświetlenie i elementy ergonomiczne."
+
+#: app/templates/services.html:166
+msgid "Aesthetic Excellence:"
+msgstr "Wysoka estetyka:"
+
+#: app/templates/services.html:166
+msgid ""
+"We believe that functionality should never come at the expense of beauty."
+"\n"
+"                                    Our design approach ensures that your"
+" adapted space is not only practical but also visually appealing,\n"
+"                                    reflecting your personal style or "
+"brand identity."
+msgstr ""
+"Wierzymy, że funkcjonalność nie powinna nigdy kosztem estetyki. Nasze "
+"podejście do projektowania zapewnia, że Twoja adaptowana przestrzeń jest "
+"nie tylko praktyczna, ale także wizualnie atrakcyjna, odzwierciedlając "
+"Twój osobisty styl lub tożsamość marki."
+
+#: app/templates/services.html:169
+msgid "Seamless Integration:"
+msgstr "Płynna integracja:"
+
+#: app/templates/services.html:169
+msgid ""
+"Whether you're working with an existing structure or planning a new "
+"configuration,\n"
+"                                    our interior adaptation services "
+"ensure a smooth transition.\n"
+"                                    We take care of all the details, from"
+" structural changes to finishing touches, ensuring that everything blends"
+" seamlessly."
+msgstr ""
+"Niezależnie od tego, czy pracujesz z istniejącą strukturą, czy planujesz "
+"nową konfigurację, nasze usługi adaptacji wnętrz zapewniają płynne "
+"przejście. Zajmujemy się wszystkimi szczegółami, od zmian strukturalnych "
+"po wykończenia, dbając o to, aby wszystko harmonijnie się łączyło."
+
+#: app/templates/services.html:172
+msgid "Attention to Detail:"
+msgstr "Dbałość o szczegóły:"
+
+#: app/templates/services.html:172
+msgid ""
+"Every element matters.\n"
+"                                    We pay close attention to the small "
+"details that make a big difference,\n"
+"                                    from the choice of materials to the "
+"quality of craftsmanship, ensuring a flawless finish."
+msgstr ""
+"Każdy element ma znaczenie. Zwracamy szczególną uwagę na drobne "
+"szczegóły, które robią dużą różnicę, od wyboru materiałów po jakość "
+"wykonania, zapewniając perfekcyjne wykończenie."
+
+#: app/templates/services.html:175
+msgid "Innovative Design:"
+msgstr "Innowacyjne projektowanie:"
+
+#: app/templates/services.html:175
+msgid ""
+"Stay ahead of the curve with our forward-thinking design solutions.\n"
+"                                    We incorporate the latest trends and "
+"technologies to create spaces that are not only current but also "
+"timeless."
+msgstr ""
+"Pozostań na czołowej pozycji dzięki naszym innowacyjnym rozwiązaniom "
+"projektowym. Wprowadzamy najnowsze trendy i technologie, aby tworzyć "
+"przestrzenie, które są nie tylko nowoczesne, ale również ponadczasowe."
+
+#: app/templates/services.html:182
+msgid "Our Process"
+msgstr "Nasz proces"
+
+#: app/templates/services.html:184 app/templates/services.html:225
+msgid "Consultation:"
+msgstr "Konsultacja:"
+
+#: app/templates/services.html:184
+msgid ""
+"We start with an in-depth consultation\n"
+"                                    to understand your needs, goals, and "
+"vision for the space."
+msgstr ""
+"Zaczynamy od szczegółowej konsultacji, aby zrozumieć Twoje potrzeby, cele"
+" i wizję przestrzeni."
+
+#: app/templates/services.html:186
+msgid "Site Evaluation:"
+msgstr "Ocena miejsca:"
+
+#: app/templates/services.html:186
+msgid ""
+"Our team conducts a thorough evaluation of the existing\n"
+"                                    space to identify opportunities for "
+"adaptation and improvement."
+msgstr ""
+"Nasz zespół przeprowadza dokładną ocenę istniejącej przestrzeni, aby "
+"zidentyfikować możliwości adaptacji i ulepszeń."
+
+#: app/templates/services.html:188
+msgid "Design Proposal:"
+msgstr "Propozycja projektu:"
+
+#: app/templates/services.html:188
+msgid ""
+"Based on your input and our findings,\n"
+"                                    we develop a comprehensive design "
+"proposal that includes layouts, material suggestions, and a detailed "
+"project plan."
+msgstr ""
+"Na podstawie Twoich uwag i naszych ustaleń opracowujemy kompleksową "
+"propozycję projektu, która obejmuje układy, sugestie dotyczące materiałów"
+" oraz szczegółowy plan projektu."
+
+#: app/templates/services.html:190
+msgid "Implementation:"
+msgstr "Wdrażanie:"
+
+#: app/templates/services.html:190
+msgid ""
+"Our skilled craftsmen and contractors bring the design to life,\n"
+"                                    ensuring every aspect of the project "
+"meets our high standards of quality."
+msgstr ""
+"Nasi wykwalifikowani rzemieślnicy i wykonawcy ożywiają projekt, "
+"zapewniając, że każdy aspekt realizacji spełnia nasze wysokie standardy "
+"jakości."
+
+#: app/templates/services.html:192
+msgid "Final Review:"
+msgstr "Ostateczna kontrola:"
+
+#: app/templates/services.html:192
+msgid ""
+"Once the work is complete, we conduct a\n"
+"                                    final walkthrough to ensure "
+"everything is perfect and meets your expectations."
+msgstr ""
+"Po zakończeniu prac przeprowadzamy ostateczny przegląd, aby upewnić się, "
+"że wszystko jest perfekcyjne i spełnia Twoje oczekiwania."
+
+#: app/templates/services.html:206
+msgid ""
+"Comprehensive Construction of Facilities: Building Your Vision from the "
+"Ground Up"
+msgstr "Kompleksowa budowa obiektów: Budowanie Twojej wizji od podstaw"
+
+#: app/templates/services.html:207
+#, python-format
+msgid ""
+"At %(title)s, we provide end-to-end construction services for both "
+"residential and commercial facilities.\n"
+"                                Our comprehensive approach ensures that "
+"every aspect of your project is handled with precision and care,\n"
+"                                from the initial design to the final "
+"handover."
+msgstr ""
+"W %(title)s oferujemy usługi budowlane od początku do końca zarówno dla "
+"nieruchomości mieszkalnych, jak i komercyjnych. Nasze kompleksowe "
+"podejście zapewnia, że każdy aspekt Twojego projektu jest realizowany z "
+"precyzją i dbałością, od początkowego projektu po ostateczne przekazanie."
+
+#: app/templates/services.html:214
+msgid "What is Comprehensive Construction?"
+msgstr "Czym jest kompleksowa budowa?"
+
+#: app/templates/services.html:215
+msgid ""
+"Comprehensive construction refers to the full spectrum of services "
+"involved in the creation\n"
+"                                of new buildings or the extensive "
+"renovation of existing structures.\n"
+"                                This includes everything from planning "
+"and design to construction management, engineering, and final touches.\n"
+"                                Our goal is to deliver a finished "
+"facility that meets your exact specifications, on time and within budget."
+msgstr ""
+"Kompleksowa budowa odnosi się do pełnego zakresu usług związanych z "
+"tworzeniem nowych budynków lub rozbudowanymi remontami istniejących "
+"struktur. Obejmuje to wszystko, od planowania i projektowania po "
+"zarządzanie budową, inżynierię i wykończenia. Naszym celem jest "
+"dostarczenie gotowego obiektu, który spełnia Twoje dokładne wymagania, w "
+"terminie i w ramach budżetu."
+
+#: app/templates/services.html:223
+msgid "It's a Process"
+msgstr "To jest proces"
+
+#: app/templates/services.html:225
+msgid ""
+"We begin with a detailed consultation to understand your needs,\n"
+"                                    objectives, and vision for the "
+"project.\n"
+"                                    This includes discussing your budget,"
+" timeline, and any specific requirements."
+msgstr ""
+"Zaczynamy od szczegółowej konsultacji, aby zrozumieć Twoje potrzeby, cele"
+" i wizję projektu. Obejmuje to omówienie budżetu, harmonogramu oraz "
+"wszelkich specyficznych wymagań."
+
+#: app/templates/services.html:228
+msgid "Planning and Design:"
+msgstr "Planowanie i projektowanie:"
+
+#: app/templates/services.html:228
+msgid ""
+"Our architects and engineers work\n"
+"                                    closely with you to develop detailed "
+"plans and designs that align with your goals.\n"
+"                                    We also handle all necessary permits "
+"and approvals."
+msgstr ""
+"Nasi architekci i inżynierowie ściśle współpracują z Tobą, aby opracować "
+"szczegółowe plany i projekty zgodne z Twoimi celami. Zajmujemy się "
+"również wszystkimi niezbędnymi pozwoleniami i zatwierdzeniami."
+
+#: app/templates/services.html:231
+msgid "Construction Management:"
+msgstr "Zarządzanie budową:"
+
+#: app/templates/services.html:231
+msgid ""
+"Once the plans are approved,\n"
+"                                    our construction team takes over, "
+"managing every aspect of the build.\n"
+"                                    We ensure that the work is carried "
+"out to the highest standards,\n"
+"                                    with regular site inspections and "
+"quality control measures."
+msgstr ""
+"Po zatwierdzeniu planów nasz zespół budowlany przejmuje zarządzanie "
+"każdym aspektem budowy. Zapewniamy, że prace są realizowane zgodnie z "
+"najwyższymi standardami, z regularnymi inspekcjami na miejscu i środkami "
+"kontroli jakości."
+
+#: app/templates/services.html:235
+msgid "Finalization:"
+msgstr "Zakończenie:"
+
+#: app/templates/services.html:235
+msgid ""
+"As the project nears completion, we focus on the finishing touches,\n"
+"                                    ensuring that every detail meets your"
+" expectations.\n"
+"                                    We also conduct thorough testing and "
+"inspections to ensure everything is perfect before handover."
+msgstr ""
+"W miarę zbliżania się projektu do ukończenia, koncentrujemy się na "
+"wykończeniach, zapewniając, że każdy detal spełnia Twoje oczekiwania. "
+"Przeprowadzamy również dokładne testy i inspekcje, aby upewnić się, że "
+"wszystko jest perfekcyjne przed przekazaniem."
+
+#: app/templates/services.html:238
+msgid "Handover and Support:"
+msgstr "Przekazanie i wsparcie:"
+
+#: app/templates/services.html:238
+msgid ""
+"Upon completion, we hand over the keys to your new facility,\n"
+"                                    providing all necessary documentation"
+" and offering ongoing support for any future needs."
+msgstr ""
+"Po zakończeniu projektu przekazujemy klucze do nowego obiektu, "
+"dostarczając wszelką niezbędną dokumentację i oferując bieżące wsparcie w"
+" przypadku przyszłych potrzeb."
+
+#: app/templates/services.html:245
+msgid "By choosing us, you'll get"
+msgstr "Decydując się na nas, zyskasz"
+
+#: app/templates/services.html:247
+msgid "Full-Service Expertise:"
+msgstr "Pełna wiedza specjalistyczna:"
+
+#: app/templates/services.html:247
+msgid ""
+"We manage every phase of the construction process,\n"
+"                                    ensuring seamless coordination and "
+"high-quality results. From initial site assessments to the final "
+"walkthrough,\n"
+"                                    our team handles it all, so you don’t"
+" have to worry about managing multiple contractors or vendors."
+msgstr ""
+"Zarządzamy każdym etapem procesu budowlanego, zapewniając płynne "
+"koordynowanie i wysoką jakość wyników. Od początkowych ocen terenu po "
+"ostateczny przegląd, nasz zespół zajmuje się wszystkim, abyś nie musiał "
+"martwić się o zarządzanie wieloma wykonawcami czy dostawcami."
+
+#: app/templates/services.html:250 app/templates/services.html:310
+msgid "Customized Solutions:"
+msgstr "Dostosowane rozwiązania:"
+
+#: app/templates/services.html:250
+msgid ""
+"Each project is unique, and we tailor our services to meet your specific "
+"needs.\n"
+"                                    Whether it’s a residential "
+"development, a commercial building, or a specialized facility,\n"
+"                                    we provide solutions that are "
+"customized to your vision and functional requirements."
+msgstr ""
+"Każdy projekt jest wyjątkowy, a nasze usługi dostosowujemy do Twoich "
+"specyficznych potrzeb. Niezależnie od tego, czy chodzi o rozwój "
+"mieszkalny, budynek komercyjny czy obiekt specjalistyczny, oferujemy "
+"rozwiązania dopasowane do Twojej wizji i wymagań funkcjonalnych."
+
+#: app/templates/services.html:253
+msgid "Quality Assurance:"
+msgstr "Zapewnienie jakości:"
+
+#: app/templates/services.html:253
+msgid ""
+"We prioritize quality in every aspect of our work.\n"
+"                                    From selecting the best materials to "
+"employing skilled craftsmen,\n"
+"                                    our focus is on delivering a facility"
+" that stands the test of time, with a strong emphasis on safety and "
+"durability."
+msgstr ""
+"Priorytetem dla nas jest jakość we wszystkich aspektach naszej pracy. Od "
+"wyboru najlepszych materiałów po zatrudnianie wykwalifikowanych "
+"rzemieślników, koncentrujemy się na dostarczaniu obiektu, który przetrwa "
+"próbę czasu, z dużym naciskiem na bezpieczeństwo i trwałość."
+
+#: app/templates/services.html:256
+msgid "Sustainable Practices:"
+msgstr "Praktyki proekologiczne:"
+
+#: app/templates/services.html:256
+msgid ""
+"We are committed to environmentally responsible construction.\n"
+"                                    Our team integrates sustainable "
+"practices into our projects,\n"
+"                                    including energy-efficient systems, "
+"eco-friendly materials, and waste reduction strategies."
+msgstr ""
+"Jesteśmy zobowiązani do odpowiedzialnej ekologicznie budowy. Nasz zespół "
+"integruje praktyki zrównoważonego rozwoju w naszych projektach, w tym "
+"systemy energooszczędne, materiały przyjazne dla środowiska oraz "
+"strategie redukcji odpadów."
+
+#: app/templates/services.html:259
+msgid ""
+"We understand the importance of deadlines.\n"
+"                                    Our project management approach is "
+"designed to keep your project on schedule,\n"
+"                                    with regular updates and transparent "
+"communication to ensure you’re informed every step of the way."
+msgstr ""
+"Rozumiemy znaczenie terminów. Nasze podejście do zarządzania projektem "
+"jest zaprojektowane, aby utrzymać projekt w harmonogramie, z regularnymi "
+"aktualizacjami i przejrzystą komunikacją, abyś był informowany na każdym "
+"etapie realizacji."
+
+#: app/templates/services.html:262 app/templates/services.html:313
+msgid "Cost Efficiency:"
+msgstr "Optymalizacja kosztów:"
+
+#: app/templates/services.html:262
+msgid ""
+"Comprehensive doesn’t have to mean expensive.\n"
+"                                    We work within your budget to deliver"
+" high-quality construction at a competitive price,\n"
+"                                    without sacrificing quality or "
+"cutting corners."
+msgstr ""
+"Kompleksowość nie musi oznaczać wysokich kosztów. Pracujemy w ramach "
+"Twojego budżetu, aby dostarczyć wysokiej jakości budowę w konkurencyjnej "
+"cenie, bez kompromisów w jakości i cięcia kosztów."
+
+#: app/templates/services.html:277
+msgid "Consulting Services: Expert Guidance for Your Projects"
+msgstr "Usługi doradcze: Eksperckie wsparcie dla Twoich projektów"
+
+#: app/templates/services.html:278
+#, python-format
+msgid ""
+"At %(title)s, we offer professional consulting services to help you "
+"navigate the complexities of construction, renovation, and interior "
+"design projects.\n"
+"                                Our experienced consultants provide "
+"valuable insights and expert advice at every stage, ensuring that your "
+"project runs smoothly and successfully."
+msgstr ""
+"W %(title)s oferujemy profesjonalne usługi doradcze, które pomogą Ci "
+"poradzić sobie z zawirowaniami budowy, remontu i projektowania wnętrz. "
+"Nasi doświadczeni doradcy dostarczają cennych informacji i fachowych "
+"porad na każdym etapie, zapewniając, że Twój projekt przebiega sprawnie i"
+" z sukcesem."
+
+#: app/templates/services.html:284
+msgid "Our Consulting Services Include:"
+msgstr "Nasze usługi doradcze obejmują:"
+
+#: app/templates/services.html:286
+msgid "Project Feasibility Studies:"
+msgstr "Analiza wykonalności projektu:"
+
+#: app/templates/services.html:286
+msgid ""
+"Assess the viability of your\n"
+"                                    project before you invest significant"
+" time and resources."
+msgstr ""
+"Oceń wykonalność swojego projektu, zanim zainwestujesz znaczną ilość "
+"czasu i zasobów."
+
+#: app/templates/services.html:288
+msgid "Budget Planning and Management:"
+msgstr "Planowanie i zarządzanie budżetem:"
+
+#: app/templates/services.html:288
+msgid ""
+"Develop a realistic budget\n"
+"                                    and manage it effectively throughout "
+"the project lifecycle."
+msgstr ""
+"Opracuj realistyczny budżet i zarządzaj nim skutecznie przez cały cykl "
+"projektu."
+
+#: app/templates/services.html:290
+msgid "Design and Architectural Consulting:"
+msgstr "Doradztwo w zakresie projektowania i architektury:"
+
+#: app/templates/services.html:290
+msgid ""
+"Ensure your design meets\n"
+"                                    both your aesthetic and functional "
+"needs, while adhering to regulations."
+msgstr ""
+"Zapewnij, że Twój projekt spełnia zarówno potrzeby estetyczne, jak i "
+"funkcjonalne, jednocześnie przestrzegając przepisów."
+
+#: app/templates/services.html:292
+msgid "Construction and Engineering Advice:"
+msgstr "Doradztwo budowlane i inżynieryjne:"
+
+#: app/templates/services.html:292
+msgid ""
+"Get expert advice\n"
+"                                    on materials, construction methods, "
+"and engineering solutions."
+msgstr ""
+"Uzyskaj fachowe porady dotyczące materiałów, metod budowlanych i "
+"rozwiązań inżynieryjnych."
+
+#: app/templates/services.html:294
+msgid "Permitting and Regulatory Guidance:"
+msgstr "Doradztwo w zakresie pozwoleń i regulacji:"
+
+#: app/templates/services.html:294
+msgid ""
+"Navigate the\n"
+"                                    complexities of permits and "
+"regulations with ease."
+msgstr "Z łatwością poruszaj się po zawirowaniach pozwoleń i regulacji."
+
+#: app/templates/services.html:301
+msgid "Our Consulting Services"
+msgstr "Nasze usługi doradcze"
+
+#: app/templates/services.html:303
+msgid "Industry Expertise:"
+msgstr "Ekspertyza branżowa:"
+
+#: app/templates/services.html:303
+msgid ""
+"Our consultants have years of experience in the construction and design "
+"industries,\n"
+"                                    offering deep knowledge and practical"
+" solutions tailored to your needs."
+msgstr ""
+"Nasi doradcy mają wieloletnie doświadczenie w branży budowlanej i "
+"projektowej, oferując głęboką wiedzę i praktyczne rozwiązania dostosowane"
+" do Twoich potrzeb."
+
+#: app/templates/services.html:305
+msgid "Strategic Planning:"
+msgstr "Planowanie strategiczne:"
+
+#: app/templates/services.html:305
+msgid ""
+"We help you develop clear,\n"
+"                                    actionable plans that align with your"
+" goals and budget,\n"
+"                                    ensuring that every decision moves "
+"your project forward."
+msgstr ""
+"Pomagamy opracować jasne, wykonalne plany, które są zgodne z Twoimi "
+"celami i budżetem, zapewniając, że każda decyzja posuwa Twój projekt do "
+"przodu."
+
+#: app/templates/services.html:308
+msgid "Risk Management:"
+msgstr "Zarządzanie ryzykiem:"
+
+#: app/templates/services.html:308
+msgid ""
+"We identify potential challenges early\n"
+"                                    on and provide strategies to mitigate"
+" risks, helping you avoid costly delays and disruptions."
+msgstr ""
+"Wczesne identyfikujemy potencjalne wyzwania i dostarczamy strategie "
+"minimalizacji ryzyka, pomagając unikać kosztownych opóźnień i zakłóceń."
+
+#: app/templates/services.html:310
+msgid ""
+"Every project is unique,\n"
+"                                    and we tailor our consulting services"
+" to address your specific requirements,\n"
+"                                    whether it’s a residential build, "
+"commercial renovation, or interior adaptation."
+msgstr ""
+"Każdy projekt jest wyjątkowy, dlatego dostosowujemy nasze usługi doradcze"
+" do Twoich specyficznych wymagań, niezależnie od tego, czy chodzi o "
+"budowę mieszkalną, remont komercyjny, czy adaptację wnętrz."
+
+#: app/templates/services.html:313
+msgid ""
+"Our consultants work with you to optimize your budget,\n"
+"                                    identifying cost-saving opportunities"
+" without compromising on quality or outcomes."
+msgstr ""
+"Nasi doradcy współpracują z Tobą, aby zoptymalizować Twój budżet, "
+"identyfikując możliwości oszczędności bez kompromisów w jakości czy "
+"wynikach."
+
+#: app/templates/services.html:315
+msgid "Ongoing Support:"
+msgstr "Wsparcie na bieżąco:"
+
+#: app/templates/services.html:315
+msgid ""
+"From the initial concept to project completion,\n"
+"                                    our consulting services include "
+"continuous support, ensuring you have the guidance you need every step of"
+" the way."
+msgstr ""
+"Od początkowej koncepcji po zakończenie projektu, nasze usługi doradcze "
+"obejmują ciągłe wsparcie, zapewniając Ci niezbędne doradztwo na każdym "
+"etapie realizacji."
+
+#~ msgid "Lorem Ipsum"
+#~ msgstr "Doradztwo"
+

@@ -17,8 +17,8 @@ export function contactFormInformation() {
             this.parentNode.classList.add('is-focused');
 
             const inputMessages = {
-              text: "We never share your sensitive personal information",
-              email: "We will never share your email outside",
+                text: lazy_gettext("text"),
+                email: lazy_gettext("email"),
             };
 
             if (!this.parentNode.querySelector(".bmd-notation")) {
@@ -94,3 +94,28 @@ export function showModalMessage() {
         }, 5000);
     }
 }
+
+function getCurrentLanguage() {
+    return localStorage.getItem('language') || navigator.language.split('-')[0] || 'en';
+}
+
+function lazy_gettext(messageKey, lang) {
+    const currentLang = lang || getCurrentLanguage();
+    const messages = translations[currentLang];
+    return messages[messageKey] || messageKey;
+}
+
+const translations = {
+    en: {
+        text: "We never share your sensitive personal information",
+        email: "We will never share your email outside"
+    },
+    pl: {
+        text: "Nigdy nie udostępniamy twoich poufnych informacji osobistych",
+        email: "Nigdy nie udostępnimy twojego e-maila nikomu"
+    },
+    de: {
+        text: "Wir geben Ihre sensiblen persönlichen Informationen niemals weiter",
+        email: "Wir werden Ihre E-Mail niemals weitergeben"
+    }
+};

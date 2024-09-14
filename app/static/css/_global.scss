@@ -3,6 +3,11 @@ html {
     -webkit-font-smoothing: antialiased;
   }
 
+  ul.nav.justify-content-center.mb-md-0 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
   .option-raised {
     position: relative;
     overflow: hidden;
@@ -11,6 +16,23 @@ html {
     box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),
                 0 6px 30px 5px rgba(0,0,0,.12),
                 0 8px 10px -5px rgba(0,0,0,.2);
+  }
+
+  .description-block {
+    .title.section-title.text-white {
+      font-weight: 600;
+    }
+
+    .title-description.section-title-description.light-color {
+      font-weight: 600;
+      margin-top: 2rem;
+    }
+
+    .option-description.section-option-description.light-color {
+      line-height: 1.7;
+      font-size: 17px;
+      margin-top: 2rem;
+    }
   }
 
   .ml-auto {

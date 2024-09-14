@@ -1,18 +1,19 @@
-from app import app, db
+from app import app, db, get_locale
 from app.email import send_contact_confirmation, send_email_confirmation
 from app.logic.map import generate_map
 from app.logic.gallery_images import get_gallery
 from app.forms import ContactForm, EmailForm
 from app.models import User, ContactEmail, Message
 
-from flask import render_template, flash, redirect, url_for, request
-from flask_babel import _
-from sqlalchemy import select
+from flask import render_template, flash, redirect, url_for, request, g
+from flask_babel import _, get_locale
 
 
 @app.route('/')
 @app.route('/index')
 def index():
+    home_name = _('Home')
+    footer_question= _("Got a Question? Share your email and We'll write you")
     return render_template(
         'index.html',
         title=app.config['TITLE'],
@@ -118,7 +119,9 @@ def realisations_type(type_of_room):
     gallery = get_gallery()
     room_images = gallery.get(title_url)
     if room_images is None:
-        flash(_("Sorry, the room type you're looking for doesn't exist. Please select a type that exists from the options below."), 'danger')
+        flash(
+            _("Sorry, the room type you're looking for doesn't exist. Please select a type that exists from the options below."),
+            'danger')
         return redirect(url_for('realisations'))
 
     return render_template(
@@ -178,7 +181,7 @@ def submit_email():
             send_email_confirmation(email_record)
 
         flash(_('Your email has been successfully sent and saved. '
-              'We appreciate your interest and will get back to you shortly.'))
+                'We appreciate your interest and will get back to you shortly.'))
         redirect(url_for('index'))
     return redirect(url_for('index'))
 
@@ -208,3 +211,7 @@ def utility_processor():
     email_form = EmailForm()
 
     return dict(email_form=email_form)
+
+@app.before_request
+def before_request():
+    g.locale = str(get_locale())
