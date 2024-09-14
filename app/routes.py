@@ -6,6 +6,7 @@ from app.forms import ContactForm, EmailForm
 from app.models import User, ContactEmail, Message
 
 from flask import render_template, flash, redirect, url_for, request
+from flask_babel import _
 from sqlalchemy import select
 
 
@@ -14,7 +15,7 @@ from sqlalchemy import select
 def index():
     return render_template(
         'index.html',
-        title='Top Design',
+        title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image='new_apartment',
         is_under_header_caption=True
@@ -27,7 +28,8 @@ def about():
 
     return render_template(
         'about_us.html',
-        title='About Us',
+        title=_('About Us'),
+        website_title=app.config['TITLE'],
         map=folium_map,
         active_page=request.endpoint,
         header_image='child_wallpaper'
@@ -38,7 +40,8 @@ def about():
 def services():
     return render_template(
         'services.html',
-        title='Services',
+        title=_('Services'),
+        website_title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image='services_header'
     )
@@ -75,16 +78,18 @@ def contact():
         if user_customer:
             send_contact_confirmation(user_customer, new_message)
 
-        flash('Thank you! Your message has been successfully sent. We’ll get back to you shortly.', 'success')
+        flash(_('Thank you! Your message has been successfully sent. We’ll get back to you shortly.'), 'success')
         return redirect(url_for('index'))
     elif request.method == 'POST':
-        flash('Oops! Something went wrong. Please try again or contact us directly.', 'danger')
+        flash(_('Oops! Something went wrong. Please try again or contact us directly.'), 'danger')
     return render_template(
         'contact.html',
-        title='Contact',
+        title=_('Contact'),
+        website_title=app.config['TITLE'],
         form=contact_form,
         active_page=request.endpoint,
-        header_image='old-to-new'
+        header_image='old-to-new',
+        contact_email=app.config['CONTACT_EMAIL']
     )
 
 
@@ -92,7 +97,8 @@ def contact():
 def realisations():
     return render_template(
         'realisations.html',
-        title='Realisations',
+        title=_('Realisations'),
+        website_title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image='calm-apartment'
     )
@@ -110,12 +116,13 @@ def realisations_type(type_of_room):
     gallery = get_gallery()
     room_images = gallery.get(title_url)
     if room_images is None:
-        flash("Sorry, the room type you're looking for doesn't exist. Please select a type that exists from the options below.", 'dagner')
+        flash(_("Sorry, the room type you're looking for doesn't exist. Please select a type that exists from the options below."), 'danger')
         return redirect(url_for('realisations'))
 
     return render_template(
         'type-of-room.html',
         title=title,
+        website_title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image=title_url,
         room_images=room_images,
@@ -128,7 +135,8 @@ def realisations_type(type_of_room):
 def reviews():
     return render_template(
         'reviews.html',
-        title='Reviews',
+        title=_('Reviews'),
+        website_title=app.config['TITLE'],
         active_page=request.endpoint,
         header_image='abstract_wall'
     )
@@ -138,9 +146,11 @@ def reviews():
 def policy():
     return render_template(
         'policy.html',
-        title='Privacy Policy',
+        title=_('Privacy Policy'),
+        website_title=app.config['TITLE'],
         active_page=request.endpoint,
-        header_image='calm-apartment'
+        header_image='calm-apartment',
+        contact_email=app.config['CONTACT_EMAIL']
     )
 
 
@@ -165,8 +175,8 @@ def submit_email():
         if email_form:
             send_email_confirmation(email_record)
 
-        flash('Your email has been successfully sent and saved. '
-              'We appreciate your interest and will get back to you shortly.')
+        flash(_('Your email has been successfully sent and saved. '
+              'We appreciate your interest and will get back to you shortly.'))
         redirect(url_for('index'))
     return redirect(url_for('index'))
 
@@ -175,7 +185,7 @@ def submit_email():
 def page_not_found(e):
     return render_template(
         '404.html',
-        title='Top Design (404)',
+        title=f'{app.config['TITLE']} (404)',
         header_image='new_apartment',
         is_under_header_caption=True
     ), 404
@@ -185,7 +195,7 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template(
         '500.html',
-        title='Top Design (500)',
+        title=f'{app.config['TITLE']} (500)',
         header_image='new_apartment',
         is_under_header_caption=True
     ), 500

@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="error-title">Oops! Page Not Found</h2>
+                        <h2 class="error-title">{{ _('Oops! Page Not Found') }}</h2>
                     </div>
                 </div>
             </div>
@@ -15,8 +15,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="error-description">It looks like the page you're looking for doesn't exist. But don't worry,
-                            we've got a main option for you:</p>
+                        <p class="error-description">{{ _("It looks like the page you're looking for doesn't exist.
+                        But don't worry, we've got a main option for you:") }}</p>
                         <ul class="error-menu-list">
                             <li class="error-menu-item">Go back to the <a href="{{ url_for('index') }}">homepage</a>.</li>
                         </ul>

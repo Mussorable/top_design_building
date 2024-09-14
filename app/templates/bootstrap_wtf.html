@@ -7,7 +7,7 @@
     {% elif field.type == 'EmailField' %}
         {% if position_on_page == "footer" %}
             {{ field.label(class="footer-input-label") }}
-            {{ field(class="footer-input", autocomplete=autocomplete, placeholder="Email address") }}
+            {{ field(class="footer-input", autocomplete=autocomplete, placeholder=_("Email address") ) }}
         {% else %}
             <div class="form-group bmd-form-group">
                 {{ field.label(class="bmd-label-floating") }}

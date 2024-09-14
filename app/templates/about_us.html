@@ -6,8 +6,8 @@
             <div class="container">
                 <div class="row row-padding-block">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h4 class="description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad at debitis dolores ipsa maxime neque pariatur, provident.</h4>
+                        <h4 class="description text-center">{{ _("Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach,
+                        biurach oraz przestrzeniach komercyjnych i usługowych") }}</h4>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -16,9 +16,9 @@
                             <div class="icon-container">
                                 <img src="{{ url_for('static', filename='svg/hammer.svg') }}" alt="Hammer" width="72px" height="72px">
                             </div>
-                            <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
-                            <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
-                                perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                            <h5 class="option-title">{{ _("Profesjonalne wykończenia wnętrz") }}</h5>
+                            <p class="option-description">{{ _("Oferujemy kompleksowe prace wykończeniowe w domach,
+                            mieszkaniach i biurach, dostosowując się do indywidualnych potrzeb klientów.") }} </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -26,9 +26,9 @@
                             <div class="icon-container">
                                 <img src="{{ url_for('static', filename='svg/drill.svg') }}" alt="Drill" width="72px" height="72px">
                             </div>
-                            <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
-                            <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
-                                perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                            <h5 class="option-title">{{ _("Kompleksowa renowacja i modernizacja") }}</h5>
+                            <p class="option-description">{{ _("Specjalizujemy się w renowacjach i modernizacjach wnętrz,
+                            przywracając im nowoczesny wygląd i funkcjonalność na najwyższym poziomie.") }}</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -36,9 +36,9 @@
                             <div class="icon-container">
                                 <img src="{{ url_for('static', filename='svg/paint-brush.svg') }}" alt="Paint Brush" width="72px" height="72px">
                             </div>
-                            <h5 class="option-title">Lorem ipsum dolor sit amet</h5>
-                            <p class="option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere incidunt laboriosam
-                                perspiciatis quasi recusandae rem, voluptas. Aliquam at earum fugiat in</p>
+                            <h5 class="option-title">{{ _("Montaż i wykończenia detali") }}</h5>
+                            <p class="option-description">{{ _("Precyzyjne prace montażowe, wypełnienia i
+                            wykończenia drobnych elementów, które nadają wnętrzom ostateczny, elegancki wygląd.") }}</p>
                         </div>
                     </div>
                 </div>
@@ -48,12 +48,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mx-auto">
-                        <h3 class="title section-title">Client Reviews</h3>
-                        <h5 class="title-description section-title-description">See what our clients have to say about our work.</h5>
-                        <p class="option-description section-option-description">We have been entrusted with the interior
-                            renovation of numerous apartments and houses. Our clients' feedback speaks for itself.
+                        <h3 class="title section-title">{{ _("Client Reviews") }}</h3>
+                        <h5 class="title-description section-title-description">{{ _("See what our clients have to say about our work.") }}</h5>
+                        <p class="option-description section-option-description">{{ _("We have been entrusted with the
+                                interior
+                                renovation of numerous apartments and houses. Our clients' feedback speaks for itself.
                             You can read their reviews on our dedicated reviews page, where you'll see how highly people
-                            value the quality of our work.</p>
+                                value the quality of our work.") }}</p>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="image-container">
@@ -78,10 +79,13 @@
                     </div>
                     <div class="col-xl-4 ml-auto">
                         <div class="description-block">
-                            <h3 class="title section-title text-white">Lorem Ipsum</h3>
-                            <h5 class="title-description section-title-description light-color">Lorem Ipsum dolor sit amet.</h5>
-                            <p class="option-description section-option-description light-color">Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Alias, consequuntur culpa eaque eveniet id.</p>
+                            <h3 class="title section-title text-white">{{ _("Lorem Ipsum") }}</h3>
+                            <h5 class="title-description section-title-description light-color">{{ _("Indywidualne doradztwo,
+                            szybka realizacja i wsparcie po zakończeniu prac") }}</h5>
+                            <p class="option-description section-option-description light-color">{{ _("Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,
+                            a także wsparcie po zakończeniu projektu.
+                            Szybko i terminowo realizujemy prace, dbając o najwyższą jakość i zadowolenie klienta.
+                            Pomagamy również w kwestiach serwisowych po zakończeniu prac.") }}</p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +97,7 @@
                     <div class="col-xl-4 option-raised hover-raise">
                         <img class="text-icon" src="{{ url_for('static', filename='svg/placeholder.svg') }}" alt="Location icon">
                         <div class="address-block">
-                            <h4 class="title section-title address">Address:</h4>
+                            <h4 class="title section-title address">{{ _("Address:") }}</h4>
                             <div class="contact-info">
                                 <p class="mb-0 d-flex align-items-center"><i class="fa-solid fa-map-location-dot"></i><strong>ul. Graniczna 14, 98-300 Gaszyn</strong></p>
                                 <a class="contact-link d-flex align-items-center" href="mailto:email@example.com"><i class="fa fa-envelope"></i>email@example.com</a>
@@ -104,7 +108,7 @@
                             <img class="qr-code" src="{{ url_for('static', filename='svg/qr.svg') }}" alt="QR Code">
                         </div>
                         <div class="contact-row text-center">
-                            <a class="btn btn-warning btn-contact" href="{{ url_for('contact') }}">Contact</a>
+                            <a class="btn btn-warning btn-contact" href="{{ url_for('contact') }}">{{ _("Contact") }}</a>
                         </div>
                     </div>
                     <div class="col-xl-8">
