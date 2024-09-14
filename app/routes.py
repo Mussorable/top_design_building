@@ -57,7 +57,7 @@ def contact():
         text_message = contact_form.message.data
 
         user_customer = User.query.filter_by(email=email).first()
-        email_record = ContactEmail.query.filter_by(email=email).first()
+        email_record = User.query.filter_by(email=email).first()
         if not user_customer:
             user_customer = User(
                 full_name=full_name,
@@ -65,12 +65,14 @@ def contact():
                 phone_number=phone_number,
             )
             db.session.add(user_customer)
+            db.session.flush()
 
         if not email_record:
             email_record = ContactEmail(email=email)
             db.session.add(email_record)
+            db.session.flush()
 
-        new_message = Message(text_message=text_message, user_id=user_customer.id)
+        new_message = Message(text_message=text_message, user_id=user_customer.id, contact_email_id=email_record.id)
         db.session.add(new_message)
 
         db.session.commit()
@@ -165,9 +167,9 @@ def submit_email():
             email_record = ContactEmail(email=email_address)
             db.session.add(email_record)
 
-        subquery = select(User.id).where(User.email == email_address).subquery()
-        Message.query.filter(Message.user_id.in_(subquery)).update(
-            {'contact_email_id': email_record.id}
+        user = User.query.filter_by(email=email_address).first()
+        Message.query.filter_by(user_id=user.id).update(
+            {'contact_email_id': email_record.id},
         )
 
         db.session.commit()
