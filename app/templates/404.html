@@ -1,31 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="page-header header-filter bg-center" style="background-image: url('{{ url_for('static', filename='images/new_appartment.webp') }}');">
-        <div class="container set-above-2">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="page-name-block">
-                        <h1 class="page-name">Top Design</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mr-auto">
-                    <div class="motto-section">
-                        <p class="page-main-motto page-desc">Swift and Reliable</p>
-                        <p class="page-secondary-motto page-desc">Quality</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-raised container-light-mode">
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="error-title">Oops! Page Not Found (404)</h2>
+                        <h2 class="error-title">{{ _('Oops! Page Not Found') }}</h2>
                     </div>
                 </div>
             </div>
@@ -34,8 +15,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="error-description">It looks like the page you're looking for doesn't exist. But don't worry,
-                            we've got a main option for you:</p>
+                        <p class="error-description">{{ _("It looks like the page you're looking for doesn't exist.
+                        But don't worry, we've got a main option for you:") }}</p>
                         <ul class="error-menu-list">
                             <li class="error-menu-item">Go back to the <a href="{{ url_for('index') }}">homepage</a>.</li>
                         </ul>

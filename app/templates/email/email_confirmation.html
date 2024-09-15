@@ -7,11 +7,14 @@
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-        <h2 style="color: #333;">Email Confirmation</h2>
-        <p>Thank you for providing your email address. We have successfully received it, and we will use this email to contact you as soon as possible.</p>
-        <p>If you did not send us this email, please ignore this message.</p>
-        <p>Best regards,</p>
-        <p><strong>Top Design</strong></p>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h2 style="color: #333; display: inline-block;">{{ _('Email Confirmation') }}</h2>
+            <img style="display: inline-block; margin-block: .83em;" src="data:image/png;base64, {{ logo_base64 }}" width="56px" height="56px" alt="logo">
+        </div>
+        <p>{{ _("Thank you for providing your email address. We have successfully received it, and we will use this email to contact you as soon as possible.") }}</p>
+        <p>{{ _("If you did not send us this email, please ignore this message.") }}</p>
+        <p>{{ _("Best regards,") }}</p>
+        <p><strong>{{ website_title }}</strong></p>
     </div>
 </body>
 </html>

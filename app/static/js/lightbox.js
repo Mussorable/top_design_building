@@ -4,6 +4,7 @@ export function setGallery() {
     const lightboxModal = document.getElementById('lightbox-modal');
     const lightboxImage = document.getElementById('lightbox-image');
     const closeImage = document.querySelector('.close');
+    const lightboxSections = document.querySelectorAll('.lightbox-section');
 
     function openLightboxModal(e) {
         lightboxModal.style.display = 'block';
@@ -32,6 +33,28 @@ export function setGallery() {
         });
         lightboxModal.addEventListener('click', () => {
             lightboxModal.style.display = 'none';
+        });
+    }
+}
+
+export function setImagesWidth() {
+    const imagesBlocks = document.querySelectorAll('.images-block');
+
+    if (imagesBlocks.length > 0) {
+        imagesBlocks.forEach((block, index) => {
+            const lightboxSections = block.querySelectorAll('.lightbox-section');
+
+            if (index % 2 === 0) {
+                lightboxSections[0].classList.add('col-lg-4');
+                if (lightboxSections[1]) {
+                    lightboxSections[1].classList.add('col-lg-8');
+                }
+            } else {
+                lightboxSections[0].classList.add('col-lg-8');
+                if (lightboxSections[1]) {
+                    lightboxSections[1].classList.add('col-lg-4');
+                }
+            }
         });
     }
 }

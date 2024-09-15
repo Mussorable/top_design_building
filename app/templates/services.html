@@ -1,27 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="page-header header-filter" style="background-image: url('{{ url_for('static', filename='images/services_header.webp') }}');">
-        <div class="container set-above-2">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="page-name-block">
-                        {% if title %}
-                            <h1 class="page-name">{{ title }}</h1>
-                        {% else %}
-                            <h1 class="page-name">About Us</h1>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-raised container-light-mode">
         <div class="section services-menu">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-50 header-text text-center">
-                    <h2 class="main-offer">Our Services</h2>
-                    <p>Swift, accurate interior comprehensive building services, ensuring flawless execution and timely project completion</p>
+                    <h2 class="main-offer">{{ _("Our Services") }}</h2>
+                    <p>{{ _("Swift, accurate interior comprehensive building services, ensuring flawless execution and timely project completion") }}</p>
                 </div>
             </div>
             <div class="row g-4 px-3 mx-0 select-services">
@@ -32,8 +17,8 @@
                                 <i class="fa-solid fa-repeat"></i>
                             </span>
                             <div class="ms-2 h6 mb-0">
-                                <h5 class="fw-bolder main-service-title">Private and Business Renovations</h5>
-                                <p class="main-service-description">Quality Renovations for Private and Commercial</p>
+                                <h5 class="fw-bolder main-service-title">{{ _("Private and Business Renovations") }}</h5>
+                                <p class="main-service-description">{{ _("Quality Renovations for Private and Commercial") }}</p>
                             </div>
                         </div>
                     </button>
@@ -45,8 +30,8 @@
                                 <i class="fa-solid fa-pen-ruler"></i>
                             </span>
                             <div class="ms-2 h6 mb-0">
-                                <h5 class="fw-bolder main-service-title">Interior Adaptation</h5>
-                                <p class="main-service-description">for Functional and Stylish Spaces</p>
+                                <h5 class="fw-bolder main-service-title">{{ _("Interior Adaptation") }}</h5>
+                                <p class="main-service-description">{{ _("for Functional and Stylish Spaces") }}</p>
                             </div>
                         </div>
                     </button>
@@ -58,8 +43,8 @@
                                 <i class="fa-solid fa-house-circle-check"></i>
                             </span>
                             <div class="ms-2 h6 mb-0">
-                                <h5 class="fw-bolder main-service-title">Comprehensive Construction of Facilities</h5>
-                                <p class="main-service-description">Complete Facility Construction from Start to Finish</p>
+                                <h5 class="fw-bolder main-service-title">{{ _("Comprehensive Construction of Facilities") }}</h5>
+                                <p class="main-service-description">{{ _("Complete Facility Construction from Start to Finish") }}</p>
                             </div>
                         </div>
                     </button>
@@ -71,8 +56,8 @@
                                 <i class="fa-solid fa-user-group"></i>
                             </span>
                             <div class="ms-2 h6 mb-0">
-                                <h5 class="fw-bolder main-service-title">Consulting for Effective Solutions</h5>
-                                <p class="main-service-description">Consulting for Optimal Project Results</p>
+                                <h5 class="fw-bolder main-service-title">{{ _("Consulting for Effective Solutions") }}</h5>
+                                <p class="main-service-description">{{ _("Consulting for Optimal Project Results") }}</p>
                             </div>
                         </div>
                     </button>
@@ -84,51 +69,51 @@
                 <div id="service-container-0" class="service-container">
                     <div class="row">
                         <div class="col-md-12 service-image-container text-center">
-                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/new_appartment.webp") }}" alt="Apartment Renovation visualization">
+                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/new_apartment.webp") }}" alt="Apartment Renovation visualization">
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-12 pb-50 header-text text-center">
-                            <h2 class="main-offer">Comprehensive Renovation Services for Private and Commercial Spaces</h2>
-                            <p>Our company offers professional comprehensive renovation services for projects of any complexity.
-                                We specialize in both private and commercial properties, ensuring high-quality work at every stage of the project.</p>
+                            <h2 class="main-offer">{{ _("Comprehensive Renovation Services for Private and Commercial Spaces") }}</h2>
+                            <p>{{ _("Our company offers professional comprehensive renovation services for projects of any complexity.
+                                We specialize in both private and commercial properties, ensuring high-quality work at every stage of the project.") }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Our Services</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Our Services") }}</h3>
                             <ul>
-                                <li><span class="fw-bolder">Residential Renovation:</span> Apartments, private houses, cottages.</li>
-                                <li><span class="fw-bolder">Commercial Renovation:</span> Offices, shops, restaurants, beauty salons, and other business spaces.</li>
-                                <li><span class="fw-bolder">Interior Design:</span> Creating unique and functional interiors tailored to your needs and style.</li>
-                                <li><span class="fw-bolder">Engineering Words:</span> Installation of heating, ventilation, air conditioning, and electrical systems.</li>
+                                <li><span class="fw-bolder">{{ _("Residential Renovation:") }}</span> {{ _("Apartments, private houses, cottages.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Commercial Renovation:") }}</span> {{ _("Offices, shops, restaurants, beauty salons, and other business spaces.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Interior Design:") }}</span> {{ _("Creating unique and functional interiors tailored to your needs and style.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Engineering Words:") }}</span> {{ _("Installation of heating, ventilation, air conditioning, and electrical systems.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">What you gain by choosing us</h3>
+                            <h3 class="fw-bold mb-3">{{ _("What you gain by choosing us") }}</h3>
                             <ul class="service-explanation">
-                                <li><span class="fw-bolder">Experience and Expertise:</span> Our team is composed of seasoned professionals with a track record of successful projects.
-                                    We approach each project with attention to detail, considering all the specific requirements and unique features of the space.</li>
-                                <li><span class="fw-bolder">Personalized Approach:</span> We create tailored solutions that meet the specific needs of our clients.
-                                    Whether you need a stylish apartment renovation or a refresh of your office space, we will find the optimal solution for you.</li>
-                                <li><span class="fw-bolder">Comprehensive Services:</span> We handle the entire project cycle - from design development to final finishing.
-                                    You won't need to worry about finding subcontractors or coordinating work; we take care of everything for you.</li>
-                                <li><span class="fw-bolder">High Standards of Quality:</span> We use only trusted materials and the latest technologies,
-                                    ensuring durability and functionality in our solutions.</li>
-                                <li><span class="fw-bolder">Timely Delivery:</span> We understand the importance of deadlines.
-                                    We strive to complete all work on time without compromising on quality.</li>
-                                <li><span class="fw-bolder">Transparency and Openness:</span> We provide detailed estimates and reports at every stage of the project,
-                                    helping you avoid unexpected costs.</li>
+                                <li><span class="fw-bolder">{{ _("Experience and Expertise:") }}</span> {{ _("Our team is composed of seasoned professionals with a track record of successful projects.
+                                    We approach each project with attention to detail, considering all the specific requirements and unique features of the space.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Personalized Approach:") }}</span> {{ _("We create tailored solutions that meet the specific needs of our clients.
+                                    Whether you need a stylish apartment renovation or a refresh of your office space, we will find the optimal solution for you.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Comprehensive Services:") }}</span> {{ _("We handle the entire project cycle - from design development to final finishing.
+                                    You won't need to worry about finding subcontractors or coordinating work; we take care of everything for you.") }}</li>
+                                <li><span class="fw-bolder">{{ _("High Standards of Quality:") }}</span> {{ _("We use only trusted materials and the latest technologies,
+                                    ensuring durability and functionality in our solutions.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Timely Delivery:") }}</span> {{ _("We understand the importance of deadlines.
+                                    We strive to complete all work on time without compromising on quality.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Transparency and Openness:") }}</span> {{ _("We provide detailed estimates and reports at every stage of the project,
+                                    helping you avoid unexpected costs.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Contact Us</h3>
-                            <p>Ready to take the first step toward creating your ideal space? Contact us for a consultation and a project cost estimate.
-                                We guarantee a professional approach and a high-quality result that will exceed your expectations.</p>
+                            <h3 class="fw-bold mb-3">{{ _("Contact Us") }}</h3>
+                            <p>{{ _("Ready to take the first step toward creating your ideal space? Contact us for a consultation and a project cost estimate.
+                                We guarantee a professional approach and a high-quality result that will exceed your expectations.") }}</p>
                         </div>
                     </div>
                 </div>
@@ -140,72 +125,72 @@
                     </div>
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-12 pb-50 header-text text-center">
-                            <h2 class="main-offer">Interior Adaptation: Transforming Spaces to Meet Your Needs</h2>
-                            <p>At Top Design, we specialize in interior adaptation services that transform spaces to better suit your needs,
+                            <h2 class="main-offer">{{ _("Interior Adaptation: Transforming Spaces to Meet Your Needs") }}</h2>
+                            <p>{{ _("At %(title)s, we specialize in interior adaptation services that transform spaces to better suit your needs,
                                 whether it's for residential or commercial properties. Our goal is to create environments that are not only functional but also aesthetically pleasing,
-                                ensuring that every space is maximized to its full potential.</p>
+                                ensuring that every space is maximized to its full potential.", title=website_title) }}</p>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">What is Interior Adaptation?</h3>
-                            <p>Interior adaptation involves the process of modifying and optimizing existing spaces to enhance their usability,
+                            <h3 class="fw-bold mb-3">{{ _("What is Interior Adaptation?") }}</h3>
+                            <p>{{ _("Interior adaptation involves the process of modifying and optimizing existing spaces to enhance their usability,
                                 comfort, and style. Whether you need to reconfigure a room, update an outdated layout, or completely overhaul a space to meet new requirements,
-                                our team is here to help.</p>
+                                our team is here to help.") }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Examples of Interior Adaptation Projects</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Examples of Interior Adaptation Projects") }}</h3>
                             <ul>
-                                <li><span class="fw-bolder">Residential Adaptation:</span> Converting a small apartment into a
-                                    spacious living area by removing non-load-bearing walls and integrating multi-functional furniture</li>
-                                <li><span class="fw-bolder">Commercial Adaptation:</span> Redesigning an office space to improve workflow,
-                                    adding flexible workstations, and enhancing lighting for better productivity.</li>
-                                <li><span class="fw-bolder">Retail Adaptation:</span> Updating a store layout to improve customer
-                                    flow and display products more effectively, creating a more engaging shopping experience.</li>
+                                <li><span class="fw-bolder">{{ _("Residential Adaptation:") }}</span> {{ _("Converting a small apartment into a
+                                    spacious living area by removing non-load-bearing walls and integrating multi-functional furniture") }}</li>
+                                <li><span class="fw-bolder">{{ _("Commercial Adaptation:") }}</span> {{ _("Redesigning an office space to improve workflow,
+                                    adding flexible workstations, and enhancing lighting for better productivity.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Retail Adaptation:") }}</span> {{ _("Updating a store layout to improve customer
+                                    flow and display products more effectively, creating a more engaging shopping experience.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Why Choose Our Interior Adaptation Services?</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Why Choose Our Interior Adaptation Services?") }}</h3>
                             <ul class="service-explanation">
-                                <li><span class="fw-bolder">Tailored Solutions:</span> We understand that each space is unique,
+                                <li><span class="fw-bolder">{{ _("Tailored Solutions:") }}</span> {{ _("We understand that each space is unique,
                                     which is why we offer customized solutions that align with your specific needs and preferences.
                                     Whether you're adapting a residential area for a growing family or transforming a commercial space to improve workflow,
-                                    we provide designs that fit your vision.</li>
-                                <li><span class="fw-bolder">Maximized Functionality:</span> Our team focuses on making the most out of every square meter.
+                                    we provide designs that fit your vision.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Maximized Functionality:") }}</span> {{ _("Our team focuses on making the most out of every square meter.
                                     We design layouts that enhance the usability of your space,
-                                    incorporating smart storage solutions, efficient lighting, and ergonomic design elements.</li>
-                                <li><span class="fw-bolder">Aesthetic Excellence:</span> We believe that functionality should never come at the expense of beauty.
+                                    incorporating smart storage solutions, efficient lighting, and ergonomic design elements.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Aesthetic Excellence:") }}</span> {{ _("We believe that functionality should never come at the expense of beauty.
                                     Our design approach ensures that your adapted space is not only practical but also visually appealing,
-                                    reflecting your personal style or brand identity.</li>
-                                <li><span class="fw-bolder">Seamless Integration:</span> Whether you're working with an existing structure or planning a new configuration,
+                                    reflecting your personal style or brand identity.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Seamless Integration:") }}</span> {{ _("Whether you're working with an existing structure or planning a new configuration,
                                     our interior adaptation services ensure a smooth transition.
-                                    We take care of all the details, from structural changes to finishing touches, ensuring that everything blends seamlessly.</li>
-                                <li><span class="fw-bolder">Attention to Detail:</span> Every element matters.
+                                    We take care of all the details, from structural changes to finishing touches, ensuring that everything blends seamlessly.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Attention to Detail:") }}</span> {{ _("Every element matters.
                                     We pay close attention to the small details that make a big difference,
-                                    from the choice of materials to the quality of craftsmanship, ensuring a flawless finish.</li>
-                                <li><span class="fw-bolder">Innovative Design:</span> Stay ahead of the curve with our forward-thinking design solutions.
-                                    We incorporate the latest trends and technologies to create spaces that are not only current but also timeless.</li>
+                                    from the choice of materials to the quality of craftsmanship, ensuring a flawless finish.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Innovative Design:") }}</span> {{ _("Stay ahead of the curve with our forward-thinking design solutions.
+                                    We incorporate the latest trends and technologies to create spaces that are not only current but also timeless.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Our Process</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Our Process") }}</h3>
                             <ul class="numerical">
-                                <li><span class="fw-bolder">Consultation:</span> We start with an in-depth consultation
-                                    to understand your needs, goals, and vision for the space.</li>
-                                <li><span class="fw-bolder">Site Evaluation:</span> Our team conducts a thorough evaluation of the existing
-                                    space to identify opportunities for adaptation and improvement.</li>
-                                <li><span class="fw-bolder">Design Proposal:</span> Based on your input and our findings,
-                                    we develop a comprehensive design proposal that includes layouts, material suggestions, and a detailed project plan.</li>
-                                <li><span class="fw-bolder">Implementation:</span> Our skilled craftsmen and contractors bring the design to life,
-                                    ensuring every aspect of the project meets our high standards of quality.</li>
-                                <li><span class="fw-bolder">Final Review:</span> Once the work is complete, we conduct a
-                                    final walkthrough to ensure everything is perfect and meets your expectations.</li>
+                                <li><span class="fw-bolder">{{ _("Consultation:") }}</span> {{ _("We start with an in-depth consultation
+                                    to understand your needs, goals, and vision for the space.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Site Evaluation:") }}</span> {{ _("Our team conducts a thorough evaluation of the existing
+                                    space to identify opportunities for adaptation and improvement.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Design Proposal:") }}</span> {{ _("Based on your input and our findings,
+                                    we develop a comprehensive design proposal that includes layouts, material suggestions, and a detailed project plan.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Implementation:") }}</span> {{ _("Our skilled craftsmen and contractors bring the design to life,
+                                    ensuring every aspect of the project meets our high standards of quality.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Final Review:") }}</span> {{ _("Once the work is complete, we conduct a
+                                    final walkthrough to ensure everything is perfect and meets your expectations.") }}</li>
                             </ul>
                         </div>
                     </div>
@@ -213,70 +198,70 @@
                 <div id="service-container-2" class="service-container">
                     <div class="row">
                         <div class="col-md-12 service-image-container text-center">
-                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/old-to-new.webp") }}" alt="Apartment Renovation visualization">
+                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/stairs-up.webp") }}" alt="Apartment Renovation visualization">
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-12 pb-50 header-text text-center">
-                            <h2 class="main-offer">Comprehensive Construction of Facilities: Building Your Vision from the Ground Up</h2>
-                            <p>At Top Design, we provide end-to-end construction services for both residential and commercial facilities.
+                            <h2 class="main-offer">{{ _("Comprehensive Construction of Facilities: Building Your Vision from the Ground Up") }}</h2>
+                            <p>{{ _("At %(title)s, we provide end-to-end construction services for both residential and commercial facilities.
                                 Our comprehensive approach ensures that every aspect of your project is handled with precision and care,
-                                from the initial design to the final handover.</p>
+                                from the initial design to the final handover.", title=website_title) }}</p>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">What is Comprehensive Construction?</h3>
-                            <p>Comprehensive construction refers to the full spectrum of services involved in the creation
+                            <h3 class="fw-bold mb-3">{{ _("What is Comprehensive Construction?") }}</h3>
+                            <p>{{ _("Comprehensive construction refers to the full spectrum of services involved in the creation
                                 of new buildings or the extensive renovation of existing structures.
                                 This includes everything from planning and design to construction management, engineering, and final touches.
-                                Our goal is to deliver a finished facility that meets your exact specifications, on time and within budget.</p>
+                                Our goal is to deliver a finished facility that meets your exact specifications, on time and within budget.") }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">It's a Process</h3>
+                            <h3 class="fw-bold mb-3">{{ _("It's a Process") }}</h3>
                             <ul class="numerical">
-                                <li><span class="fw-bolder">Consultation:</span> We begin with a detailed consultation to understand your needs,
+                                <li><span class="fw-bolder">{{ _("Consultation:") }}</span> {{ _("We begin with a detailed consultation to understand your needs,
                                     objectives, and vision for the project.
-                                    This includes discussing your budget, timeline, and any specific requirements.</li>
-                                <li><span class="fw-bolder">Planning and Design:</span> Our architects and engineers work
+                                    This includes discussing your budget, timeline, and any specific requirements.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Planning and Design:") }}</span> {{ _("Our architects and engineers work
                                     closely with you to develop detailed plans and designs that align with your goals.
-                                    We also handle all necessary permits and approvals.</li>
-                                <li><span class="fw-bolder">Construction Management:</span> Once the plans are approved,
+                                    We also handle all necessary permits and approvals.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Construction Management:") }}</span> {{ _("Once the plans are approved,
                                     our construction team takes over, managing every aspect of the build.
                                     We ensure that the work is carried out to the highest standards,
-                                    with regular site inspections and quality control measures.</li>
-                                <li><span class="fw-bolder">Finalization:</span> As the project nears completion, we focus on the finishing touches,
+                                    with regular site inspections and quality control measures.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Finalization:") }}</span> {{ _("As the project nears completion, we focus on the finishing touches,
                                     ensuring that every detail meets your expectations.
-                                    We also conduct thorough testing and inspections to ensure everything is perfect before handover.</li>
-                                <li><span class="fw-bolder">Handover and Support:</span> Upon completion, we hand over the keys to your new facility,
-                                    providing all necessary documentation and offering ongoing support for any future needs.</li>
+                                    We also conduct thorough testing and inspections to ensure everything is perfect before handover.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Handover and Support:") }}</span> {{ _("Upon completion, we hand over the keys to your new facility,
+                                    providing all necessary documentation and offering ongoing support for any future needs.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">By choosing us, you'll get</h3>
+                            <h3 class="fw-bold mb-3">{{ _("By choosing us, you'll get") }}</h3>
                             <ul class="service-explanation">
-                                <li><span class="fw-bolder">Full-Service Expertise:</span> We manage every phase of the construction process,
+                                <li><span class="fw-bolder">{{ _("Full-Service Expertise:") }}</span> {{ _("We manage every phase of the construction process,
                                     ensuring seamless coordination and high-quality results. From initial site assessments to the final walkthrough,
-                                    our team handles it all, so you don’t have to worry about managing multiple contractors or vendors.</li>
-                                <li><span class="fw-bolder">Customized Solutions:</span> Each project is unique, and we tailor our services to meet your specific needs.
+                                    our team handles it all, so you don’t have to worry about managing multiple contractors or vendors.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Customized Solutions:") }}</span> {{ _("Each project is unique, and we tailor our services to meet your specific needs.
                                     Whether it’s a residential development, a commercial building, or a specialized facility,
-                                    we provide solutions that are customized to your vision and functional requirements.</li>
-                                <li><span class="fw-bolder">Quality Assurance:</span> We prioritize quality in every aspect of our work.
+                                    we provide solutions that are customized to your vision and functional requirements.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Quality Assurance:") }}</span> {{ _("We prioritize quality in every aspect of our work.
                                     From selecting the best materials to employing skilled craftsmen,
-                                    our focus is on delivering a facility that stands the test of time, with a strong emphasis on safety and durability.</li>
-                                <li><span class="fw-bolder">Sustainable Practices:</span> We are committed to environmentally responsible construction.
+                                    our focus is on delivering a facility that stands the test of time, with a strong emphasis on safety and durability.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Sustainable Practices:") }}</span> {{ _("We are committed to environmentally responsible construction.
                                     Our team integrates sustainable practices into our projects,
-                                    including energy-efficient systems, eco-friendly materials, and waste reduction strategies.</li>
-                                <li><span class="fw-bolder">Timely Delivery:</span> We understand the importance of deadlines.
+                                    including energy-efficient systems, eco-friendly materials, and waste reduction strategies.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Timely Delivery:") }}</span> {{ _("We understand the importance of deadlines.
                                     Our project management approach is designed to keep your project on schedule,
-                                    with regular updates and transparent communication to ensure you’re informed every step of the way.</li>
-                                <li><span class="fw-bolder">Cost Efficiency:</span> Comprehensive doesn’t have to mean expensive.
+                                    with regular updates and transparent communication to ensure you’re informed every step of the way.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Cost Efficiency:") }}</span> {{ _("Comprehensive doesn’t have to mean expensive.
                                     We work within your budget to deliver high-quality construction at a competitive price,
-                                    without sacrificing quality or cutting corners.</li>
+                                    without sacrificing quality or cutting corners.") }}</li>
                             </ul>
                         </div>
                     </div>
@@ -284,51 +269,51 @@
                 <div id="service-container-3" class="service-container">
                     <div class="row">
                         <div class="col-md-12 service-image-container text-center">
-                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/business_private.webp") }}" alt="Apartment Renovation visualization">
+                            <img class="service-presentation-image" src="{{ url_for('static', filename="images/wall_horizontal.webp") }}" alt="Apartment Renovation visualization">
                         </div>
                     </div>
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-12 pb-50 header-text text-center">
-                            <h2 class="main-offer">Consulting Services: Expert Guidance for Your Projects</h2>
-                            <p>At Top Design, we offer professional consulting services to help you navigate the complexities of construction, renovation, and interior design projects.
-                                Our experienced consultants provide valuable insights and expert advice at every stage, ensuring that your project runs smoothly and successfully.</p>
+                            <h2 class="main-offer">{{ _("Consulting Services: Expert Guidance for Your Projects") }}</h2>
+                            <p>{{ _("At %(title)s, we offer professional consulting services to help you navigate the complexities of construction, renovation, and interior design projects.
+                                Our experienced consultants provide valuable insights and expert advice at every stage, ensuring that your project runs smoothly and successfully.", title=website_title) }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Our Consulting Services Include:</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Our Consulting Services Include:") }}</h3>
                             <ul>
-                                <li><span class="fw-bolder">Project Feasibility Studies:</span> Assess the viability of your
-                                    project before you invest significant time and resources.</li>
-                                <li><span class="fw-bolder">Budget Planning and Management:</span> Develop a realistic budget
-                                    and manage it effectively throughout the project lifecycle.</li>
-                                <li><span class="fw-bolder">Design and Architectural Consulting:</span> Ensure your design meets
-                                    both your aesthetic and functional needs, while adhering to regulations.</li>
-                                <li><span class="fw-bolder">Construction and Engineering Advice:</span> Get expert advice
-                                    on materials, construction methods, and engineering solutions.</li>
-                                <li><span class="fw-bolder">Permitting and Regulatory Guidance:</span> Navigate the
-                                    complexities of permits and regulations with ease.</li>
+                                <li><span class="fw-bolder">{{ _("Project Feasibility Studies:") }}</span> {{ _("Assess the viability of your
+                                    project before you invest significant time and resources.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Budget Planning and Management:") }}</span> {{ _("Develop a realistic budget
+                                    and manage it effectively throughout the project lifecycle.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Design and Architectural Consulting:") }}</span> {{ _("Ensure your design meets
+                                    both your aesthetic and functional needs, while adhering to regulations.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Construction and Engineering Advice:") }}</span> {{ _("Get expert advice
+                                    on materials, construction methods, and engineering solutions.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Permitting and Regulatory Guidance:") }}</span> {{ _("Navigate the
+                                    complexities of permits and regulations with ease.") }}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-12">
-                            <h3 class="fw-bold mb-3">Our Consulting Services</h3>
+                            <h3 class="fw-bold mb-3">{{ _("Our Consulting Services") }}</h3>
                             <ul class="service-explanation">
-                                <li><span class="fw-bolder">Industry Expertise:</span> Our consultants have years of experience in the construction and design industries,
-                                    offering deep knowledge and practical solutions tailored to your needs.</li>
-                                <li><span class="fw-bolder">Strategic Planning:</span> We help you develop clear,
+                                <li><span class="fw-bolder">{{ _("Industry Expertise:") }}</span> {{ _("Our consultants have years of experience in the construction and design industries,
+                                    offering deep knowledge and practical solutions tailored to your needs.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Strategic Planning:") }}</span> {{ _("We help you develop clear,
                                     actionable plans that align with your goals and budget,
-                                    ensuring that every decision moves your project forward.</li>
-                                <li><span class="fw-bolder">Risk Management:</span> We identify potential challenges early
-                                    on and provide strategies to mitigate risks, helping you avoid costly delays and disruptions.</li>
-                                <li><span class="fw-bolder">Customized Solutions:</span> Every project is unique,
+                                    ensuring that every decision moves your project forward.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Risk Management:") }}</span> {{ _("We identify potential challenges early
+                                    on and provide strategies to mitigate risks, helping you avoid costly delays and disruptions.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Customized Solutions:") }}</span> {{ _("Every project is unique,
                                     and we tailor our consulting services to address your specific requirements,
-                                    whether it’s a residential build, commercial renovation, or interior adaptation.</li>
-                                <li><span class="fw-bolder">Cost Efficiency:</span> Our consultants work with you to optimize your budget,
-                                    identifying cost-saving opportunities without compromising on quality or outcomes.</li>
-                                <li><span class="fw-bolder">Ongoing Support:</span> From the initial concept to project completion,
-                                    our consulting services include continuous support, ensuring you have the guidance you need every step of the way.</li>
+                                    whether it’s a residential build, commercial renovation, or interior adaptation.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Cost Efficiency:") }}</span> {{ _("Our consultants work with you to optimize your budget,
+                                    identifying cost-saving opportunities without compromising on quality or outcomes.") }}</li>
+                                <li><span class="fw-bolder">{{ _("Ongoing Support:") }}</span> {{ _("From the initial concept to project completion,
+                                    our consulting services include continuous support, ensuring you have the guidance you need every step of the way.") }}</li>
                             </ul>
                         </div>
                     </div>

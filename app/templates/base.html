@@ -13,10 +13,10 @@
     {% assets "css_all" %}
         <link rel="stylesheet" href="{{ ASSET_URL }}">
     {% endassets %}
-    {% if title %}
-        <title>{{ title }} | Top Design</title>
+    {% if title and website_title %}
+        <title>{{ title }} | {{ website_title }}</title>
     {% else %}
-        <title>Top Design</title>
+        <title>{{ title }}</title>
     {% endif %}
 </head>
 <body>
@@ -27,17 +27,17 @@
                     <img src="{{ url_for('static', filename='svg/logo.svg') }}" alt="Logo" width="48px" height="48px">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">About Us</a></li>
-                    <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">Services</a></li>
-                    <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">Realisations</a></li>
+                    <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">{{ _('Home') }}</a></li>
+                    <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">{{ _('About Us') }}</a></li>
+                    <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
+                    <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">{{ _('Realisations') }}</a></li>
                 </ul>
 {#                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">#}
 {#                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">#}
 {#                </form>#}
                 <ul class="nav mb-md-0 justify-content-center">
-                    <li><a href="{{ url_for('reviews') }}" class="btn btn-outline-light me-2">Reviews</a></li>
-                    <li><a href="{{ url_for('contact') }}" class="btn btn-warning">Contact</a></li>
+                    <li><a href="{{ url_for('reviews') }}" class="btn btn-outline-light me-2">{{ _('Reviews') }}</a></li>
+                    <li><a href="{{ url_for('contact') }}" class="btn btn-warning">{{ _('Contact') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -59,12 +59,17 @@
         </div>
     {% endif %}
     {% endwith %}
+    {% block page_header_content %}
+        {% if header_image %}
+            {% include 'page_header_content.html' with context %}
+        {% endif %}
+    {% endblock %}
     {% block content %}{% endblock %}
     <footer class="page-footer mt-5">
         <div class="container">
             <div class="row footer-above-block justify-content-between">
                 <div class="col-lg-4 footer-title-container">
-                    <h4 class="footer-title">Got a Question? Share your email and We'll write you</h4>
+                    <h4 class="footer-title">{{ _("Got a Question? Share your email and We'll write you") }}</h4>
                 </div>
                 <div class="col-lg-4 footer-input-container">
                     {{ wtf.quick_form(email_form, position_on_page="footer", action=url_for('submit_email')) }}
@@ -73,16 +78,16 @@
             <div class="row footer-navigation">
                 <div class="col-lg-8">
                     <ul class="nav justify-content-start">
-                        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link px-2 text-white fw-bolder">Home</a></li>
-                        <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link px-2 text-white fw-bolder">About Us</a></li>
-                        <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link px-2 text-white fw-bolder">Services</a></li>
-                        <li class="nav-item"><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white fw-bolder">Realisations</a></li>
-                        <li class="nav-item"><a href="{{ url_for('reviews') }}" class="nav-link px-2 text-white fw-bolder">Reviews</a></li>
-                        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link px-2 text-white fw-bolder">Contact</a></li>
+                        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Home') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link px-2 text-white fw-bolder">{{ _('About Us') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Services') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Realisations') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('reviews') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Reviews') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Contact') }}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 text-end">
-                    <a href="{{ url_for('policy') }}" class="footer-terms-links text-white fw-bolder px-2">Privacy Policy</a>
+                    <a href="{{ url_for('policy') }}" class="footer-terms-links text-white fw-bolder px-2">{{ _('Privacy Policy') }}</a>
                 </div>
             </div>
         </div>

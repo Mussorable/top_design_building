@@ -1,8 +1,9 @@
-from flask import Flask
+from flask import Flask, request
 from flask_assets import Environment, Bundle
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_mail import Mail
+from flask_babel import Babel
 
 from config import Config
 
@@ -13,6 +14,13 @@ assets = Environment(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 mail = Mail(app)
+
+
+def get_locale():
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+
+
+babel = Babel(app, locale_selector=get_locale)
 
 js_bundle = Bundle('js/main.js', filters='jsmin', output='js/main.min.js')
 assets.register('js_all', js_bundle)

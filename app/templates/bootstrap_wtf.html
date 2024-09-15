@@ -7,28 +7,28 @@
     {% elif field.type == 'EmailField' %}
         {% if position_on_page == "footer" %}
             {{ field.label(class="footer-input-label") }}
-            {{ field(class="footer-input", autocomplete=autocomplete, placeholder="Email address") }}
+            {{ field(class="footer-input", autocomplete=autocomplete, placeholder=_("Email address") ) }}
         {% else %}
             <div class="form-group bmd-form-group">
                 {{ field.label(class="bmd-label-floating") }}
-                {{ field(class="form-control") }}
+                {{ field(class="form-control", autocomplete=autocomplete) }}
             </div>
         {% endif %}
     {% elif field.type == "SubmitField" %}
         {% if position_on_page == "footer"  %}
             <div class="submit-container">
-                {{ field(class="footer-input-submit") }}
+                {{ field(class="footer-input-submit submit-selector") }}
                 <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         {% else %}
         <div class="submit text-center">
-            {{ field(class="btn btn-warning btn-raised btn-contact") }}
+            {{ field(class="btn btn-warning btn-raised btn-contact submit-selector") }}
         </div>
         {% endif %}
     {% else %}
         <div class="form-group bmd-form-group">
             {{ field.label(class="bmd-label-floating") }}
-            {{ field(class="form-control") }}
+            {{ field(class="form-control", autocomplete=autocomplete) }}
         </div>
     {% endif %}
 {% endmacro %}

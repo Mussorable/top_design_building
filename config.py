@@ -4,6 +4,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
+    TITLE = 'Top Design'
     SECRET_KEY = os.environ.get('SECRET_KEY')
     ASSETS_DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
@@ -12,4 +13,7 @@ class Config:
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    CONTACT_EMAIL = 'example@email.com'
+    CONTACT_PHONE = '+48123456789'
     ADMINS = os.environ.get('MAIL_SENDER')
+    LANGUAGES = ['pl', 'en', 'de']

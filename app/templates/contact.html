@@ -1,30 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="page-header header-filter bg-center" style="background-image: url('{{ url_for('static', filename='images/old-to-new.webp') }}');">
-        <div class="container set-above-2">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="page-name-block">
-                        {% if title %}
-                            <h1 class="page-name">{{ title }}</h1>
-                        {% else %}
-                            <h1 class="page-name">Contact</h1>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-raised container-light-mode">
         <div class="section">
             <div class="container">
                 <div class="row row-padding-block">
                     <div class="col-md-12">
-                        <h2 class="title section-title text-left">Send us a message</h2>
+                        <h2 class="title section-title text-left">{{ _("Send us a message") }}</h2>
                         <h5 class="title-description section-title-description">
-                            You can contact us with anything related
-                            to our work. We'll get in touch with you as soon as possible.
+                            {{ _("You can contact us with anything related to our work.
+                            We'll get in touch with you as soon as possible.") }}
                         </h5>
                     </div>
                 </div>
@@ -35,7 +20,7 @@
                     <div class="col-md-4 ml-auto">
                         <div class="contact-information">
                             <i class="fa-solid fa-map-location"></i>
-                            <h5 class="small-contact-title">Where to Find Us</h5>
+                            <h5 class="small-contact-title">{{ _("Where to Find Us") }}</h5>
                             <p class="small-contact-description">
                                 ul. Graniczna 14
                                 <br>
@@ -46,20 +31,20 @@
                         </div>
                         <div class="contact-information">
                             <i class="fa-solid fa-mobile"></i>
-                            <h5 class="small-contact-title">Contact Details</h5>
+                            <h5 class="small-contact-title">{{ _("Contact Details") }}</h5>
                             <p class="small-contact-description">
                                 Tomasz Nawrocki
                                 <br>
                                 +48 723 569 435
                                 <br>
-                                Mon - Fri, 8:00 - 19:00
+                                {{ contact_email }}
                             </p>
                         </div>
                         <div class="contact-information">
                             <i class="fa-solid fa-circle-info"></i>
-                            <h5 class="small-contact-title">Legal Disclosures</h5>
+                            <h5 class="small-contact-title">{{ _("Legal Disclosures") }}</h5>
                             <p class="small-contact-description">
-                                Top Design JDG
+                                {{ website_title }} JDG
                                 <br>
                                 VAT: PL0123456789
                                 <br>

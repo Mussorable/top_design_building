@@ -1,53 +1,38 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="page-header header-filter" style="background-image: url('{{ url_for('static', filename='images/calm-apartment.webp') }}');">
-        <div class="container set-above-2">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="page-name-block">
-                        {% if title %}
-                            <h1 class="page-name">{{ title }}</h1>
-                        {% else %}
-                            <h1 class="page-name">About Us</h1>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-raised container-light-mode">
         <div class="section">
             <div class="container">
                 <div class="row mb-5 realisations-menu">
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='kitchen') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='kitchen', gallery_type=_("Kitchen")) }}" class="realisation-button">
                             <div class="realisation-container">
                                 <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/kitchen.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Kitchen</h5>
+                                        <h5 class="fw-bolder">{{ _("Kitchen") }}</h5>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='washroom') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='bathroom', gallery_type=_("Bathroom")) }}" class="realisation-button">
                             <div class="realisation-container">
-                                <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/washroom.webp') }}');">
+                                <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/bathroom.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Washroom</h5>
+                                        <h5 class="fw-bolder">{{ _("Bathroom") }}</h5>
                                     </div>
                                 </div>
                             </div>
                             </a>
                     </div>
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='living-room') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='living-room', gallery_type=_("Living Room")) }}" class="realisation-button">
                             <div class="realisation-container">
                                 <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/living-room.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Living Room</h5>
+                                        <h5 class="fw-bolder">{{ _("Living Room") }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -56,33 +41,33 @@
                 </div>
                 <div class="row realisations-menu">
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='summer-terrace') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='summer-terrace', gallery_type=_("Summer Terrace")) }}" class="realisation-button">
                             <div class="realisation-container">
                                 <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/summer-terrace.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Summer Terrace</h5>
+                                        <h5 class="fw-bolder">{{ _("Summer Terrace") }}</h5>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='business') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='business', gallery_type=_("Business")) }}" class="realisation-button">
                             <div class="realisation-container">
                                 <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/business.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Business</h5>
+                                        <h5 class="fw-bolder">{{ _("Business") }}</h5>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="small-wrapper col-md-4">
-                        <a href="{{ url_for('realisations_type', type_of_room='other') }}" class="realisation-button">
+                        <a href="{{ url_for('realisations_type', type_of_room='other', gallery_type=_("Other")) }}" class="realisation-button">
                             <div class="realisation-container">
                                 <div class="image-small-container" style="background-image: url('{{ url_for('static', filename='images/other.webp') }}');">
                                     <div class="image-small-container-title">
-                                        <h5 class="fw-bolder">Other</h5>
+                                        <h5 class="fw-bolder">{{ _("Other") }}</h5>
                                     </div>
                                 </div>
                             </div>
