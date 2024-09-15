@@ -1,3 +1,1 @@
-web: flask db upgrade;
-flask translate compile;
-gunicorn manager:app
+web: flask db upgrade; flask translate compile; gunicorn manager:app; heroku ps:scale web=1
