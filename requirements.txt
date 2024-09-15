@@ -67,7 +67,6 @@ s3transfer==0.10.2
 setuptools==72.1.0
 simpleline==1.9.0
 six==1.16.0
-sos==4.7.2
 soupsieve==2.5
 SQLAlchemy==2.0.32
 Tempita==0.5.2
