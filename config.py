@@ -14,5 +14,6 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     CONTACT_EMAIL = 'example@email.com'
+    CONTACT_PHONE = '+48123456789'
     ADMINS = os.environ.get('MAIL_SENDER')
     LANGUAGES = ['pl', 'en', 'de']

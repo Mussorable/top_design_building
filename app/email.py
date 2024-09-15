@@ -31,9 +31,9 @@ def send_contact_confirmation(user, user_message):
         sender=app.config['ADMINS'],
         recipients=[user.email],
         text_body=render_template('email/form_confirmation.txt',
-                                  user=user, user_message=user_message),
+                                  user=user, user_message=user_message, website_title=app.config['TITLE']),
         html_body=render_template('email/form_confirmation.html',
-                                  user=user, user_message=user_message)
+                                  user=user, user_message=user_message, website_title=app.config['TITLE']),
     )
 
 
@@ -42,6 +42,12 @@ def send_email_confirmation(email_record):
         '[Top Design] Email Confirmation - Thank You for Providing Your Email!',
         sender=app.config['ADMINS'],
         recipients=[email_record.email],
-        text_body=render_template('email/email_confirmation.txt', email_record=email_record),
-        html_body=render_template('email/email_confirmation.html', email_record=email_record)
+        text_body=render_template(
+            'email/email_confirmation.txt',
+            email_record=email_record,
+            website_title=app.config['TITLE'],
+            contact_email=app.config['CONTACT_EMAIL'],
+            contact_phone=app.config['CONTACT_PHONE'],
+        ),
+        html_body=render_template('email/email_confirmation.html', email_record=email_record, website_title=app.config['TITLE']),
     )

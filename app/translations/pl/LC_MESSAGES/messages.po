@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-14 17:41+0200\n"
-"PO-Revision-Date: 2024-09-14 17:48+0200\n"
+"POT-Creation-Date: 2024-09-15 13:59+0200\n"
+"PO-Revision-Date: 2024-09-15 14:01+0200\n"
 "Last-Translator: \n"
 "Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
@@ -88,7 +88,7 @@ msgstr ""
 "Ups! Coś poszło nie tak. Proszę spróbować ponownie lub skontaktować się z nami "
 "bezpośrednio."
 
-#: app/routes.py:90 app/templates/about_us.html:111 app/templates/policy.html:108
+#: app/routes.py:90 app/templates/about_us.html:110 app/templates/policy.html:108
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -96,7 +96,7 @@ msgstr "Kontakt"
 msgid "Realisations"
 msgstr "Realizacje"
 
-#: app/routes.py:123
+#: app/routes.py:124
 msgid ""
 "Sorry, the room type you're looking for doesn't exist. Please select a type that "
 "exists from the options below."
@@ -104,15 +104,15 @@ msgstr ""
 "Przepraszamy, typ pokoju, którego szukasz, nie istnieje. Proszę wybrać "
 "istniejący typ z poniższych opcji."
 
-#: app/routes.py:143
+#: app/routes.py:145
 msgid "Reviews"
 msgstr "Opinie"
 
-#: app/routes.py:154 app/templates/policy.html:9
+#: app/routes.py:156 app/templates/policy.html:9
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
-#: app/routes.py:183
+#: app/routes.py:185
 msgid ""
 "Your email has been successfully sent and saved. We appreciate your interest and "
 "will get back to you shortly."
@@ -157,53 +157,50 @@ msgstr "Przepraszamy za niedogodności i dziękujemy za cierpliwość!"
 
 #: app/templates/about_us.html:9
 msgid ""
-"Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach,\n"
-"                        biurach oraz przestrzeniach komercyjnych i usługowych"
+"Comprehensive and modern interior finishing in homes,\n"
+"                        apartments, offices, and commercial and service spaces"
 msgstr ""
 "Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach, biurach oraz "
 "przestrzeniach komercyjnych i usługowych"
 
 #: app/templates/about_us.html:19
-msgid "Profesjonalne wykończenia wnętrz"
+msgid "Professional interior finishing"
 msgstr "Profesjonalne wykończenia wnętrz"
 
 #: app/templates/about_us.html:20
 msgid ""
-"Oferujemy kompleksowe prace wykończeniowe w domach,\n"
-"                            mieszkaniach i biurach, dostosowując się do "
-"indywidualnych potrzeb klientów."
+"We offer comprehensive finishing work for homes, apartments,\n"
+"                            and offices, tailored to the individual needs of our "
+"clients."
 msgstr ""
-"Oferujemy kompleksowe prace wykończeniowe w domach,\n"
-"                            mieszkaniach i biurach, dostosowując się do "
-"indywidualnych potrzeb klientów."
+"Oferujemy kompleksowe prace wykończeniowe w domach, mieszkaniach i biurach, "
+"dostosowując się do indywidualnych potrzeb klientów."
 
 #: app/templates/about_us.html:29
-msgid "Kompleksowa renowacja i modernizacja"
-msgstr "Kompleksowa renowacja i modernizacja"
+msgid "Comprehensive renovation and modernization"
+msgstr "Kompleksowe usługi remontowe dla przestrzeni prywatnych i komercyjnych"
 
 #: app/templates/about_us.html:30
 msgid ""
-"Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
-"                            przywracając im nowoczesny wygląd i funkcjonalność "
-"na najwyższym poziomie."
+"We specialize in interior renovations and modernizations,\n"
+"                            restoring them to a modern appearance and top-level "
+"functionality."
 msgstr ""
-"Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
-"                            przywracając im nowoczesny wygląd i funkcjonalność "
-"na najwyższym poziomie."
+"Specjalizujemy się w renowacjach i modernizacjach wnętrz, przywracając im "
+"nowoczesny wygląd i funkcjonalność na najwyższym poziomie."
 
 #: app/templates/about_us.html:39
-msgid "Montaż i wykończenia detali"
+msgid "Installation and finishing of details"
 msgstr "Montaż i wykończenia detali"
 
 #: app/templates/about_us.html:40
 msgid ""
-"Precyzyjne prace montażowe, wypełnienia i\n"
-"                            wykończenia drobnych elementów, które nadają "
-"wnętrzom ostateczny, elegancki wygląd."
+"Precise installation work, filling,\n"
+"                            and finishing of small elements that give interiors "
+"a final, elegant appearance."
 msgstr ""
-"Precyzyjne prace montażowe, wypełnienia i\n"
-"                            wykończenia drobnych elementów, które nadają "
-"wnętrzom ostateczny, elegancki wygląd."
+"Precyzyjne prace montażowe, wypełnienia i wykończenia drobnych elementów, które "
+"nadają wnętrzom ostateczny, elegancki wygląd."
 
 #: app/templates/about_us.html:51
 msgid "Client Reviews"
@@ -228,34 +225,32 @@ msgstr ""
 "stronie z opiniami, gdzie zobaczysz, jak wysoko ludzie cenią jakość naszej pracy."
 
 #: app/templates/about_us.html:82
-msgid "Eksperckie doradztwo"
-msgstr "Eksperckie doradztwo"
+msgid "Consulting"
+msgstr "Doradztwo"
 
 #: app/templates/about_us.html:83
 msgid ""
-"Indywidualne doradztwo,\n"
-"                            szybka realizacja i wsparcie po zakończeniu prac"
-msgstr ""
-"Indywidualne doradztwo,\n"
-"                            szybka realizacja i wsparcie po zakończeniu prac"
+"Individualized consulting,\n"
+"                            fast execution, and support after the completion of "
+"the work"
+msgstr "Indywidualne doradztwo, szybka realizacja i wsparcie po zakończeniu prac"
 
 #: app/templates/about_us.html:85
 msgid ""
-"Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,\n"
-"                            a także wsparcie po zakończeniu projektu.\n"
-"                            Szybko i terminowo realizujemy prace, dbając o "
-"najwyższą jakość i zadowolenie klienta.\n"
-"                            Pomagamy również w kwestiach serwisowych po "
-"zakończeniu prac."
+"We provide professional consulting at every stage of finishing and "
+"modernization,\n"
+"                            as well as support after the project is completed. "
+"We execute work quickly and on time, ensuring the highest quality and customer "
+"satisfaction.\n"
+"                            We also assist with service-related issues after the "
+"completion of the work."
 msgstr ""
-"Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,\n"
-"                            a także wsparcie po zakończeniu projektu.\n"
-"                            Szybko i terminowo realizujemy prace, dbając o "
-"najwyższą jakość i zadowolenie klienta.\n"
-"                            Pomagamy również w kwestiach serwisowych po "
-"zakończeniu prac."
+"Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji, a "
+"także wsparcie po zakończeniu projektu. Szybko i terminowo realizujemy prace, "
+"dbając o najwyższą jakość i zadowolenie klienta. Pomagamy również w kwestiach "
+"serwisowych po zakończeniu prac."
 
-#: app/templates/about_us.html:100
+#: app/templates/about_us.html:99
 msgid "Address:"
 msgstr "Adres:"
 
@@ -464,11 +459,11 @@ msgstr "Lat doświadczenia"
 msgid "Savings on Materials"
 msgstr "Oszczędności na materiałach"
 
-#: app/templates/page_header_content.html:18
+#: app/templates/page_header_content.html:20
 msgid "Swift and Reliable"
 msgstr "Swift and Reliable"
 
-#: app/templates/page_header_content.html:19
+#: app/templates/page_header_content.html:21
 msgid "Quality"
 msgstr "Quality"
 
@@ -696,27 +691,27 @@ msgstr ""
 msgid "Last updated:"
 msgstr "Data ostatniej aktualizacji:"
 
-#: app/templates/realisations.html:13
+#: app/templates/realisations.html:9 app/templates/realisations.html:13
 msgid "Kitchen"
 msgstr "Kuchnia"
 
-#: app/templates/realisations.html:24
+#: app/templates/realisations.html:20 app/templates/realisations.html:24
 msgid "Bathroom"
 msgstr "Łazienka"
 
-#: app/templates/realisations.html:35
+#: app/templates/realisations.html:31 app/templates/realisations.html:35
 msgid "Living Room"
 msgstr "Pokój"
 
-#: app/templates/realisations.html:48
+#: app/templates/realisations.html:44 app/templates/realisations.html:48
 msgid "Summer Terrace"
 msgstr "Summer Terrace"
 
-#: app/templates/realisations.html:59
+#: app/templates/realisations.html:55 app/templates/realisations.html:59
 msgid "Business"
 msgstr "Biznes"
 
-#: app/templates/realisations.html:70
+#: app/templates/realisations.html:66 app/templates/realisations.html:70
 msgid "Other"
 msgstr "Inne"
 
@@ -1564,6 +1559,106 @@ msgstr ""
 "Od początkowej koncepcji po zakończenie projektu, nasze usługi doradcze obejmują "
 "ciągłe wsparcie, zapewniając Ci niezbędne doradztwo na każdym etapie realizacji."
 
+#: app/templates/email/email_confirmation.html:11
+msgid "Email Confirmation"
+msgstr "Potwierdzenie e-mail"
+
+#: app/templates/email/email_confirmation.html:14
+#: app/templates/email/email_confirmation.txt:1
+msgid ""
+"Thank you for providing your email address. We have successfully received it, "
+"and we will use this email to contact you as soon as possible."
+msgstr ""
+"Dziękujemy za podanie adresu e-mail. Otrzymaliśmy go pomyślnie i będziemy "
+"korzystać z tego adresu, aby skontaktować się z Tobą jak najszybciej."
+
+#: app/templates/email/email_confirmation.html:15
+#: app/templates/email/email_confirmation.txt:3
+msgid "If you did not send us this email, please ignore this message."
+msgstr ""
+"Jeśli nie wysłałeś(-aś) do nas tego e-maila, prosimy zignorować tę wiadomość."
+
+#: app/templates/email/email_confirmation.html:16
+#: app/templates/email/email_confirmation.txt:5
+#: app/templates/email/form_confirmation.html:71
+#: app/templates/email/form_confirmation.txt:15
+msgid "Best regards,"
+msgstr "Z poważaniem,"
+
+#: app/templates/email/form_confirmation.html:47
+#: app/templates/email/form_confirmation.txt:1
+msgid "Dear"
+msgstr "Szanowny/Szanowna"
+
+#: app/templates/email/form_confirmation.html:48
+#: app/templates/email/form_confirmation.txt:3
+msgid ""
+"Thank you for reaching out! We’ve received your request through our contact form "
+"and will be in touch very soon."
+msgstr ""
+"Dziękujemy za kontakt! Otrzymaliśmy Twoje zgłoszenie przez nasz formularz "
+"kontaktowy i wkrótce się z Tobą skontaktujemy."
+
+#: app/templates/email/form_confirmation.html:51
+#: app/templates/email/form_confirmation.txt:5
+msgid "Here’s a summary of your submission:"
+msgstr "Oto podsumowanie Twojego zgłoszenia:"
+
+#: app/templates/email/form_confirmation.html:52
+#: app/templates/email/form_confirmation.txt:7
+msgid "Name:"
+msgstr "Imię:"
+
+#: app/templates/email/form_confirmation.html:53
+#: app/templates/email/form_confirmation.txt:8
+msgid "Email:"
+msgstr "Twój email:"
+
+#: app/templates/email/form_confirmation.html:54
+msgid "Phone Number:"
+msgstr "Numer telefonu:"
+
+#: app/templates/email/form_confirmation.html:55
+#: app/templates/email/form_confirmation.txt:10
+msgid "Message:"
+msgstr "Twoja wiadomość:"
+
+#: app/templates/email/form_confirmation.html:64
+#, python-format
+msgid ""
+"One of our team members will reach out to you within 5 days to discuss your "
+"inquiry.\n"
+"            If you need immediate assistance, please don’t hesitate to contact "
+"us directly\n"
+"            at %(business_mail)s or call us at %(business_phone_number)s."
+msgstr ""
+"Jeden z członków naszego zespołu skontaktuje się z Tobą w ciągu 5 dni, aby "
+"omówić Twoje zapytanie.\n"
+"Jeśli potrzebujesz natychmiastowej pomocy, nie wahaj się skontaktować z nami "
+"bezpośrednio pod adresem e-mail %(business_mail)s lub zadzwoń do nas pod numer "
+"%(business_phone_number)s."
+
+#: app/templates/email/form_confirmation.html:68
+#: app/templates/email/form_confirmation.txt:13
+msgid "We look forward to connecting with you soon!"
+msgstr "Z niecierpliwością czekamy na możliwość kontaktu z Tobą wkrótce!"
+
+#: app/templates/email/form_confirmation.txt:9
+msgid "Phone Number (if provided):"
+msgstr "Numer telefonu (jeśli podano):"
+
+#: app/templates/email/form_confirmation.txt:11
+#, python-format
+msgid ""
+"One of our team members will reach out to you within 5 days to discuss your "
+"inquiry. If you need immediate assistance, please don’t hesitate to contact us "
+"directly at %(contact_phone)s or %(contact_email)s."
+msgstr ""
+"Jeden z członków naszego zespołu skontaktuje się z Tobą w ciągu 5 dni, aby "
+"omówić Twoje zapytanie. Jeśli potrzebujesz natychmiastowej pomocy, nie wahaj się "
+"skontaktować z nami bezpośrednio pod numerem %(contact_phone)s lub adresem e-"
+"mail %(contact_email)s."
+
 #~ msgid "Lorem Ipsum"
 #~ msgstr "Doradztwo"
 
@@ -1763,3 +1858,71 @@ msgstr ""
 
 #~ msgid "Data ostatniej aktualizacji:"
 #~ msgstr "Data ostatniej aktualizacji:"
+
+#~ msgid ""
+#~ "Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach,\n"
+#~ "                        biurach oraz przestrzeniach komercyjnych i usługowych"
+#~ msgstr ""
+#~ "Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach, biurach "
+#~ "oraz przestrzeniach komercyjnych i usługowych"
+
+#~ msgid "Profesjonalne wykończenia wnętrz"
+#~ msgstr "Profesjonalne wykończenia wnętrz"
+
+#~ msgid ""
+#~ "Oferujemy kompleksowe prace wykończeniowe w domach,\n"
+#~ "                            mieszkaniach i biurach, dostosowując się do "
+#~ "indywidualnych potrzeb klientów."
+#~ msgstr ""
+#~ "Oferujemy kompleksowe prace wykończeniowe w domach,\n"
+#~ "                            mieszkaniach i biurach, dostosowując się do "
+#~ "indywidualnych potrzeb klientów."
+
+#~ msgid "Kompleksowa renowacja i modernizacja"
+#~ msgstr "Kompleksowa renowacja i modernizacja"
+
+#~ msgid ""
+#~ "Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
+#~ "                            przywracając im nowoczesny wygląd i "
+#~ "funkcjonalność na najwyższym poziomie."
+#~ msgstr ""
+#~ "Specjalizujemy się w renowacjach i modernizacjach wnętrz,\n"
+#~ "                            przywracając im nowoczesny wygląd i "
+#~ "funkcjonalność na najwyższym poziomie."
+
+#~ msgid "Montaż i wykończenia detali"
+#~ msgstr "Montaż i wykończenia detali"
+
+#~ msgid ""
+#~ "Precyzyjne prace montażowe, wypełnienia i\n"
+#~ "                            wykończenia drobnych elementów, które nadają "
+#~ "wnętrzom ostateczny, elegancki wygląd."
+#~ msgstr ""
+#~ "Precyzyjne prace montażowe, wypełnienia i\n"
+#~ "                            wykończenia drobnych elementów, które nadają "
+#~ "wnętrzom ostateczny, elegancki wygląd."
+
+#~ msgid "Eksperckie doradztwo"
+#~ msgstr "Eksperckie doradztwo"
+
+#~ msgid ""
+#~ "Indywidualne doradztwo,\n"
+#~ "                            szybka realizacja i wsparcie po zakończeniu prac"
+#~ msgstr ""
+#~ "Indywidualne doradztwo,\n"
+#~ "                            szybka realizacja i wsparcie po zakończeniu prac"
+
+#~ msgid ""
+#~ "Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,\n"
+#~ "                            a także wsparcie po zakończeniu projektu.\n"
+#~ "                            Szybko i terminowo realizujemy prace, dbając o "
+#~ "najwyższą jakość i zadowolenie klienta.\n"
+#~ "                            Pomagamy również w kwestiach serwisowych po "
+#~ "zakończeniu prac."
+#~ msgstr ""
+#~ "Zapewniamy fachowe doradztwo na każdym etapie wykończenia i modernizacji,\n"
+#~ "                            a także wsparcie po zakończeniu projektu.\n"
+#~ "                            Szybko i terminowo realizujemy prace, dbając o "
+#~ "najwyższą jakość i zadowolenie klienta.\n"
+#~ "                            Pomagamy również w kwestiach serwisowych po "
+#~ "zakończeniu prac."

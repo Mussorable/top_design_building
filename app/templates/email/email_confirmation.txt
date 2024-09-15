@@ -1,6 +1,6 @@
-Thank you for providing your email address. We have successfully received it, and we will use this email to contact you as soon as possible.
+{{ _("Thank you for providing your email address. We have successfully received it, and we will use this email to contact you as soon as possible.") }}
 
-If you did not send us this email, please ignore this message.
+{{ _("If you did not send us this email, please ignore this message.") }}
 
-Best regards,
-Top Design
+{{ _("Best regards,") }}
+{{ website_title }}

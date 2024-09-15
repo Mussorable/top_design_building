@@ -44,29 +44,35 @@
 </head>
 <body>
     <div class="email-container">
-        <p>Dear {{ user.full_name }},</p>
-        <p>Thank you for reaching out! We’ve received your request through our contact form and will be in touch very soon.</p>
+        <p>{{ _("Dear") }} {{ user.full_name }},</p>
+        <p>{{ _("Thank you for reaching out! We’ve received your request through our contact form and will be in touch very soon.") }}</p>
 
         <div class="summary">
-            <h3>Here’s a summary of your submission:</h3>
-            <p><strong>Name:</strong> {{ user.full_name }}</p>
-            <p><strong>Email:</strong> {{ user.email }}</p>
-            <p><strong>Phone Number:</strong> {{ user.phone_number }}</p>
-            <p><strong>Message:</strong> {{ user_message.text_message }}</p>
+            <h3>{{ _("Here’s a summary of your submission:") }}</h3>
+            <p><strong>{{ _("Name:") }}</strong> {{ user.full_name }}</p>
+            <p><strong>{{ _("Email:") }}</strong> {{ user.email }}</p>
+            <p><strong>{{ _("Phone Number:") }}</strong> {{ user.phone_number }}</p>
+            <p><strong>{{ _("Message:") }}</strong> {{ user_message.text_message }}</p>
         </div>
 
-        <p>One of our team members will reach out to you within [X] business days to discuss your inquiry.
+        {% set business_email %}
+            <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>
+        {% endset %}
+        {% set business_phone_number %}
+            <a href="tel:{{ contact_phone }}">{{ contact_phone }}</a>
+        {% endset %}
+        <p>{{ _("One of our team members will reach out to you within 5 days to discuss your inquiry.
             If you need immediate assistance, please don’t hesitate to contact us directly
-            at <a href="mailto:[Your Email Address]">[Your Email Address]</a> or call us at
-            <a href="tel:+48723569435">+48 723 569 435</a>.</p>
+            at %(business_mail)s or call us at %(business_phone_number)s.", business_mail=business_mail, business_phone_number=business_phone_number) }}</p>
 
-        <p>We look forward to connecting with you soon!</p>
+        <p>{{ _("We look forward to connecting with you soon!") }}</p>
         <div style="display: flex; align-items: center; justify-content: space-between;">
             <div class="footer">
-                <p>Best regards,<br>
-                Top Design<br>
-                <a href="[Company Website URL]">[Company Website URL]</a><br>
-                <a href="tel:+48723569435">+48 723 569 435</a></p>
+                <p>{{ _("Best regards,") }}<br>
+                    {{ website_title }}<br>
+                    <a href="mailto:{{ contact_email }}">{{ contact_email }}</a><br>
+                    <a href="tel:{{ contact_phone }}">{{ contact_phone }}</a>
+                </p>
             </div>
             <img style="display: inline-block; margin-block: .83em;" src="data:image/png;base64, {{ logo_base64 }}" width="56px" height="56px" alt="logo">
         </div>

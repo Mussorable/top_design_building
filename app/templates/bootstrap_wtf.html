@@ -11,7 +11,7 @@
         {% else %}
             <div class="form-group bmd-form-group">
                 {{ field.label(class="bmd-label-floating") }}
-                {{ field(class="form-control") }}
+                {{ field(class="form-control", autocomplete=autocomplete) }}
             </div>
         {% endif %}
     {% elif field.type == "SubmitField" %}
@@ -28,7 +28,7 @@
     {% else %}
         <div class="form-group bmd-form-group">
             {{ field.label(class="bmd-label-floating") }}
-            {{ field(class="form-control") }}
+            {{ field(class="form-control", autocomplete=autocomplete) }}
         </div>
     {% endif %}
 {% endmacro %}
