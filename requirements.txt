@@ -64,7 +64,6 @@ PyYAML==6.0.1
 regex==2024.4.28
 requests==2.31.0
 s3transfer==0.10.2
-sepolicy==3.6
 setools==4.5.1
 setuptools==72.1.0
 simpleline==1.9.0
