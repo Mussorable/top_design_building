@@ -27,7 +27,6 @@ Flask-Migrate==4.0.7
 Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.2.1
 folium==0.17.0
-fros==1.1
 greenlet==3.0.3
 gunicorn==23.0.0
 humanize==3.13.1
