@@ -17,7 +17,6 @@ cryptography==41.0.7
 cssmin==0.2.0
 dasbus==1.7
 distro==1.9.0
-dnf==4.21.1
 dnspython==2.6.1
 email_validator==2.2.0
 fedora-third-party==0.10
