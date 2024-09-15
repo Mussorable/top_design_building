@@ -75,5 +75,4 @@ urllib3==1.26.19
 webassets==2.0
 Werkzeug==3.0.3
 WTForms==3.1.2
-xkbregistry==0.3
 xyzservices==2024.6.0
