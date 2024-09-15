@@ -33,6 +33,7 @@ humanize==3.13.1
 idna==3.7
 iso639==0.1.4
 xdg==6.0.0
+pyxdg==0.28
 itsdangerous==2.2.0
 Jinja2==3.1.4
 jmespath==1.0.1
