@@ -38,6 +38,7 @@ Flask-WTF==1.2.1
 folium==0.17.0
 fros==1.1
 greenlet==3.0.3
+gunicorn==23.0.0
 humanize==3.13.1
 idna==3.7
 iso639==0.1.4
@@ -63,6 +64,7 @@ pid==2.2.3
 pillow==10.3.0
 ply==3.11
 productmd==1.38
+psycopg2-binary==2.9.9
 ptyprocess==0.7.0
 pwquality==1.4.5
 pycairo==1.25.1
