@@ -42,7 +42,6 @@ lxml==5.1.0
 Mako==1.2.3
 MarkupSafe==2.1.3
 numpy==2.0.1
-pyxdg==0.28
 olefile==0.47
 packaging==23.2
 Paste==3.7.1
