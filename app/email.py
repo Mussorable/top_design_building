@@ -59,7 +59,7 @@ def send_administrator_notification(user, user_message=""):
     send_mail(
         _('[%(title)s] Notification - New Contact Record', title=app.config['TITLE']),
         sender=app.config['ADMINS'],
-        recipients=app.config['CONTACT_EMAIL'],
+        recipients=[app.config['CONTACT_EMAIL']],
         text_body=render_template(
             'email/contact_record.txt',
             user=user,
