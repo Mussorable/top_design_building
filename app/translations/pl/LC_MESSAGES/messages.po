@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-15 13:59+0200\n"
-"PO-Revision-Date: 2024-09-15 14:01+0200\n"
+"POT-Creation-Date: 2024-09-16 19:20+0200\n"
+"PO-Revision-Date: 2024-09-16 19:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
@@ -19,6 +19,22 @@ msgstr ""
 "%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.16.0\n"
 "X-Generator: Poedit 3.5\n"
+
+#: app/email.py:31
+#, python-format
+msgid "[%(title)s] Contact Form Confirmation"
+msgstr "[%(title)s] Potwierdzenie Formularza Kontaktowego"
+
+#: app/email.py:43
+#, python-format
+msgid "[%(title)s] Email Confirmation - Thank You for Providing Your Email!"
+msgstr ""
+"[%(title)s] Potwierdzenie Emaila - Dziękujemy za Podanie Twojego Adresu Email!"
+
+#: app/email.py:60
+#, python-format
+msgid "[%(title)s] Notification - New Contact Record"
+msgstr "[%(title)s] Powiadomienie - Nowy Zapis Kontaktowy"
 
 #: app/forms.py:8
 msgid "Your name"
@@ -74,7 +90,7 @@ msgstr "O nas"
 msgid "Services"
 msgstr "Usługi"
 
-#: app/routes.py:84
+#: app/routes.py:87
 msgid ""
 "Thank you! Your message has been successfully sent. We’ll get back to you "
 "shortly."
@@ -82,21 +98,21 @@ msgstr ""
 "Dziękujemy! Twoja wiadomość została pomyślnie wysłana. Wkrótce się z Tobą "
 "skontaktujemy."
 
-#: app/routes.py:87
+#: app/routes.py:90 app/routes.py:182
 msgid "Oops! Something went wrong. Please try again or contact us directly."
 msgstr ""
 "Ups! Coś poszło nie tak. Proszę spróbować ponownie lub skontaktować się z nami "
 "bezpośrednio."
 
-#: app/routes.py:90 app/templates/about_us.html:110 app/templates/policy.html:108
+#: app/routes.py:93 app/templates/about_us.html:110 app/templates/policy.html:108
 msgid "Contact"
 msgstr "Kontakt"
 
-#: app/routes.py:103
+#: app/routes.py:106
 msgid "Realisations"
 msgstr "Realizacje"
 
-#: app/routes.py:124
+#: app/routes.py:127
 msgid ""
 "Sorry, the room type you're looking for doesn't exist. Please select a type that "
 "exists from the options below."
@@ -104,11 +120,11 @@ msgstr ""
 "Przepraszamy, typ pokoju, którego szukasz, nie istnieje. Proszę wybrać "
 "istniejący typ z poniższych opcji."
 
-#: app/routes.py:145
+#: app/routes.py:148
 msgid "Reviews"
 msgstr "Opinie"
 
-#: app/routes.py:156 app/templates/policy.html:9
+#: app/routes.py:159 app/templates/policy.html:9
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
@@ -1559,6 +1575,62 @@ msgstr ""
 "Od początkowej koncepcji po zakończenie projektu, nasze usługi doradcze obejmują "
 "ciągłe wsparcie, zapewniając Ci niezbędne doradztwo na każdym etapie realizacji."
 
+#: app/templates/email/contact_record.html:5
+msgid "New Contact Record"
+msgstr "Nowy Zapis Kontaktowy"
+
+#: app/templates/email/contact_record.html:31
+msgid "New Contact Record Submitted"
+msgstr "Nowy Zapis Kontaktowy Został Przesłany"
+
+#: app/templates/email/contact_record.html:32
+msgid "A new contact record has been submitted on your website:"
+msgstr "Na Twojej stronie internetowej został przesłany nowy zapis kontaktowy:"
+
+#: app/templates/email/contact_record.html:35
+msgid "Client Name:"
+msgstr "Nazwa Klienta:"
+
+#: app/templates/email/contact_record.html:39
+msgid "Client Email:"
+msgstr "Email Klienta:"
+
+#: app/templates/email/contact_record.html:45
+#: app/templates/email/contact_record.txt:9
+#: app/templates/email/form_confirmation.html:55
+#: app/templates/email/form_confirmation.txt:10
+msgid "Message:"
+msgstr "Twoja wiadomość:"
+
+#: app/templates/email/contact_record.html:50
+#: app/templates/email/contact_record.txt:12
+#: app/templates/email/email_confirmation.html:16
+#: app/templates/email/email_confirmation.txt:5
+#: app/templates/email/form_confirmation.html:71
+#: app/templates/email/form_confirmation.txt:15
+msgid "Best regards,"
+msgstr "Z poważaniem,"
+
+#: app/templates/email/contact_record.txt:3
+msgid "A new contact record has been submitted."
+msgstr "Został przesłany nowy zapis kontaktowy."
+
+#: app/templates/email/contact_record.txt:5
+msgid "Client Details:"
+msgstr "Dane Klienta:"
+
+#: app/templates/email/contact_record.txt:6
+#: app/templates/email/form_confirmation.html:52
+#: app/templates/email/form_confirmation.txt:7
+msgid "Name:"
+msgstr "Imię:"
+
+#: app/templates/email/contact_record.txt:7
+#: app/templates/email/form_confirmation.html:53
+#: app/templates/email/form_confirmation.txt:8
+msgid "Email:"
+msgstr "Twój email:"
+
 #: app/templates/email/email_confirmation.html:11
 msgid "Email Confirmation"
 msgstr "Potwierdzenie e-mail"
@@ -1577,13 +1649,6 @@ msgstr ""
 msgid "If you did not send us this email, please ignore this message."
 msgstr ""
 "Jeśli nie wysłałeś(-aś) do nas tego e-maila, prosimy zignorować tę wiadomość."
-
-#: app/templates/email/email_confirmation.html:16
-#: app/templates/email/email_confirmation.txt:5
-#: app/templates/email/form_confirmation.html:71
-#: app/templates/email/form_confirmation.txt:15
-msgid "Best regards,"
-msgstr "Z poważaniem,"
 
 #: app/templates/email/form_confirmation.html:47
 #: app/templates/email/form_confirmation.txt:1
@@ -1604,24 +1669,9 @@ msgstr ""
 msgid "Here’s a summary of your submission:"
 msgstr "Oto podsumowanie Twojego zgłoszenia:"
 
-#: app/templates/email/form_confirmation.html:52
-#: app/templates/email/form_confirmation.txt:7
-msgid "Name:"
-msgstr "Imię:"
-
-#: app/templates/email/form_confirmation.html:53
-#: app/templates/email/form_confirmation.txt:8
-msgid "Email:"
-msgstr "Twój email:"
-
 #: app/templates/email/form_confirmation.html:54
 msgid "Phone Number:"
 msgstr "Numer telefonu:"
-
-#: app/templates/email/form_confirmation.html:55
-#: app/templates/email/form_confirmation.txt:10
-msgid "Message:"
-msgstr "Twoja wiadomość:"
 
 #: app/templates/email/form_confirmation.html:64
 #, python-format
