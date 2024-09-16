@@ -1,5 +1,5 @@
 from app import app, db, get_locale
-from app.email import send_contact_confirmation, send_email_confirmation
+from app.email import send_contact_confirmation, send_email_confirmation, send_administrator_notification
 from app.logic.map import generate_map
 from app.logic.gallery_images import get_gallery
 from app.forms import ContactForm, EmailForm
@@ -82,6 +82,7 @@ def contact():
 
         if user_customer:
             send_contact_confirmation(user_customer, new_message)
+            send_administrator_notification(user_customer, new_message)
 
         flash(_('Thank you! Your message has been successfully sent. We’ll get back to you shortly.'), 'success')
         return redirect(url_for('index'))

@@ -2,6 +2,7 @@ import base64
 
 from flask import render_template
 from flask_mail import Message
+from flask_babel import _
 from app import app, mail
 
 from threading import Thread
@@ -27,7 +28,7 @@ def send_mail(subject, sender, recipients, text_body, html_body):
 
 def send_contact_confirmation(user, user_message):
     send_mail(
-        '[Top Design] Contact Form Confirmation',
+        _('[%(title)s] Contact Form Confirmation', title=app.config['TITLE']),
         sender=app.config['ADMINS'],
         recipients=[user.email],
         text_body=render_template('email/form_confirmation.txt',
@@ -39,7 +40,7 @@ def send_contact_confirmation(user, user_message):
 
 def send_email_confirmation(email_record):
     send_mail(
-        '[Top Design] Email Confirmation - Thank You for Providing Your Email!',
+        _('[%(title)s] Email Confirmation - Thank You for Providing Your Email!', title=app.config['TITLE']),
         sender=app.config['ADMINS'],
         recipients=[email_record.email],
         text_body=render_template(
@@ -49,5 +50,21 @@ def send_email_confirmation(email_record):
             contact_email=app.config['CONTACT_EMAIL'],
             contact_phone=app.config['CONTACT_PHONE'],
         ),
-        html_body=render_template('email/email_confirmation.html', email_record=email_record, website_title=app.config['TITLE']),
+        html_body=render_template('email/email_confirmation.html', email_record=email_record,
+                                  website_title=app.config['TITLE']),
+    )
+
+
+def send_administrator_notification(user, user_message=""):
+    send_mail(
+        _('[%(title)s] Notification - New Contact Record', title=app.config['TITLE']),
+        sender=app.config['ADMINS'],
+        recipients=app.config['CONTACT_EMAIL'],
+        text_body=render_template(
+            'email/contact_record.txt',
+            user=user,
+            user_message=user_message,
+            website_title=app.config['TITLE']
+        ),
+        html_body=render_template('email/contact_record.html', user=user, user_message=user_message),
     )

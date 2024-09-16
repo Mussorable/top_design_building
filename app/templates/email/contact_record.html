@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ _("New Contact Record") }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .message {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{ _("New Contact Record Submitted") }}</h2>
+        <p>{{ _("A new contact record has been submitted on your website:") }}</p>
+        <table>
+            <tr>
+                <td><strong>{{ _("Client Name:") }}</strong></td>
+                <td>{{ user.name }}</td>
+            </tr>
+            <tr>
+                <td><strong>{{ _("Client Email:") }}</strong></td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </table>
+
+        <div class="message">
+            <h3>{{ _("Message:") }}</h3>
+            <p>{{ user_message }}</p>
+        </div>
+
+        <div class="footer">
+            <p>{{ _("Best regards,") }}<br>{{ website_title }}</p>
+        </div>
+    </div>
+</body>
+</html>

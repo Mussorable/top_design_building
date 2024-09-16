@@ -1,0 +1,13 @@
+{{ _(Hello,) }}
+
+{{ _("A new contact record has been submitted.") }}
+
+{{ _("Client Details:") }}
+{{ _("Name:") }} {{ user.name }}
+{{ _("Email:") }} {{ user.email }}
+
+{{ _("Message:") }}
+{{ user_message }}
+
+{{ _("Best regards,") }}
+{{ website_title }}
