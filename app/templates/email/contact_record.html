@@ -33,17 +33,21 @@
         <table>
             <tr>
                 <td><strong>{{ _("Client Name:") }}</strong></td>
-                <td>{{ user.name }}</td>
+                <td>{{ user.full_name }}</td>
             </tr>
             <tr>
                 <td><strong>{{ _("Client Email:") }}</strong></td>
                 <td>{{ user.email }}</td>
             </tr>
+            <tr>
+                <td><strong>{{ _("Phone Number:") }}</strong></td>
+                <td>{{ user.phone_number }}</td>
+            </tr>
         </table>
 
         <div class="message">
             <h3>{{ _("Message:") }}</h3>
-            <p>{{ user_message }}</p>
+            <p>{{ user_message.text_message }}</p>
         </div>
 
         <div class="footer">

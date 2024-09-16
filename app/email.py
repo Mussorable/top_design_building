@@ -66,5 +66,6 @@ def send_administrator_notification(user, user_message=""):
             user_message=user_message,
             website_title=app.config['TITLE']
         ),
-        html_body=render_template('email/contact_record.html', user=user, user_message=user_message),
+        html_body=render_template('email/contact_record.html', user=user, user_message=user_message,
+                                  website_title=app.config['TITLE']),
     )
