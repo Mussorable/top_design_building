@@ -1,4 +1,4 @@
-{{ _(Hello,) }}
+{{ _("Hello,") }}
 
 {{ _("A new contact record has been submitted.") }}
 

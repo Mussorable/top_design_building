@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-16 19:20+0200\n"
-"PO-Revision-Date: 2024-09-16 19:25+0200\n"
+"POT-Creation-Date: 2024-09-16 20:13+0200\n"
+"PO-Revision-Date: 2024-09-16 20:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: de <LL@li.org>\n"
 "Language: de\n"
@@ -1638,6 +1638,10 @@ msgstr "Nachricht:"
 #: app/templates/email/form_confirmation.txt:15
 msgid "Best regards,"
 msgstr "Mit freundlichen Grüßen,"
+
+#: app/templates/email/contact_record.txt:1
+msgid "Hello,"
+msgstr "Hallo,"
 
 #: app/templates/email/contact_record.txt:3
 msgid "A new contact record has been submitted."

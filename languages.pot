@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-16 19:20+0200\n"
+"POT-Creation-Date: 2024-09-16 20:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1400,6 +1400,10 @@ msgstr ""
 #: app/templates/email/form_confirmation.html:71
 #: app/templates/email/form_confirmation.txt:15
 msgid "Best regards,"
+msgstr ""
+
+#: app/templates/email/contact_record.txt:1
+msgid "Hello,"
 msgstr ""
 
 #: app/templates/email/contact_record.txt:3
