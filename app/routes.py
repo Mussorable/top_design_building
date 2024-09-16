@@ -57,7 +57,10 @@ def contact():
         phone_number = contact_form.phone_number.data
         text_message = contact_form.message.data
 
-        user_customer = User.query.filter_by(email=email).first()
+        if phone_number.startswith('+48 '):
+            phone_number = phone_number.replace('+48 ', '')
+
+        user_customer = User.query.filter_by(email=email, phone_number=phone_number).first()
         email_record = User.query.filter_by(email=email).first()
         if not user_customer:
             user_customer = User(
@@ -71,9 +74,8 @@ def contact():
         if not email_record:
             email_record = ContactEmail(email=email)
             db.session.add(email_record)
-            db.session.flush()
 
-        new_message = Message(text_message=text_message, user_id=user_customer.id, contact_email_id=email_record.id)
+        new_message = Message(text_message=text_message, user_id=user_customer.id)
         db.session.add(new_message)
 
         db.session.commit()
@@ -171,16 +173,13 @@ def submit_email():
         if not email_record:
             email_record = ContactEmail(email=email_address)
             db.session.add(email_record)
+            db.session.commit()
 
-        user = User.query.filter_by(email=email_address).first()
-        Message.query.filter_by(user_id=user.id).update(
-            {'contact_email_id': email_record.id},
-        )
-
-        db.session.commit()
-
-        if email_form:
+        if email_record:
             send_email_confirmation(email_record)
+        else:
+            flash(_('Oops! Something went wrong. Please try again or contact us directly.'), 'danger')
+            return redirect(url_for('realisations'))
 
         flash(_('Your email has been successfully sent and saved. '
                 'We appreciate your interest and will get back to you shortly.'))

@@ -26,8 +26,6 @@ class ContactEmail(db.Model):
     id: so.Mapped[int] = so.mapped_column(primary_key=True)
     email: so.Mapped[str] = so.mapped_column(sa.String(120), index=True)
 
-    messages: so.Mapped[List['Message']] = so.relationship('Message', backref='contact_email', lazy=True)
-
     def __repr__(self):
         return f'<Contact Email {self.email}>'
 
@@ -40,8 +38,6 @@ class Message(db.Model):
     timestamp: so.Mapped[datetime] = so.mapped_column(sa.DateTime, default=datetime.now(timezone.utc))
 
     user_id: so.Mapped[Optional[int]] = so.mapped_column(sa.Integer, sa.ForeignKey('users.id'), nullable=True)
-    contact_email_id: so.Mapped[Optional[int]] = so.mapped_column(sa.Integer, sa.ForeignKey('contact_emails.id'),
-                                                                  nullable=True)
 
     def __repr__(self):
-        return f'<Message {self.id} | User ID: {self.user_id} | Contact Email ID: {self.contact_email_id}>'
+        return f'<Message {self.id} | User ID: {self.user_id}>'
