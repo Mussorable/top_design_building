@@ -9,7 +9,7 @@ class ContactForm(FlaskForm):
     email = EmailField(_l('Your email'), validators=[DataRequired(), Email()])
     phone_number = StringField(_l('Your phone number'), validators=[
         DataRequired(),
-        Regexp(r'^\+?1?(\d{3}\s?){2,5}\d{3}$', message=_l("Invalid phone number format.")),
+        Regexp(r'^(\+?48)?\s?(\d{3}\s?){2}\d{3}$', message=_l("Invalid phone number format.")),
         Length(min=10, max=15, message=_l("Phone number must be between 10 and 15 digits."))
     ])
     message = TextAreaField(_l('Your message'), validators=[DataRequired()])
