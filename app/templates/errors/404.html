@@ -18,9 +18,9 @@
                         <p class="error-description">{{ _("It looks like the page you're looking for doesn't exist.
                         But don't worry, we've got a main option for you:") }}</p>
                         <ul class="error-menu-list">
-                            <li class="error-menu-item">Go back to the <a href="{{ url_for('index') }}">homepage</a>.</li>
+                            <li class="error-menu-item">Go back to the <a href="{{ url_for('main.index') }}">homepage</a>.</li>
                         </ul>
-                        <p class="error-description-footer">If you believe this is an error, please <a href="{{ url_for('contact') }}">contact us</a>. In the meantime,
+                        <p class="error-description-footer">If you believe this is an error, please <a href="{{ url_for('main.contact') }}">contact us</a>. In the meantime,
                             feel free to explore the rest of the site!</p>
                     </div>
                 </div>
