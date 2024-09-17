@@ -23,21 +23,21 @@
     <header class="p-3 bg-dark text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="{{ url_for('index') }}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <a href="{{ url_for('main.index') }}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <img src="{{ url_for('static', filename='svg/logo.svg') }}" alt="Logo" width="48px" height="48px">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">{{ _('Home') }}</a></li>
-                    <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">{{ _('About Us') }}</a></li>
-                    <li><a href="{{ url_for('services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
-                    <li><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">{{ _('Realisations') }}</a></li>
+                    <li><a href="{{ url_for('main.index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">{{ _('Home') }}</a></li>
+                    <li><a href="{{ url_for('main.about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">{{ _('About Us') }}</a></li>
+                    <li><a href="{{ url_for('main.services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
+                    <li><a href="{{ url_for('main.realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">{{ _('Realisations') }}</a></li>
                 </ul>
 {#                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">#}
 {#                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">#}
 {#                </form>#}
                 <ul class="nav mb-md-0 justify-content-center">
-                    <li><a href="{{ url_for('reviews') }}" class="btn btn-outline-light me-2">{{ _('Reviews') }}</a></li>
-                    <li><a href="{{ url_for('contact') }}" class="btn btn-warning">{{ _('Contact') }}</a></li>
+                    <li><a href="{{ url_for('main.reviews') }}" class="btn btn-outline-light me-2">{{ _('Reviews') }}</a></li>
+                    <li><a href="{{ url_for('main.contact') }}" class="btn btn-warning">{{ _('Contact') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -72,22 +72,22 @@
                     <h4 class="footer-title">{{ _("Got a Question? Share your email and We'll write you") }}</h4>
                 </div>
                 <div class="col-lg-4 footer-input-container">
-                    {{ wtf.quick_form(email_form, position_on_page="footer", action=url_for('submit_email')) }}
+                    {{ wtf.quick_form(email_form, position_on_page="footer", action=url_for('main.submit_email')) }}
                 </div>
             </div>
             <div class="row footer-navigation">
                 <div class="col-lg-8">
                     <ul class="nav justify-content-start">
-                        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Home') }}</a></li>
-                        <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link px-2 text-white fw-bolder">{{ _('About Us') }}</a></li>
-                        <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Services') }}</a></li>
-                        <li class="nav-item"><a href="{{ url_for('realisations') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Realisations') }}</a></li>
-                        <li class="nav-item"><a href="{{ url_for('reviews') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Reviews') }}</a></li>
-                        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Contact') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.index') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Home') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.about') }}" class="nav-link px-2 text-white fw-bolder">{{ _('About Us') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.services') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Services') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.realisations') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Realisations') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.reviews') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Reviews') }}</a></li>
+                        <li class="nav-item"><a href="{{ url_for('main.contact') }}" class="nav-link px-2 text-white fw-bolder">{{ _('Contact') }}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 text-end">
-                    <a href="{{ url_for('policy') }}" class="footer-terms-links text-white fw-bolder px-2">{{ _('Privacy Policy') }}</a>
+                    <a href="{{ url_for('main.policy') }}" class="footer-terms-links text-white fw-bolder px-2">{{ _('Privacy Policy') }}</a>
                 </div>
             </div>
         </div>
