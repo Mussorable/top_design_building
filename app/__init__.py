@@ -69,10 +69,12 @@ def create_app(config_class=Config):
         app.logger.setLevel(logging.INFO)
         app.logger.info('App startup')
 
-    js_bundle = Bundle('js/main.js', filters='jsmin', output='js/main.min.js')
-    assets.register('js_all', js_bundle)
+    if not app.config['TESTING']:
+        js_bundle = Bundle('js/main.js', filters='jsmin', output='js/main.min.js')
+        assets.register('js_all', js_bundle)
 
-    css_bundle = Bundle('css/main.scss', filters='libsass', output='css/main.min.css')
-    assets.register('css_all', css_bundle)
+    if not app.config['TESTING']:
+        css_bundle = Bundle('css/main.scss', filters='libsass', output='css/main.min.css')
+        assets.register('css_all', css_bundle)
 
     return app
