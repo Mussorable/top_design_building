@@ -1,7 +1,6 @@
 import unittest
 
 from app import create_app, db
-from app.main.routes import contact
 from app.models import User, ContactEmail, Message
 from config import Config
 
