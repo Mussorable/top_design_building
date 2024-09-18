@@ -19,6 +19,7 @@ def index():
         'index.html',
         title=current_app.config['TITLE'],
         header_image='new_apartment',
+        active_page=request.endpoint,
         is_under_header_caption=True
     )
 
