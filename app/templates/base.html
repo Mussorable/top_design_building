@@ -27,10 +27,10 @@
                     <img src="{{ url_for('static', filename='svg/logo.svg') }}" alt="Logo" width="48px" height="48px">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="{{ url_for('main.index') }}" class="nav-link px-2 text-white {% if active_page == 'index' %}active{% endif %}">{{ _('Home') }}</a></li>
-                    <li><a href="{{ url_for('main.about') }}" class="nav-link px-2 text-white {% if active_page == 'about' %}active{% endif %}">{{ _('About Us') }}</a></li>
-                    <li><a href="{{ url_for('main.services') }}" class="nav-link px-2 text-white {% if active_page == 'services' %}active{% endif %}">{{ _('Services') }}</a></li>
-                    <li><a href="{{ url_for('main.realisations') }}" class="nav-link px-2 text-white {% if active_page == 'realisations' %}active{% endif %}">{{ _('Realisations') }}</a></li>
+                    <li><a href="{{ url_for('main.index') }}" class="nav-link px-2 text-white {% if active_page == 'main.index' %}active{% endif %}">{{ _('Home') }}</a></li>
+                    <li><a href="{{ url_for('main.about') }}" class="nav-link px-2 text-white {% if active_page == 'main.about' %}active{% endif %}">{{ _('About Us') }}</a></li>
+                    <li><a href="{{ url_for('main.services') }}" class="nav-link px-2 text-white {% if active_page == 'main.services' %}active{% endif %}">{{ _('Services') }}</a></li>
+                    <li><a href="{{ url_for('main.realisations') }}" class="nav-link px-2 text-white {% if active_page == 'main.realisations' %}active{% endif %}">{{ _('Realisations') }}</a></li>
                 </ul>
 {#                <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">#}
 {#                    <input id="search-bar" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">#}

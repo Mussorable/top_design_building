@@ -121,6 +121,8 @@ html {
       &>div {
         a.nav-link {
           transition: all .3s;
+          text-transform: uppercase;
+          font-size: 15px;
 
           &:hover {
             color: $orange-main !important;

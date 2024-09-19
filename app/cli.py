@@ -1,7 +1,9 @@
 import os
+import sys
 import click
 
 from flask import Blueprint
+from manager import COV
 
 bp = Blueprint('cli', __name__, cli_group=None)
 
@@ -38,3 +40,25 @@ def compile():
     """Compile all languages."""
     if os.system('pybabel compile -d app/translations'):
         raise RuntimeError('compile command failed')
+
+
+@bp.cli.command()
+@click.option('--coverage/--no-coverage', default=False, help='Coverage Ticker app')
+def test(coverage):
+    """Run the unit tests."""
+    if coverage and not os.environ.get('FLASK_COVERAGE'):
+        os.environ['FLASK_COVERAGE'] = '1'
+        os.execvp(sys.executable, [sys.executable] + sys.argv)
+    import unittest
+    tests = unittest.TestLoader().discover('app/tests', pattern='test*.py')
+    unittest.TextTestRunner(verbosity=2).run(tests)
+    if COV:
+        COV.stop()
+        COV.save()
+        print('Coverage Summary:')
+        COV.report()
+        basedir = os.path.abspath(os.path.dirname(__file__))
+        covdir = os.path.join(basedir, 'tmp/coverage')
+        COV.html_report(directory=covdir)
+        print('HTML version: file://%s/index.html' % covdir)
+        COV.erase()

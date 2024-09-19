@@ -19,6 +19,7 @@ def index():
         'index.html',
         title=current_app.config['TITLE'],
         header_image='new_apartment',
+        active_page=request.endpoint,
         is_under_header_caption=True
     )
 
@@ -114,7 +115,7 @@ def contact():
             phone_number = phone_number.replace('+48 ', '')
 
         user_customer = User.query.filter_by(email=email, phone_number=phone_number).first()
-        email_record = User.query.filter_by(email=email).first()
+        email_record = ContactEmail.query.filter_by(email=email).first()
         if not user_customer:
             user_customer = User(
                 full_name=full_name,
