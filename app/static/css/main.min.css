@@ -118,6 +118,24 @@ html .scrolling-fast-up {
 html .mr-auto {
   margin-right: auto; }
 
+html #section-2 {
+  position: relative; }
+  html #section-2:after {
+    background: #232323;
+    background: linear-gradient(90deg, #232323 1%, rgba(83, 83, 83, 0) 20%, rgba(84, 84, 84, 0) 28%, rgba(87, 87, 87, 0) 72%, rgba(88, 88, 88, 0) 80%, #232323 99%);
+    content: "";
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  html #section-2 > .container {
+    margin-inline: 0;
+    max-width: none; }
+    html #section-2 > .container .row.mb-1.text-center.justify-content-center.gy-4 {
+      position: relative; }
+
 html .move-left {
   animation-name: moveLeft; }
 
@@ -490,7 +508,7 @@ html .section {
     margin-bottom: 25px; }
     html .section > .container > .row > .header-text > .main-offer {
       font-weight: 600; }
-  html .section > .row > div > .glide {
+  html .section > .container > .row > div > .glide {
     animation-duration: 600ms;
     animation-timing-function: ease;
     animation-delay: 0ms;
@@ -499,27 +517,27 @@ html .section {
     overflow: hidden;
     position: relative;
     width: 100%; }
-    html .section > .row > div > .glide > .track {
+    html .section > .container > .row > div > .glide > .track {
       animation: glide 100s linear infinite;
       white-space: nowrap;
       will-change: transform; }
-    html .section > .row > div > .glide > .track-2 {
+    html .section > .container > .row > div > .glide > .track-2 {
       animation: glideRight 100s linear infinite;
       white-space: nowrap;
       will-change: transform; }
-    html .section > .row > div > .glide .track > .service-option,
-    html .section > .row > div > .glide .track-2 > .service-option {
+    html .section > .container > .row > div > .glide .track > .service-option,
+    html .section > .container > .row > div > .glide .track-2 > .service-option {
       border: 4px solid #333;
       background-color: #fff;
       border-radius: 30px;
       text-align: center;
       flex: 0 0 auto; }
-      html .section > .row > div > .glide .track > .service-option > .option-name > p,
-      html .section > .row > div > .glide .track-2 > .service-option > .option-name > p {
+      html .section > .container > .row > div > .glide .track > .service-option > .option-name > p,
+      html .section > .container > .row > div > .glide .track-2 > .service-option > .option-name > p {
         margin: 0;
         font-weight: 500; }
-      html .section > .row > div > .glide .track > .service-option i.fa-circle-dot,
-      html .section > .row > div > .glide .track-2 > .service-option i.fa-circle-dot {
+      html .section > .container > .row > div > .glide .track > .service-option i.fa-circle-dot,
+      html .section > .container > .row > div > .glide .track-2 > .service-option i.fa-circle-dot {
         font-size: 12px;
         color: #f84f1c;
         opacity: 0.85; }
@@ -834,7 +852,10 @@ header {
 
 @media screen and (max-width: 992px) {
   .page-name {
-    font-size: 4.2rem !important; }
+    font-size: 3.2rem !important; }
+  .page-main-motto,
+  .page-secondary-motto {
+    font-size: 2rem !important; }
   .page-footer .footer-navigation .nav.justify-content-start {
     justify-content: center !important; }
   .container-raised {
@@ -867,6 +888,8 @@ header {
         display: none; } }
 
 @media screen and (max-width: 768px) {
+  #section-2:after {
+    background: linear-gradient(90deg, #232323 1%, rgba(83, 83, 83, 0) 20%, rgba(84, 84, 84, 0) 28%, rgba(87, 87, 87, 0) 72%, rgba(88, 88, 88, 0) 80%, #232323 99%) !important; }
   .statistics .stats-row:last-child {
     margin-top: 0 !important; }
   .realisations-menu {

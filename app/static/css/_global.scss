@@ -89,6 +89,31 @@ html {
       margin-right: auto;
   }
 
+  #section-2 {
+    position: relative;
+
+    &:after {
+      background: rgb(35,35,35);
+      background: linear-gradient(90deg, rgba(35,35,35,1) 1%, rgba(83,83,83,0) 20%, rgba(84,84,84,0) 28%, rgba(87,87,87,0) 72%, rgba(88,88,88,0) 80%, rgba(35,35,35,1) 99%);
+      content: "";
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &>.container {
+      margin-inline: 0;
+      max-width: none;
+
+      .row.mb-1.text-center.justify-content-center.gy-4 {
+        position: relative;
+      }
+    }
+  }
+
   .move-left {
       animation-name: moveLeft;
   }
@@ -709,57 +734,55 @@ html {
       }
     }
 
-    &>.row {
-      &>div {
-        &>.glide {
-          animation-duration: 600ms;
-          animation-timing-function: ease;
-          animation-delay: 0ms;
-          animation-direction: normal;
-          animation-fill-mode: both;
-          overflow: hidden;
-          position: relative;
-          width: 100%;
+    &>.container {
+      & > .row {
+        & > div {
+          & > .glide {
+            animation-duration: 600ms;
+            animation-timing-function: ease;
+            animation-delay: 0ms;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
 
-          &>.track {
-            animation: glide 100s linear infinite;
-            white-space: nowrap;
-            will-change: transform;
-          }
-
-          &>.track-2 {
-            animation: glideRight 100s linear infinite;
-            white-space: nowrap;
-            will-change: transform;
-          }
-
-          .track>.service-option,
-          .track-2>.service-option {
-            border: 4px solid $black;
-            background-color: $white-true;
-            border-radius: 30px;
-            text-align: center;
-            flex: 0 0 auto;
-
-            &>.option-name {
-              &>p {
-                margin: 0;
-                font-weight: 500;
-              }
+            & > .track {
+              animation: glide 100s linear infinite;
+              white-space: nowrap;
+              will-change: transform;
             }
 
-            i.fa-circle-dot {
-              font-size: 12px;
-              color: $orange-main;
-              opacity: 0.85;
+            & > .track-2 {
+              animation: glideRight 100s linear infinite;
+              white-space: nowrap;
+              will-change: transform;
+            }
+
+            .track > .service-option,
+            .track-2 > .service-option {
+              border: 4px solid $black;
+              background-color: $white-true;
+              border-radius: 30px;
+              text-align: center;
+              flex: 0 0 auto;
+
+              & > .option-name {
+                & > p {
+                  margin: 0;
+                  font-weight: 500;
+                }
+              }
+
+              i.fa-circle-dot {
+                font-size: 12px;
+                color: $orange-main;
+                opacity: 0.85;
+              }
             }
           }
         }
       }
-    }
-
-    &>.select-services {
-
     }
   }
 

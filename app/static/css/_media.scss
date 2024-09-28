@@ -46,7 +46,12 @@
 
 @media screen and (max-width: 992px) {
     .page-name {
-        font-size: 4.2rem !important;
+        font-size: 3.2rem !important;
+    }
+
+    .page-main-motto,
+    .page-secondary-motto {
+        font-size: 2rem !important;
     }
 
     .page-footer .footer-navigation .nav.justify-content-start {
@@ -107,6 +112,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    #section-2 {
+        &:after {
+            background: linear-gradient(90deg, rgba(35,35,35,1) 1%, rgba(83,83,83,0) 20%, rgba(84,84,84,0) 28%, rgba(87,87,87,0) 72%, rgba(88,88,88,0) 80%, rgba(35,35,35,1) 99%) !important;
+        }
+    }
+
     .statistics .stats-row:last-child {
         margin-top: 0 !important;
     }
