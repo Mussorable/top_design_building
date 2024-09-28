@@ -8,6 +8,19 @@ html {
     font-size: 18px;
   }
 
+  .fa-magnifying-glass {
+    position: absolute;
+    font-size: 24px;
+    padding: 10px;
+    opacity: 0;
+    color: $orange-main;
+    border-radius: 50%;
+    background-color: $white-true;
+    left: calc(50% - 23px);
+    top: calc(50% - 23px);
+    border: 1px solid $orange-main;
+  }
+
   .option-raised {
     position: relative;
     overflow: hidden;
@@ -391,15 +404,22 @@ html {
               }
 
               &>.stats-column {
-                &>.column-title {
-                  font-size: 24px;
-                  margin: 0;
-                }
+                display: flex;
+                justify-content: space-around;
 
-                &>.column-value {
-                  color: $orange-main;
-                  font-size: 62px;
-                  margin-block: 0;
+                &>.stats-wrap {
+                  width: 200px;
+
+                  &>.column-title {
+                    font-size: 24px;
+                    margin: 0;
+                  }
+
+                  &>.column-value {
+                    color: $orange-main;
+                    font-size: 62px;
+                    margin-block: 0;
+                  }
                 }
               }
             }
@@ -502,19 +522,6 @@ html {
               overflow: hidden;
               max-height: 400px;
               height: 400px;
-
-              &>.fa-magnifying-glass {
-                position: absolute;
-                font-size: 24px;
-                padding: 10px;
-                opacity: 0;
-                color: $orange-main;
-                border-radius: 50%;
-                background-color: $white-true;
-                left: calc(50% - 23px);
-                top: calc(50% - 23px);
-                border: 1px solid $orange-main;
-              }
 
               &>.content-image {
                 width: 100%;

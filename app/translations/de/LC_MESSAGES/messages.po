@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-16 20:13+0200\n"
-"PO-Revision-Date: 2024-09-16 20:14+0200\n"
+"POT-Creation-Date: 2024-09-28 14:58+0200\n"
+"PO-Revision-Date: 2024-09-28 14:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: de <LL@li.org>\n"
 "Language: de\n"
@@ -19,102 +19,84 @@ msgstr ""
 "Generated-By: Babel 2.16.0\n"
 "X-Generator: Poedit 3.5\n"
 
-#: app/email.py:31
+#: app/email.py:26
 #, python-format
 msgid "[%(title)s] Contact Form Confirmation"
 msgstr "[%(title)s] Bestätigung des Kontaktformulars"
 
-#: app/email.py:43
+#: app/email.py:38
 #, python-format
 msgid "[%(title)s] Email Confirmation - Thank You for Providing Your Email!"
 msgstr ""
 "[%(title)s] E-Mail-Bestätigung - Vielen Dank, dass Sie Ihre E-Mail-Adresse "
 "angegeben haben!"
 
-#: app/email.py:60
+#: app/email.py:55
 #, python-format
 msgid "[%(title)s] Notification - New Contact Record"
 msgstr "[%(title)s] Benachrichtigung - Neuer Kontaktantrag"
 
-#: app/forms.py:8
+#: app/main/forms.py:8
 msgid "Your name"
 msgstr "Dein Name"
 
-#: app/forms.py:9
+#: app/main/forms.py:9
 msgid "Your email"
 msgstr "Deine E-Mail"
 
-#: app/forms.py:10
+#: app/main/forms.py:10
 msgid "Your phone number"
 msgstr "Deine Telefonnummer"
 
-#: app/forms.py:12
+#: app/main/forms.py:12
 msgid "Invalid phone number format."
 msgstr "Ungültiges Telefonnummernformat."
 
-#: app/forms.py:13
+#: app/main/forms.py:13
 msgid "Phone number must be between 10 and 15 digits."
 msgstr "Die Telefonnummer muss zwischen 10 und 15 Ziffern enthalten."
 
-#: app/forms.py:15
+#: app/main/forms.py:15
 msgid "Your message"
 msgstr "Deine Nachricht"
 
-#: app/forms.py:16 app/templates/services.html:114
+#: app/main/forms.py:16 app/templates/services.html:114
 msgid "Contact Us"
 msgstr "Kontaktieren Sie uns"
 
-#: app/forms.py:20
+#: app/main/forms.py:20
 msgid "For any questions, offers or comments please fill out the following form."
 msgstr ""
 "Für alle Fragen, Angebote oder Kommentare füllen Sie bitte das folgende Formular "
 "aus."
 
-#: app/forms.py:22
+#: app/main/forms.py:22
 msgid "Submit"
 msgstr "Absenden"
 
-#: app/routes.py:15
+#: app/main/routes.py:16
 msgid "Home"
 msgstr "Startseite"
 
-#: app/routes.py:16
+#: app/main/routes.py:17
 msgid "Got a Question? Share your email and We'll write you"
 msgstr ""
 "Haben Sie eine Frage? Teilen Sie uns Ihre E-Mail mit und wir schreiben Ihnen "
 "zurück"
 
-#: app/routes.py:32
+#: app/main/routes.py:33
 msgid "About Us"
 msgstr "Über uns"
 
-#: app/routes.py:44
+#: app/main/routes.py:45
 msgid "Services"
 msgstr "Dienstleistungen"
 
-#: app/routes.py:87
-msgid ""
-"Thank you! Your message has been successfully sent. We’ll get back to you "
-"shortly."
-msgstr ""
-"Danke! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei "
-"Ihnen melden."
-
-#: app/routes.py:90 app/routes.py:182
-msgid "Oops! Something went wrong. Please try again or contact us directly."
-msgstr ""
-"Ups! Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren "
-"Sie uns direkt."
-
-#: app/routes.py:93 app/templates/about_us.html:110 app/templates/policy.html:108
-msgid "Contact"
-msgstr "Kontakt"
-
-#: app/routes.py:106
+#: app/main/routes.py:56
 msgid "Realisations"
 msgstr "Realisierungen"
 
-#: app/routes.py:127
+#: app/main/routes.py:77
 msgid ""
 "Sorry, the room type you're looking for doesn't exist. Please select a type that "
 "exists from the options below."
@@ -122,57 +104,40 @@ msgstr ""
 "Entschuldigung, der gesuchte Zimmertyp existiert nicht. Bitte wählen Sie einen "
 "verfügbaren Zimmertyp aus den unten stehenden Optionen."
 
-#: app/routes.py:148
+#: app/main/routes.py:98
 msgid "Reviews"
 msgstr "Bewertungen"
 
-#: app/routes.py:159 app/templates/policy.html:9
+#: app/main/routes.py:141
+msgid ""
+"Thank you! Your message has been successfully sent. We’ll get back to you "
+"shortly."
+msgstr ""
+"Danke! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei "
+"Ihnen melden."
+
+#: app/main/routes.py:144 app/main/routes.py:186
+msgid "Oops! Something went wrong. Please try again or contact us directly."
+msgstr ""
+"Ups! Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren "
+"Sie uns direkt."
+
+#: app/main/routes.py:147 app/templates/about_us.html:110
+#: app/templates/policy.html:108
+msgid "Contact"
+msgstr "Kontakt"
+
+#: app/main/routes.py:163 app/templates/policy.html:9
 msgid "Privacy Policy"
 msgstr "Datenschutzbestimmungen"
 
-#: app/routes.py:185
+#: app/main/routes.py:189
 msgid ""
 "Your email has been successfully sent and saved. We appreciate your interest and "
 "will get back to you shortly."
 msgstr ""
 "Ihre E-Mail wurde erfolgreich gesendet und gespeichert. Wir schätzen Ihr "
 "Interesse und werden uns in Kürze bei Ihnen melden."
-
-#: app/templates/404.html:9
-msgid "Oops! Page Not Found"
-msgstr "Ups! Seite nicht gefunden"
-
-#: app/templates/404.html:18
-msgid ""
-"It looks like the page you're looking for doesn't exist.\n"
-"                        But don't worry, we've got a main option for you:"
-msgstr ""
-"Es scheint, dass die von Ihnen gesuchte Seite nicht existiert. Aber keine Sorge, "
-"wir haben eine Hauptoption für Sie:"
-
-#: app/templates/500.html:9
-msgid "Uh-oh! Something Went Wrong (500)"
-msgstr "Upps! Etwas ist schiefgelaufen (500)"
-
-#: app/templates/500.html:18
-msgid ""
-"It looks like something on our end isn’t working right now.\n"
-"                                We’re working hard to fix it, so please try "
-"again soon."
-msgstr ""
-"Es scheint, dass auf unserer Seite derzeit etwas nicht funktioniert. Wir "
-"arbeiten hart daran, das Problem zu beheben, also versuchen Sie es bitte bald "
-"erneut."
-
-#: app/templates/500.html:21
-msgid "In the meantime, you can:"
-msgstr "In der Zwischenzeit können Sie:"
-
-#: app/templates/500.html:26
-msgid "We apologize for the inconvenience, and thanks for your patience!"
-msgstr ""
-"Wir entschuldigen uns für die Unannehmlichkeiten und danken Ihnen für Ihre "
-"Geduld!"
 
 #: app/templates/about_us.html:9
 msgid ""
@@ -485,6 +450,18 @@ msgstr "Jahre Erfahrung"
 #: app/templates/index.html:451
 msgid "Savings on Materials"
 msgstr "Einsparungen bei Materialien"
+
+#: app/templates/index.html:465
+msgid "Our Certificates"
+msgstr "Unsere Zertifikate"
+
+#: app/templates/index.html:467
+msgid ""
+"A showcase of official certificates demonstrating the quality, expertise,\n"
+"                        and reliability of our construction services."
+msgstr ""
+"Eine Präsentation offizieller Zertifikate, die die Qualität, Expertise und "
+"Zuverlässigkeit unserer Baudienstleistungen demonstrieren."
 
 #: app/templates/page_header_content.html:20
 msgid "Swift and Reliable"
@@ -1623,14 +1600,19 @@ msgstr "Name des Kunden:"
 msgid "Client Email:"
 msgstr "E-Mail des Kunden:"
 
-#: app/templates/email/contact_record.html:45
+#: app/templates/email/contact_record.html:43
+#: app/templates/email/form_confirmation.html:54
+msgid "Phone Number:"
+msgstr "Telefonnummer:"
+
+#: app/templates/email/contact_record.html:49
 #: app/templates/email/contact_record.txt:9
 #: app/templates/email/form_confirmation.html:55
 #: app/templates/email/form_confirmation.txt:10
 msgid "Message:"
 msgstr "Nachricht:"
 
-#: app/templates/email/contact_record.html:50
+#: app/templates/email/contact_record.html:54
 #: app/templates/email/contact_record.txt:12
 #: app/templates/email/email_confirmation.html:16
 #: app/templates/email/email_confirmation.txt:5
@@ -1703,10 +1685,6 @@ msgstr ""
 msgid "Here’s a summary of your submission:"
 msgstr "Hier ist eine Zusammenfassung Ihrer Anfrage:"
 
-#: app/templates/email/form_confirmation.html:54
-msgid "Phone Number:"
-msgstr "Telefonnummer:"
-
 #: app/templates/email/form_confirmation.html:64
 #, python-format
 msgid ""
@@ -1742,6 +1720,42 @@ msgstr ""
 "Verbindung setzen, um Ihre Anfrage zu besprechen. Wenn Sie sofortige Hilfe "
 "benötigen, zögern Sie bitte nicht, uns direkt unter %(contact_phone)s oder "
 "%(contact_email)s zu kontaktieren."
+
+#: app/templates/errors/404.html:9
+msgid "Oops! Page Not Found"
+msgstr "Ups! Seite nicht gefunden"
+
+#: app/templates/errors/404.html:18
+msgid ""
+"It looks like the page you're looking for doesn't exist.\n"
+"                        But don't worry, we've got a main option for you:"
+msgstr ""
+"Es scheint, dass die von Ihnen gesuchte Seite nicht existiert. Aber keine Sorge, "
+"wir haben eine Hauptoption für Sie:"
+
+#: app/templates/errors/500.html:9
+msgid "Uh-oh! Something Went Wrong (500)"
+msgstr "Upps! Etwas ist schiefgelaufen (500)"
+
+#: app/templates/errors/500.html:18
+msgid ""
+"It looks like something on our end isn’t working right now.\n"
+"                                We’re working hard to fix it, so please try "
+"again soon."
+msgstr ""
+"Es scheint, dass auf unserer Seite derzeit etwas nicht funktioniert. Wir "
+"arbeiten hart daran, das Problem zu beheben, also versuchen Sie es bitte bald "
+"erneut."
+
+#: app/templates/errors/500.html:21
+msgid "In the meantime, you can:"
+msgstr "In der Zwischenzeit können Sie:"
+
+#: app/templates/errors/500.html:26
+msgid "We apologize for the inconvenience, and thanks for your patience!"
+msgstr ""
+"Wir entschuldigen uns für die Unannehmlichkeiten und danken Ihnen für Ihre "
+"Geduld!"
 
 #~ msgid ""
 #~ "Kompleksowe i nowoczesne wykończenia wnętrz w domach, mieszkaniach,\n"

@@ -4,7 +4,6 @@ export function setGallery() {
     const lightboxModal = document.getElementById('lightbox-modal');
     const lightboxImage = document.getElementById('lightbox-image');
     const closeImage = document.querySelector('.close');
-    const lightboxSections = document.querySelectorAll('.lightbox-section');
 
     function openLightboxModal(e) {
         lightboxModal.style.display = 'block';
