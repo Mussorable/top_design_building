@@ -17,8 +17,8 @@ class Config:
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    CONTACT_EMAIL = 'example@mail.com'
-    CONTACT_PHONE = '+48123456789'
+    CONTACT_EMAIL = 'contact@perfect-space.pl'
+    CONTACT_PHONE = '+48723569435'
     ADMINS = os.environ.get('MAIL_SENDER')
     LANGUAGES = ['pl', 'en', 'de']
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
