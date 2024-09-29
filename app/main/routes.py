@@ -1,4 +1,4 @@
-from flask import render_template, current_app, flash, redirect, url_for, request
+from flask import render_template, current_app, flash, redirect, url_for, request, send_from_directory
 from flask_babel import _
 
 from app.email import send_contact_confirmation, send_administrator_notification, send_email_confirmation
@@ -190,3 +190,8 @@ def submit_email():
                 'We appreciate your interest and will get back to you shortly.'))
         redirect(url_for('main.index'))
     return redirect(url_for('main.index'))
+
+
+@bp.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
