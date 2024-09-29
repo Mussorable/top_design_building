@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.perfect-space.pl/</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/index</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/about</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/services</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/reviews</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/contact</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/policy</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations/kitchen?gallery_type=Kitchen</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations/bathroom?gallery_type=Bathroom</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations/living-room?gallery_type=Living+Room</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations/business?gallery_type=Business</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.perfect-space.pl/realisations/other?gallery_type=Other</loc>
+  <lastmod>2024-09-29T14:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
