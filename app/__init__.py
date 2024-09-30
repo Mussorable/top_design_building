@@ -23,7 +23,8 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
 
     def get_locale():
-        return request.accept_languages.best_match(app.config['LANGUAGES'])
+        # return request.accept_languages.best_match(app.config['LANGUAGES'])
+        return 'pl'
 
     assets.init_app(app)
     db.init_app(app)
